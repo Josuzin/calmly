@@ -1,34 +1,76 @@
-import React from "react";
+'use client'
+import Link from "next/link";
+import React, { useState } from "react";
 import Image from "next/image";
 import Rectangle_28 from "/images/Rectangle_28.webp";
-import  "/styles/LoginForm.css";
+import "/styles/LoginForm.css";
+
+import { signIn } from "next-auth/react";
+import { useRouter } from "next/navigation";
 
 
-export default async function LoginForm() {
+
+
+
+export default function LoginForm() {
+  const router = useRouter();
+    const [email, setEmail] = useState("");
+    const [password, setPassword] = useState("");
+  const [error, setError] = useState("User does not exists!");
+
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    const result = await signIn("credentials", {
+      email,
+      password,
+      redirect: false,
+    });
+    if (result.error) {
+      setError("invalid credentials");
+    }
+    if (result.status === 200) {
+
+    }
+    router.replace("/xixi");
+  };
+
+  
   return (
-    <body>
+    <div>
       <div className="login-box">
         <h1>LOGIN</h1>
       </div>
       <div className="wrapper">
-        <form action="">
+        <form onSubmit={handleSubmit} action="POST">
           <figure>
-            <Image src= {Rectangle_28} alt="logo" className="logo" />
+            <Image src={Rectangle_28} alt="logo" className="logo" />
           </figure>
           <h2>WELCOME BACK!</h2>
           <div className="input-box">
             <p className="e">Email</p>
-            <input type="email" placeholder="Enter your email" required />
+            <input
+              onChange={(e) => setEmail(e.target.value)}
+              type="email"
+              placeholder="Enter your email"
+              required
+            />
           </div>
           <div className="input-box">
             <p className="p">Password</p>
-            <input type="password" placeholder="Enter your password" required />
+            <input
+              onChange={(e) => setPassword(e.target.value)}
+              type="password"
+              placeholder="Enter your password"
+              required
+            />
           </div>
           <div className="btn-box">
             <button type="submit" className="btn">
               LOGIN
             </button>
           </div>
+          {error && <p className="error">{error}</p>}
           <div className="register-link">
             <p className="acc">
               Need an account? <a href="">SIGN UP</a>
@@ -36,6 +78,6 @@ export default async function LoginForm() {
           </div>
         </form>
       </div>
-    </body>
+    </div>
   );
 }
