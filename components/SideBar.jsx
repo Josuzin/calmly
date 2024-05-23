@@ -30,8 +30,11 @@ export default async function SideBar() {
             <p className="p-profile">Profile</p>
           </li>
         </ul>
+        <div className="emergency-div">
+          <button className="emergency"></button>
+        </div>
         <div className="toggle-div">
-          <button></button>
+          <button className="toggle"></button>
         </div>
       </div>
     </div>
