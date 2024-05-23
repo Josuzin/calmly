@@ -5,7 +5,7 @@
 .sidebar {
   background-color: rgba(16, 13, 46, 0.8);
   color: white;
-  width: 150px;
+  width: 210px;
   height: 100%;
   padding: 20px 0;
   display: flex;
@@ -14,66 +14,98 @@
   position: fixed;
 }
 
+.Logo{
+    width: 100px;
+    margin-bottom: 10px;
+    margin-top: 50px;
+}
+
 li{
     display: flex;
     flex-direction: row;
-    margin-top: 25px; 
-    margin-bottom: 25px;
+    margin-top: 55px; 
+    margin-bottom: 40px;
 }
 
 .icon-home{
-    width: 16px
+    position: absolute;
+    width: 16px;
+    left: 40px;
 }
 
 .p-home{
-    margin-left: 16px;
+    margin-left: 20px;
+    position: absolute;
+    cursor: pointer;
 }
 
 .icon-meditation{
-    width: 19px
+    position: absolute;
+    width: 19px;
+    left: 40px;
 }
 
 .p-meditation{
-    margin-left: 10px;
+    margin-left: 20px;
+    position: absolute;
+    cursor: pointer;
 }
 
 .icon-journaling{
-    width: 20px
+    position: absolute;
+    width: 20px;
+    left: 40px;
 }
 
 .p-journaling{
-    margin-left: 9px;
+    margin-left: 20px;
+    position: absolute;
+    cursor: pointer;
 }
 
 .icon-timer{
-    width: 24px;
-    margin-top: -5px;
-    margin-left: -3px
+    position: absolute;
+    width: 20px;
+    left: 40px;
 }
 
 .p-timer{
-    margin-left: 10px;
+    margin-left: 20px;
+    position: absolute;
+    cursor: pointer;
 }
 
 .icon-profile{
-    width: 19px;
-    margin-top: -2px
+    position: absolute;
+    width: 22px;
+    left: 40px;
+    margin-top: -5px;
 }
 
 .p-profile{
-    margin-left: 13px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+p:hover{
+    font-weight: 600;
 }
 
 .lista {
   list-style-type: none;
   font-size: 12px;
+  margin-top: 50px;
 }
 
 p{
     margin-left: 10px;
 }
 
-.Logo{
-    width: 100px;
-    margin-bottom: 80px;
+.emergency{
+    margin-top: 80px;
+}
+
+.toggle{
+    margin-top: 200px;
+    margin-right: -40px;
 }
