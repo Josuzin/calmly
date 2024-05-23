@@ -39,7 +39,7 @@
   }
   
   h1 {
-    font-size: 50px;
+    /* font-size: 50px; */
     animation: appearFromLeft 1s ease-in-out forwards;
   }
   

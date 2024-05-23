@@ -35,14 +35,14 @@ export default function LoginForm() {
   return (
     <div className="body">
       <div className="login-box">
-        <h1>LOGIN</h1>
+        <h1 className="h1">LOGIN</h1>
       </div>
       <div className="wrapper">
         <form onSubmit={handleSubmit} action="POST">
-          <figure>
+          <figure className="figure">
             <Image src={Rectangle_28} alt="logo" className="logo" />
           </figure>
-          <h2>WELCOME BACK!</h2>
+          <h2 className="h2">WELCOME BACK!</h2>
           <div className="input-box">
             <p className="e">Email</p>
             <input

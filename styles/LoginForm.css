@@ -19,98 +19,93 @@
 }
 
 .wrapper {
-  width: 500px;
+  width: 38vw;
   background-color: rgba(255, 255, 255, 0.3);
   padding-top: 0;
-  padding-bottom: 20px;
-  padding-left: 50px;
-  padding-right: 50px;
-  border-radius: 10px;
+  padding-bottom: 1.0417vw;
+  padding-left: 2.6042vw;
+  padding-right: 2.6042vw;
+  border-radius: 0.5208vw;
 }
 
 h2 {
-  font-size: 22px;
+  font-size: 1.1458vw;
   font-weight: 500;
   text-align: center;
   color: white;
 }
+
 h1 {
   font-weight: 300;
-  font-size: 24px;
-  margin-bottom: 20px;
+  font-size: 2.2vw;
+  margin-bottom: 1.0417vw;
   color: white;
   text-align: center;
 }
 
 .e,
 .p {
-  font-size: 14px;
-  margin-top: 25px;
-  margin-bottom: 5px;
+  font-size: 0.9292vw;
+  margin-top: 1.3021vw;
+  margin-bottom: 0.2604vw;
   color: white;
 }
 
 input {
   width: 100%;
-  padding: 8px;
+  padding: 0.4167vw;
   border: none;
-  border-radius: 8px;
+  border-radius: 0.4167vw;
   outline: none;
 }
 
 .acc {
-  font-size: 12px;
-  margin-top: 40px;
+  font-size: 0.8250vw;
+  margin-top: 2.0833vw;
   color: white;
 }
 
 .logo {
-  width: 150px;
+  width: 8.8125vw;
   height: auto;
 }
 
 figure {
   display: flex;
   justify-content: center;
-  margin-bottom: 10px;
+  margin-bottom: 0.5208vw;
 }
 
-button {
-  margin-top: 40px;
-  padding: 7px 40px;
-  font-size: 12px;
+.btn {
+  margin-top: 4.0833vw;
+  padding: 0.3646vw 4.0833vw;
+  font-size: 0.9250vw;
   color: #fff;
-  border: 2px solid #fff;
-  border-radius: 50px;
+  border: 0.1142vw solid #fff;
+  border-radius: 2.6042vw;
   background: none;
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.3s ease,
     border-color 0.3s ease;
 }
 
-button:hover {
+.btn:hover {
   background-color: #d278ae;
   color: #fff;
   border-color: #d278ae;
   transform: translateY(-3px);
 }
 
-button:active {
+.btn:active {
   background-color: black;
   color: #fff;
   border-color: black;
-  transform: translateY(1px);
+  transform: translateY(0.0521vw);
 }
 
 .btn-box {
   display: flex;
   justify-content: center;
-}
-
-a {
-  color: #fff;
-  text-decoration: none;
-  font-weight: 600;
 }
 
 .acc {
@@ -119,6 +114,9 @@ a {
 
 .signup {
   transition: text-decoration 0.3s ease;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600
 }
 
 .signup:hover {

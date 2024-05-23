@@ -5,9 +5,9 @@
 .sidebar {
   background-color: rgba(16, 13, 46, 0.8);
   color: white;
-  width: 240px;
+  width: 12.5vw;
   height: 100%;
-  padding: 20px 0;
+  padding: 1.0417vw 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -15,26 +15,26 @@
 }
 
 .Logo{
-    width: 100px;
-    margin-bottom: 10px;
-    margin-top: 50px;
+    width: 7.2083vw;
+    margin-bottom: 0.5208vw;
+    margin-top: 2.6042vw;
 }
 
 li{
     display: flex;
     flex-direction: row;
-    margin-top: 55px; 
-    margin-bottom: 40px;
+    margin-top: 2.8646vw; 
+    margin-bottom: 2.0833vw;
 }
 
 .icon-home{
     position: absolute;
-    width: 16px;
-    left: 40px;
+    width: 1.3833vw;
+    left: 2.0833vw;
 }
 
 .p-home{
-    margin-left: 20px;
+    margin-left: 1.0417vw;
     position: absolute;
     cursor: pointer;
 }
@@ -45,12 +45,12 @@ li{
 
 .icon-meditation{
     position: absolute;
-    width: 19px;
-    left: 40px;
+    width: 1.3896vw;
+    left: 2.0833vw;
 }
 
 .p-meditation{
-    margin-left: 20px;
+    margin-left: 1.0417vw;
     position: absolute;
     cursor: pointer;
 }
@@ -61,12 +61,12 @@ li{
 
 .icon-journaling{
     position: absolute;
-    width: 20px;
-    left: 40px;
+    width: 1.2417vw;
+    left: 2.0833vw;
 }
 
 .p-journaling{
-    margin-left: 20px;
+    margin-left: 1.0417vw;
     position: absolute;
     cursor: pointer;
 }
@@ -77,12 +77,12 @@ li{
 
 .icon-timer{
     position: absolute;
-    width: 20px;
-    left: 40px;
+    width: 1.4417vw;
+    left: 2.0833vw;
 }
 
 .p-timer{
-    margin-left: 20px;
+    margin-left: 1.0417vw;
     position: absolute;
     cursor: pointer;
 }
@@ -93,13 +93,13 @@ li{
 
 .icon-profile{
     position: absolute;
-    width: 22px;
-    left: 40px;
-    margin-top: -5px;
+    width: 1.7458vw;
+    left: 2.0833vw;
+    margin-top: -0.5804vw;
 }
 
 .p-profile{
-    margin-left: 20px;
+    margin-left: 1.0417vw;
     cursor: pointer;
 }
 
@@ -109,19 +109,19 @@ li{
 
 .lista {
   list-style-type: none;
-  font-size: 12px;
-  margin-top: 50px;
+  font-size: 0.8250vw;
+  margin-top: 2.6042vw;
 }
 
 p{
-    margin-left: 10px;
+    margin-left: 0.5208vw;
 }
 
 .emergency{
-    margin-top: 80px;
+    margin-top: 4.1667vw;
 }
 
 .toggle{
-    margin-top: 200px;
-    margin-right: -40px;
+    margin-top: 10.4167vw;
+    margin-right: -2.0833vw;
 }
