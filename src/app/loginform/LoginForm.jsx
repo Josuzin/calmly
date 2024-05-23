@@ -12,11 +12,12 @@ import { useRouter } from "next/navigation";
 
 
 
+
 export default function LoginForm() {
   const router = useRouter();
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
-  const [error, setError] = useState("User does not exist!");
+  const [error, setError] = useState(undefined);
 
 
   const handleSubmit = async (e) => {

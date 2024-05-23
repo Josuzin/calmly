@@ -1,10 +1,12 @@
 import Image from "next/image";
-import LoginForm from "../../components/LoginForm";
+import LoginForm from "./loginform/LoginForm";
 import SideBar from "../../components/SideBar";
+import HomePage from "../../pages/firstpage/HomePage";
+
 
 export default function Home() {
   return (
-    <LoginForm/>
+    <HomePage/>
     
   );
 }
