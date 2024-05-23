@@ -1,0 +1,206 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .page {
+    background-image: url("/images/fundo.png");
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    color: white;
+    font-family: "poppins", sans-serif;
+  }
+  
+  .wrappermed {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    margin-left: 18.5vw;
+  }
+  
+  .meditation-options-box {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 8%;
+  }
+  
+  .ok {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .porra {
+    width: 9vw;
+    margin-left: -0.5vw;
+  }
+  
+  .med-photo{
+    width: 8.5vw;
+  }
+  
+  .meditation-options-box > div {
+    flex: 1;
+    padding: 0.521vw;
+    text-align: center;
+  }
+  
+  .meditation-options-box img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .description-box {
+    display: flex;
+    margin-left: 1vw;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    width: 65%;
+  }
+
+  .descrip-photo{
+    width: 40vw;
+  }
+  
+  .description-title-box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 2vw;
+  }
+  
+  .description-title-box p {
+    color: #d8d8d8;
+    margin-top: 1vw;
+  }  
+
+  .description-title {
+    margin-top: 2.6vw;
+    font-size: 1vw;
+    margin-left: 0.5vw;
+    font-weight: 540;
+  }
+  
+  h4 {
+    font-size: 0.631vw;
+    font-weight: 400;
+    text-align: start;
+    margin-top: 1vw;
+    padding-right: 8vw;
+  }
+
+  .text-main{
+    color: rgba(216, 216, 216, 1);
+    font-size: 	0.750vw;
+    font-weight: 100;
+    padding-right: 7vw;
+  }
+
+  .text{
+    color: rgba(216, 216, 216, 1);
+    font-size: 0.521vw;
+    font-weight: 100;
+    text-align: start;
+  }
+  
+  .meditation-options-box {
+    margin-top: 1vw;
+  }
+  
+  button {
+    background-color: #d278ae;
+    border: none;
+    padding: 0.368vw 1.839vw;
+    border-radius: 2.627vw;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  
+  button:hover {
+    transform: translateY(-0.158vw);
+    box-shadow: 0 0 0.788vw rgba(16, 13, 46, 0.7);
+  }
+  
+  button:active {
+    box-shadow: 0 0 0.263vw rgba(16, 13, 46, 0.5);
+    background-color: black;
+    color: white;
+    border: 0.105vw solid black;
+  }
+  
+  .btn-box-end {
+    display: flex;
+  }
+  
+  .btn-one {
+    margin-top: 0.788vw;
+    align-self: flex-start;
+    margin-right: 10.5vw;
+  }
+  
+  .btn-two {
+    margin-top: 0.788vw;
+    align-self: flex-start;
+    margin-right: 10.2vw;
+  }
+  
+  .btn-thr {
+    margin-top: 0.788vw;
+    align-self: flex-start;
+    margin-right: 10.2vw;
+  }
+  
+  .btn-fou {
+    margin-top: 0.788vw;
+    align-self: flex-start;
+    margin-right: 10.5vw;
+  }
+  
+  .btn-fiv {
+    margin-top: 0.788vw;
+    align-self: flex-start;
+  }
+  
+  .show-more {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 7.5vw;
+    margin-top: 3%;
+    margin-bottom: 6%;
+  }
+  
+  .show-more:hover {
+      cursor: pointer;
+  }
+  
+  .show-more a {
+    color: #d8d8d8;
+    text-decoration: none;
+    font-size: 0.631vw;
+    margin-bottom: 0.788vw;
+    font-weight: 500;
+  }
+  
+  .seta {
+    width: 1vw
+  }
+  .seta:hover {
+      cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .seta:hover{
+    animation: up-and-down 1s infinite alternate;
+  }
+  
+  @keyframes up-and-down {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-0.525vw);
+    }
+  }

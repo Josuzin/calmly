@@ -5,7 +5,7 @@
 .sidebar {
   background-color: rgba(16, 13, 46, 0.8);
   color: white;
-  width: 210px;
+  width: 240px;
   height: 100%;
   padding: 20px 0;
   display: flex;
@@ -39,6 +39,10 @@ li{
     cursor: pointer;
 }
 
+.p-home:hover{
+    font-weight: 600;
+}
+
 .icon-meditation{
     position: absolute;
     width: 19px;
@@ -49,6 +53,10 @@ li{
     margin-left: 20px;
     position: absolute;
     cursor: pointer;
+}
+
+.p-meditation:hover{
+    font-weight: 600;
 }
 
 .icon-journaling{
@@ -63,6 +71,10 @@ li{
     cursor: pointer;
 }
 
+.p-journaling:hover{
+    font-weight: 600;
+}
+
 .icon-timer{
     position: absolute;
     width: 20px;
@@ -73,6 +85,10 @@ li{
     margin-left: 20px;
     position: absolute;
     cursor: pointer;
+}
+
+.p-timer:hover{
+    font-weight: 600;
 }
 
 .icon-profile{
@@ -87,7 +103,7 @@ li{
     cursor: pointer;
 }
 
-p:hover{
+.p-profile:hover{
     font-weight: 600;
 }
 

@@ -1,21 +1,4 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  .background {
-    background-image: url("../images/firstpage.png");
-    background-color: #1b183e;
-    background-size: cover;
-    font-family: "poppins", sans-serif;
-    color: #fff;
-  }
-  
-  .component h1
-   {
-    text-align: start;
-   }
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap');
 
   .pai {
     display: flex;
@@ -71,83 +54,31 @@
     }
   }
   
-  .container {
+.main{
+    margin-left: 210px;
+    font-family: "poppins", sans-serif;
+}
+
+.moods{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 12px;
+    background-color: rgba(22, 17, 53, 0.3);
+    border-radius: 10px;
+    margin: 20px 0px 20px 20px; 
     position: absolute;
-    top: 35%;
-  }
-  
-  .pi,
-  button {
-    align-self: flex-start;
-    animation: appearFromLeft2 1s ease-in-out forwards;
-  }
-  
-  @keyframes appearFromLeft2 {
-    0% {
-      transform: translateX(-100%);
-      opacity: 0;
-    }
-    100% {
-      transform: translateX(0);
-      opacity: 1;
-    }
-  }
+    width: 80vw;
+    padding-left: 80px
+}
 
+.wymt{
+    font-weight: 700;
+    font-size: 42px;
+    display: flex;
+    justify-self: start;
+}
 
-  
-  .pi {
-    font-size: 23px;
-    color: #bcbcbc;
-    font-weight: 500;
+.emotions{
+    display: flex;
+    flex-direction: row;
 
- 
-  }
-  
-  .desenho {
-    position: absolute;
-    top: 40%;
-    right: 12%;
-    animation: appearFromLeft3 1s ease-in-out forwards;
-  }
-  
-  @keyframes appearFromLeft3 {
-    0% {
-      transform: translateX(100%);
-      opacity: 0;
-    }
-    100% {
-      transform: translateX(0);
-      opacity: 1;
-    }
-  }
-  
-  button {
-    background: none;
-    border: 2px solid #fff;
-    color: #bcbcbc;
-    padding: 12px 50px;
-    border-radius: 50px;
-    margin-top: 60px;
-    font-size: 18px;
-    cursor: pointer;
-    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out,
-      border-color 0.2s ease-in-out;
-  }
-  
-  button:hover {
-    background-color: #d278ae;
-    color: #fff;
-    border-color: #d278ae;
-    box-shadow: 0 5px 10px rgba(210, 120, 174, 0.5);
-    transform: translateY(-5px);
-  }
-  
-  figure {
-    margin-left: 12%;
-  }
-
-  
+}
