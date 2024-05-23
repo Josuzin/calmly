@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap');
+
+.main{
+    margin-left: 210px;
+    font-family: "poppins", sans-serif;
+}
+
+.moods{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(22, 17, 53, 0.3);
+    border-radius: 10px;
+    margin: 20px 0px 20px 20px; 
+    position: absolute;
+    width: 80vw;
+    padding-left: 80px
+}
+
+.wymt{
+    font-weight: 700;
+    font-size: 42px;
+    display: flex;
+    justify-self: start;
+    width: 
+}
+
+.emotions{
+    display: flex;
+    flex-direction: row;
+
+}
