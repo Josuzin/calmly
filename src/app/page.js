@@ -3,10 +3,13 @@ import LoginForm from "../../pages/loginform";
 import SideBar from "../../components/SideBar";
 import HomePage from "../../components/HomePage";
 import MeditationPage from "../../components/MeditationPage";
+import Chatbox from "../../components/Chatbox";
+import Timers from "../../pages/timer";
+
 
 export default function Home() {
   return (
-    <MeditationPage/>
+    <Chatbox/>
     
     
   );
