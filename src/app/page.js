@@ -10,6 +10,8 @@ import Timers from "../../pages/timer";
 export default function Home() {
   return (
     <Chatbox/>
+ 
+    
     
     
   );

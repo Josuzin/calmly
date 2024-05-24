@@ -6,7 +6,7 @@
   
   .page {
     background-image: url("/images/fundo.png");
-    background-size: 100vw 100vh;
+    background-size: cover;
     background-repeat: no-repeat;
     color: white;
     font-family: "poppins", sans-serif;
@@ -110,6 +110,7 @@
   
   button {
     background-color: #d278ae;
+    font-size: small;
     border: none;
     padding: 0.368vw 1.839vw;
     border-radius: 2.627vw;
@@ -185,8 +186,9 @@
   }
   
   .seta {
-    width: 1vw
+    width: 1vw;
   }
+
   .seta:hover {
       cursor: pointer;
     transition: transform 0.3s ease-in-out;
