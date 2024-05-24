@@ -5,7 +5,7 @@
 .sidebar {
   background-color: rgba(16, 13, 46, 0.8);
   color: white;
-  width: 12.5vw;
+  width: 13.5vw;
   height: 100%;
   padding: 1.0417vw 0;
   display: flex;
@@ -29,8 +29,8 @@ li{
 
 .icon-home{
     position: absolute;
-    width: 1.3833vw;
-    left: 2.0833vw;
+    width: 1vw;
+    left: 3.0833vw;
 }
 
 .p-home{
@@ -45,8 +45,8 @@ li{
 
 .icon-meditation{
     position: absolute;
-    width: 1.3896vw;
-    left: 2.0833vw;
+    width: 1vw;
+    left: 3.0833vw;
 }
 
 .p-meditation{
@@ -61,8 +61,8 @@ li{
 
 .icon-journaling{
     position: absolute;
-    width: 1.2417vw;
-    left: 2.0833vw;
+    width: 0.9vw;
+    left: 3.0833vw;
 }
 
 .p-journaling{
@@ -77,8 +77,8 @@ li{
 
 .icon-timer{
     position: absolute;
-    width: 1.4417vw;
-    left: 2.0833vw;
+    width: 1.1vw;
+    left: 3.0833vw;
 }
 
 .p-timer{
@@ -93,9 +93,9 @@ li{
 
 .icon-profile{
     position: absolute;
-    width: 1.7458vw;
-    left: 2.0833vw;
-    margin-top: -0.5804vw;
+    width: 1.3vw;
+    left: 3.0833vw;
+    margin-top: -0.4804vw;
 }
 
 .p-profile{
@@ -109,11 +109,11 @@ li{
 
 .lista {
   list-style-type: none;
-  font-size: 0.8250vw;
+  font-size: 0.68vw;
   margin-top: 2.6042vw;
 }
 
-p{
+p{  
     margin-left: 0.5208vw;
 }
 
