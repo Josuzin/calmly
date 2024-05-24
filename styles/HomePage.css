@@ -7,7 +7,7 @@
 }
 
 .page {
-  background-image: url("/images/fundo.png");
+  background-image: url("../images/fundo.png");
   background-size: cover;
   color: #fff;
   font-family: "poppins", sans-serif;

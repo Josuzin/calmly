@@ -21,35 +21,35 @@ export default function FirstPage() {
           rel="stylesheet"
         />
       </Head>
-      <body className={styles.background}>
+      <div className="page">
         <nav>
           <figure>
-            <Image src={Logo} alt="logo" className={styles.logo} />
+            <Image src={Logo} alt="logo" className="logo" />
           </figure>
-          <div className={styles.signinBox}>
+          <div className="signin-box">
             <Link href="/LoginForm">Sign in</Link>
           </div>
         </nav>
-        <div className={styles.pai}>
-          <section className={styles.container}>
-            <div className={styles.component}>
-              <h1>
+        <div className="pai">
+          <section className="container">
+            <div className="component">
+              <h1 className="first-page-title">
                 Hope, Heal, Hone <br />
                 Discover Your Potential now
               </h1>
             </div>
-            <p className={styles.pi}>
+            <p className="pi">
               Maximize Productivity, Minimize Effort, and
               <br />
               Unleash Your Best Self at Your Fingertips.
             </p>
-            <button>Create account</button>
+            <button className="first-page-btn">Create account</button>
           </section>
-          <figure className={styles.desenho}>
+          <figure className="desenho">
             <Image src={Desenho} alt="desenho" />
           </figure>
         </div>
-      </body>
+      </div>
     </>
   );
 }

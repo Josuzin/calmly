@@ -4,14 +4,18 @@
   box-sizing: border-box;
 }
 
-.background {
-  background-image: url("/my-app/calmly/images/firstpage.png");
+.page {
+  width: 100%;
+  background-image: url("../images/firstpage.png");
   font-family: "poppins", sans-serif;
-  background-size: cover; 
+  background-size: cover;
+  background-color: #1B183E
 }
 
-.component h1 {
+
+.first-page-title {
   text-align: start;
+  font-weight: 700;
 }
 
 .pai {
@@ -37,7 +41,7 @@ nav {
 }
 
 .logo {
-  height: 80px;
+  width: 140px;
 }
 
 a {
@@ -77,7 +81,7 @@ h1 {
 }
 
 .pi,
-button {
+.first-page-btn {
   align-self: flex-start;
   animation: appearFromLeft2 1s ease-in-out forwards;
 }
@@ -117,7 +121,7 @@ button {
   }
 }
 
-button {
+.first-page-btn {
   background: none;
   border: 2px solid #fff;
   color: #bcbcbc;
@@ -130,7 +134,7 @@ button {
     border-color 0.2s ease-in-out;
 }
 
-button:hover {
+.first-page-btn:hover {
   background-color: #d278ae;
   color: #fff;
   border-color: #d278ae;
@@ -140,4 +144,12 @@ button:hover {
 
 figure {
   margin-left: 12%;
+}
+
+.pi {
+  margin: 0;
+}
+
+.first-page-title {
+  margin: 0;
 }
