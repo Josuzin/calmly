@@ -1,0 +1,213 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "poppins", sans-serif;
+  background-image: url("/images/fundo.png");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #fff;
+}
+
+.timer-para-flex {
+  display: flex;
+  margin-left: 5vw;
+}
+
+.timer-navbar-box {
+  width: 12.5vw;
+}
+
+.timer-title {
+  font-size: 2.5vw;
+  font-weight: 500;
+}
+
+.timer-number {
+  font-size: 3.333vw;
+  font-weight: 600;
+}
+
+.timer-music-title {
+  font-size: 1.042vw;
+  font-weight: 500;
+}
+
+.timer-author-box {
+  font-size: 0.625vw;
+  color: #c5c5c5;
+  font-weight: 400;
+}
+
+.timer-content-box {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 100vh;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+.timer-animation-1,
+.timer-animation-2,
+.timer-animation-3 {
+  position: absolute;
+  animation: pulse 4s infinite;
+}
+
+@keyframes pulse {
+
+  0%,
+  100% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(0.8);
+  }
+}
+
+.timer-animation-1 {
+  height: 31vw;
+  width: 31vw;
+  border: 0.313vw solid white;
+  opacity: 0.1;
+  border-radius: 18.229vw;
+  top: 8.5vw;
+  left: 37.9vw;
+}
+
+.timer-animation-2 {
+  height: 25vw;
+  width: 25vw;
+  border: 0.313vw solid white;
+  opacity: 0.1;
+  border-radius: 13.802vw;
+  top: 11.5vw;
+  left: 40.9vw;
+}
+
+.timer-animation-3 {
+  height: 17.917vw;
+  width: 17.917vw;
+  border: 0.313vw solid white;
+  opacity: 0.3;
+  border-radius: 8.958vw;
+  top: 14.5vw;
+  left: 44.5vw;
+}
+
+.timer-music-section-box {
+  display: flex;
+}
+
+.timer-music-section-box {
+  display: grid;
+  grid-template-columns: repeat(3, 20.833vw);
+}
+
+.timer-replay-box,
+.timer-play-box,
+.timer-pause-box {
+  width: 33%;
+}
+
+.timer-play-btn-box {
+  display: flex;
+}
+
+.timer-btn-replay,
+.timer-btn-pause {
+  width: 3.125vw;
+  height: 3.125vw;
+  cursor: pointer;
+  border-radius: 3.073vw;
+  border: 0.104vw solid #d278ae;
+  background-color: #864d82;
+}
+
+.timer-btn-play {
+  width: 4.167vw;
+  height: 4.167vw;
+  border-radius: 2.604vw;
+  border: 0.104vw solid #d278ae;
+  background-color: #864d82;
+  cursor: pointer;
+}
+
+.timer-replay-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.timer-play-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.timer-pause-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fa-pause {
+  font-size: 2.083vw;
+  color: #fff;
+}
+
+.fa-square {
+  font-size: 1.042vw;
+  color: #fff;
+}
+
+.fa-rotate-right {
+  font-size: 1.042vw;
+  color: #fff;
+}
+
+.timer-music-img-box {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1vw;
+}
+
+
+.timer-cover-size {
+  width: 5.365vw;
+}
+
+.timer-navbar-box {
+  background:none;
+}
+
+.time-selection {
+  position: absolute;
+  top: 24vw;
+  left: 80vw;
+  display: flex;
+  flex-direction: column;
+  gap: 2vw;
+}
+
+.timer-btn-style {
+  width: 4vw;
+  height: 4vw;
+  border-radius: 2vw;
+  border: 0.104vw solid #d278ae;
+  background-color: #864d82;
+  cursor: pointer;
+}
+
+
+
+
