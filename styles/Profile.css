@@ -10,6 +10,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  /* background-attachment: fixed; */
   color: #fff;
   min-height: 100vh; 
   width: 100%;
@@ -151,7 +152,7 @@
   background-color: #D278AE;
   border: none;
   color: #fff;
-  font-weight: 600;
+  font-weight: 560;
   padding: 0.6vw 2.2vw;
   cursor: pointer;
   border-radius: 2.604vw;
@@ -168,6 +169,7 @@
 .profile-btn-save:active {
   background-color: #b2568a;
   transform: scale(0.95);
+  border: none;
 }
 
 .profile-list-box {

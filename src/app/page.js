@@ -8,10 +8,11 @@ import Chatbox from "../../components/Chatbox";
 import Timers from "../../pages/timer";
 import FirstPage from "../../components/FirstPage";
 import Profile from "../../components/Profile"
-
+import MeditationMuscle from "../../components/MeditationMuscle";
 
 export default function Home() {
   return (
-    <Profile/>
+    <MeditationMuscle/>
+
   );
 }

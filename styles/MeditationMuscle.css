@@ -1,0 +1,172 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.medi-page-body {
+  font-family: "Poppins", sans-serif;
+  background-image: url("/images/fundo.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #fff;
+  min-height: 100vh;
+}
+
+.med-back {
+ font-size: 0.625vw;
+}
+
+.med-title {
+  font-size: 1.25vw;
+  font-weight: 600;
+}
+
+.med-text-read, .med-thd-p, .med-ul-title, .med-topic-y, .med-frt-title, .med-btn, .med-btn-done, .med-back  {
+  font-size: 0.625vw;
+  color: #D8D8D8;
+  font-weight: 300;
+}
+
+.med-text-read, .med-thd-p {
+  margin-left: 0;
+}
+
+.med-back {
+  text-decoration: none;
+  margin-left: 0.5vw;
+  transition: font-size 0.2s ease, font-weight 0.2s ease;
+}
+
+.med-back:hover {
+  font-size: 0.7vw;
+  font-weight: 600; 
+}
+
+.med-back:active {
+  font-size: 0.6vw;
+}
+
+.med-goback-nd-pic {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.fa-chevron-left {
+  font-size: 1vw;
+  color: #fff;
+}
+
+.med-page-wrapper {
+  display: flex;
+}
+
+.med-navbar {
+  width: 20vw;
+  background: none;
+}
+
+.med-content-box {
+  display: flex;
+  justify-content: center;
+  gap: 6vw;
+  margin-top: 2vw;
+  margin-bottom: 2vw;
+}
+
+.med-cover {
+  width: 10.417vw;
+}
+
+.med-guide-text {
+  width: 40vw;
+  background-color: rgba(13, 10, 41, 0.7);
+  padding: 1.5vw 2vw;
+  border-radius: 0.5vw;
+  display: flex;
+  flex-direction: column;
+  gap:0.5vw;
+}
+
+.med-title {
+  text-align: center;
+  margin-bottom: 1vw;
+}
+
+.med-btn {
+  background-color: #D278AE;
+  padding: 0.5vw 1.5vw;
+  border: none;
+  border-radius: 50px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.med-btn-done {
+  background: none;
+  padding: 0.5vw 1.5vw;
+  border: 1px solid #D278AE;
+  border-radius: 50px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.med-btn-done:hover {
+  background-color: rgba(210, 120, 174, 0.2); 
+  border-color: #b36491; 
+  transform: scale(1.05); 
+}
+
+.med-btn-done:active {
+  transform: scale(0.95); 
+  border: none;
+}
+
+.med-btn:hover {
+  background-color: #b36491; 
+  transform: scale(1.05); 
+}
+
+.med-btn:active {
+  transform: scale(0.95); 
+  border: none;
+}
+
+.med-btn-audio {
+  display: flex;
+  justify-content: center;
+  margin-top: 3vw;
+}
+
+.med-content-left {
+  display: flex;
+flex-direction: column;
+}
+
+.med-pic {
+  margin-top: 2vw;
+  margin-left: 2vw;
+}
+
+.med-content-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* .med-ul, .med-last-ul {
+  list-style-position: inside; 
+  padding-left: 0; 
+  margin-left: 0;
+} */
+
+.med-topic-y {
+  margin-top: 0;
+  margin-bottom: 0.5vw;
+  margin-left: 1vw;
+  margin-right: 0;
+}

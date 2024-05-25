@@ -4,12 +4,15 @@
     box-sizing: border-box;
   }
   
-  .page {
-    background-image: url("/images/fundo.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    color: white;
-    font-family: "poppins", sans-serif;
+  .page-medipage {
+    
+    font-family: "Poppins", sans-serif;
+  background-image: url("/images/meditationcover.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #fff;
+  min-height: 100vh;
   }
   
   .wrappermed {
@@ -29,15 +32,18 @@
   .ok {
     display: flex;
     flex-direction: column;
+    padding: 0;
   }
   
   .porra {
     width: 9vw;
     margin-left: -0.5vw;
+    display: flex;
+    flex-direction: column;
   }
   
   .med-photo{
-    width: 8.5vw;
+    width: 10.5vw;
   }
   
   .meditation-options-box > div {
@@ -53,7 +59,7 @@
   
   .description-box {
     display: flex;
-    margin-left: 1vw;
+    margin-left: 0.5vw;
     margin-top: 5%;
     margin-bottom: 5%;
     width: 65%;
@@ -102,6 +108,8 @@
     font-size: 0.521vw;
     font-weight: 100;
     text-align: start;
+    width: 100%;
+    margin-top: 0.3vw;
   }
   
   .meditation-options-box {
@@ -135,7 +143,43 @@
     display: flex;
   }
   
-  .btn-one {
+.btn-one, 
+.btn-two, 
+.btn-thr, 
+.btn-fou, 
+.btn-fiv {
+  font-size: 0.625vw;
+  margin-top: 1.5vw;
+  transition: background-color 0.3s, transform 0.2s;
+  width: fit-content;
+}
+
+.btn-one:hover, 
+.btn-two:hover, 
+.btn-thr:hover, 
+.btn-fou:hover, 
+.btn-fiv:hover {
+  background-color: #c0679b;
+  transform: scale(1.05);
+}
+
+.btn-one:active, 
+.btn-two:active, 
+.btn-thr:active, 
+.btn-fou:active, 
+.btn-fiv:active {
+  background-color: #b2568a;
+  transform: scale(0.95);
+  border: none;
+}
+
+.btn-da-medit {
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 0.5vw;
+}
+
+  /* .btn-one {
     margin-top: 0.788vw;
     align-self: flex-start;
     margin-right: 10.5vw;
@@ -162,7 +206,7 @@
   .btn-fiv {
     margin-top: 0.788vw;
     align-self: flex-start;
-  }
+  } */
   
   .show-more {
     display: flex;
