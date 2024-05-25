@@ -4,7 +4,7 @@ import SideBar from "./SideBar"
 
 export default function HomePage() {
     return (
-        <div className="page">
+        <div className="page-main-main">
             <SideBar />
             <div class="porra-page-flex-box">
                 <section class="porra-main-content-box">

@@ -6,8 +6,8 @@
   box-sizing: border-box;
 }
 
-.page {
-  background-image: url("../images/fundo.png");
+.page-main-main {
+  background-image: url("/images/fundo.png");
   background-size: cover;
   color: #fff;
   font-family: "poppins", sans-serif;
