@@ -1,0 +1,220 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.body-profile {
+  font-family: "Poppins", sans-serif;
+  background-image: url("/images/profile-bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #fff;
+  min-height: 100vh; 
+  width: 100%;
+}
+
+.profile-page {
+  display: flex;
+}
+
+.profile-navbar {
+  width: 12vw;
+}
+
+.profile-content-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: 41vw;
+  width: 90vw;
+  margin-left: 15vw;
+  margin-right: 8vw;
+  margin-top: 2vw;
+  margin-bottom: 2vw;
+}
+
+.profile-btn-box {
+  width: 51vw;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.profile-curr-password,
+.profile-new-pass-repeat,
+.profile-new-passww {
+  width: 51vw;
+  height: 2vw;
+  background: none;
+  border: 0.15vw solid #ADADAD;
+  border-radius: 0.4vw;
+  outline: none;
+  transition: border-color 0.3s;
+  color: #fff;
+  padding-left: 0.5vw;
+}
+
+.profile-pic-section-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5vw;
+}
+
+.profile-pic {
+  width: 14.01vw;
+}
+
+.profile-title {
+  font-size: 1.146vw;
+  font-weight: 600;
+  text-align: start;
+}
+
+.profile-nickname {
+  font-size: 4.688vw;
+  margin-top: 1vw;
+  font-weight: 800;
+}
+
+.profile-password-change-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.profile-curr-pass,
+.profile-new-pass,
+.profile-repeat-new-pass {
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-curr-pass {
+  margin-top: 0;
+}
+
+
+.profile-password-change-box {
+  padding-top: 2vw;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-change-pass {
+  font-size: 1.042vw;
+  font-weight: 700;
+}
+
+.profile-pass,
+.profile-new-pass,
+.profile-repeat-pass {
+  font-size: 0.938vw;
+}
+
+
+.profile-uppercase,
+.profile-spec-char,
+.profile-ten-char {
+  font-size: 0.833vw;
+  margin: 0;
+}
+
+.profile-list-box {
+  margin-top: 0.5vw;
+  margin-bottom: 1vw;
+}
+
+.profile-curr-password,
+.profile-new-pass,
+.profile-new-pass-repeat {
+  margin-top: 0.5vw;
+}
+
+.profile-new-pass {
+  margin-top: 1.5vw;
+}
+
+.profile-require-title {
+  margin-top: 1.5vw;
+  margin-left: 0;
+}
+
+.profile-repeat-new-pass {
+  margin-top: 1.5vw;
+}
+
+.profile-btn-save {
+  background-color: #D278AE;
+  border: none;
+  color: #fff;
+  font-weight: 600;
+  padding: 0.6vw 2.2vw;
+  cursor: pointer;
+  border-radius: 2.604vw;
+  margin-top: 1vw;
+  transition: background-color 0.3s, transform 0.2s;
+  margin-bottom: 2vw;
+}
+
+.profile-btn-save:hover {
+  background-color: #c0679b;
+  transform: scale(1.05);
+}
+
+.profile-btn-save:active {
+  background-color: #b2568a;
+  transform: scale(0.95);
+}
+
+.profile-list-box {
+  list-style-type: none;
+  padding: 0;
+}
+
+.profile-uppercase,
+.profile-spec-char,
+.profile-ten-char {
+  position: relative;
+  padding-left: 25px;
+  margin-bottom: 10px;
+}
+
+.profile-list-box li:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 12px;
+  height: 12px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  background-color: transparent;
+}
+
+.profile-pass {
+  margin-top: 0.7vw;
+}
+
+.profile-new-passww:focus {
+  border-color: #D278AE;
+}
+
+.profile-curr-password:focus {
+  border-color: #D278AE;
+}
+
+.profile-new-pass-repeat:focus {
+  border-color: #D278AE;
+}
+
+.profile-new-passww {
+  margin-top: 0.5vw;
+}
+.profile-change-pass {
+  margin-left: 0;
+}
