@@ -17,7 +17,7 @@ export default function MeditationMuscle() {
               <a href="" className="med-back">Back</a>
             </div>
             <div className="med-pic">
-              <img src="/images/Rectangle 35.png" alt="med cover" className="med-cover" />
+              <img src="/images/Rectangle_35.png" alt="med cover" className="med-cover" />
             </div>
           </div>
           <div className="med-middle-content">
