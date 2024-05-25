@@ -23,7 +23,7 @@ export default function FirstPage() {
       </Head>
       <div className="page">
         <nav>
-          <figure>
+          <figure className="oi">
             <Image src={Logo} alt="logo" className="logo" />
           </figure>
           <div className="signin-box">
