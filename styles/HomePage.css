@@ -8,7 +8,10 @@
 
 .page-main-main {
   background-image: url("/images/fundo.png");
-  background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
   color: #fff;
   font-family: "poppins", sans-serif;
   position: fixed;

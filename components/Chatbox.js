@@ -2,6 +2,7 @@
 import { useState, useEffect } from 'react';
 import { GoogleGenerativeAI, HarmCategory, HarmBlockThreshold } from '@google/generative-ai';
 import styles from '../styles/Chatbox.css'; // 
+import SideBar from './SideBar';
 
 const Chatbox = () => {
   const [messages, setMessages] = useState([]);
@@ -51,42 +52,63 @@ const Chatbox = () => {
     const userMessage = { text: inputValue.trim(), role: 'user' };
     setMessages((prevMessages) => [...prevMessages, userMessage]);
     setInputValue('');
-const result = await chat.sendMessage("ola");
-const response= await result.response.text();
-console.log(response)
-    
+    const result = await chat.sendMessage("ola");
+    const response = await result.response.text();
+    console.log(response)
 
-     try {
-       const result = await chat.sendMessage(inputValue.trim());
-       console.log(result);
-       const assistantMessage = { text: await result.response.text(), role: 'assistant' };
-       setMessages((prevMessages) => [...prevMessages, userMessage, assistantMessage]);
-     } catch (error) {
-       setError('An error occurred while sending the message.');
-     }
+
+    try {
+      const result = await chat.sendMessage(inputValue.trim());
+      console.log(result);
+      const assistantMessage = { text: await result.response.text(), role: 'assistant' };
+      setMessages((prevMessages) => [...prevMessages, userMessage, assistantMessage]);
+    } catch (error) {
+      setError('An error occurred while sending the message.');
+    }
   };
 
   return (
-    <div className={styles.chatbox}>
-      <div className={styles.messageList}>
-        {messages.map((message, index) => (
-          <div key={index} className={`${styles.message} ${message.role}`}>
-            <strong>{message.role}: </strong>
-            {message.text}
+    <div className="chatbox-container">
+      <SideBar />
+      <div className="chatbox-history-box">
+        <div className="chatbox-history-title-box">
+          <h2 className="chatbox-history-title">History</h2>
+        </div>
+        <div className="chatbox-history-convo">
+          <div className="chatbox-date-convo-box">
+            <p className="chatbox-date"></p>
           </div>
-        ))}
+          <div className="chatbox-convo-box">
+            <p className="chatbox-convo-go"></p>
+          </div>
+        </div>
       </div>
-      {error && <p className={styles.errorMessage}>{error}</p>}
-      <form onSubmit={handleSubmit} className={styles.inputForm}>
-        <input
-          type="text"
-          value={inputValue}
-          onChange={(e) => setInputValue(e.target.value)}
-          className={styles.inputField}
-          placeholder="Digite sua mensagem aqui..."
-        />
-        <button type="submit" className={styles.sendButton}>Enviar</button>
-      </form>
+      <div className="chatbox-outside-box">
+        <div className="chatbox-my">
+            <h1 className="chatbox-my-therapist">My Therapist</h1>
+        </div>
+        <div className="chatbox-msg-balao">
+          {messages.map((message, index) => (
+            <div key={index} className={`${styles.message} ${message.role}`}>
+              <strong>{message.role}: </strong>
+              {message.text}
+            </div>
+          ))}
+        </div>
+        {error && <p className="chatbox-error-msg">{error}</p>}
+        <form onSubmit={handleSubmit} className="chatbox-form">
+          <input
+            type="text"
+            value={inputValue}
+            onChange={(e) => setInputValue(e.target.value)}
+            className="chatbox-input-box"
+          />
+          <button type="submit" className="fodase">
+            <img src="/images/send-btn.png" className="chatbox-send-icon"></img>
+          </button>
+        </form>
+      </div>
+
     </div>
   );
 };

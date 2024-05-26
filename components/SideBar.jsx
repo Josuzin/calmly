@@ -1,7 +1,7 @@
 import Link from "next/link"
 import styles from "../styles/SideBar.css"
 
-export default async function SideBar() {
+export default function SideBar() {
   return (
     <div className="sidebar">
       <div className="Logo">

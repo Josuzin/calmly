@@ -45,6 +45,8 @@ export default function Timer() {
 
   return (
     <div>
+      <SideBar/>
+      <div>
       <div class="timer-animation-1"></div>
       <div class="timer-animation-2"></div>
       <div class="timer-animation-3"></div>
@@ -111,5 +113,7 @@ export default function Timer() {
 
 
     </div>
+    </div>
+    
   );
 }
