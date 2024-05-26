@@ -5,7 +5,7 @@ const TextBlock = () => {
     const [texts, setTexts] = useState([])
 
     const fetchTexts = async () => {
-        const response = await fetch('/api/texts')
+        const response = await fetch('/models/userTextBlock')
         const data = await response.json()
         if(data.success){
             setTexts(data.data)
@@ -36,8 +36,8 @@ const TextBlock = () => {
                     <textarea
                     value={text}
                     onChange={(e) => setText(e.target.value)}
-                    placeholder="Escreve aqui caralho"/>
-                    <button type="submit">Submeter esta merda</button>
+                    placeholder="Start Here :)"/>
+                    <button type="submit">Submeter</button>
                 </form>
                 <div>
                     <h2>Textos submetidos:</h2>
