@@ -12,9 +12,6 @@
     justify-content: space-between;
 }
 
-
-
-
 .chatbox-history-title,
 .chatbox-my-therapist {
     font-size: 1.563vw;
@@ -71,4 +68,43 @@
 
 .fodase {
     padding: 0;
+}
+
+ .chatbox-input-container {
+    position: fixed;
+    bottom: 3vw; 
+    left: calc(46vw + 1vw); 
+    display: flex;
+    justify-content: center;
+    /* background-color: rgba(22, 17, 53, 0.8); */
+    /* box-shadow: 0 -2px 10px rgba(0,0,0,0.5);  */
+ }
+
+.fodase {
+    position: absolute;
+    right: 0.2vw;
+    box-shadow: 0 -2px 10px rgba(0,0,0,0.5);
+}
+
+.fodase:hover {
+  transform: scale(1);  
+  transition: transform 0.2s ease-in-out;  
+}
+
+.fodase:active {  
+  transform: scale(0.9); 
+  transition: transform 0.1s ease-in-out;
+  border: none;
+}
+
+.whatsdis {
+    background-color: red;
+}
+
+.message-right {
+  float: right; 
+}
+
+.message-left {
+  float: left;
 }

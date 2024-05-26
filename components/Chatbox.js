@@ -85,28 +85,31 @@ const Chatbox = () => {
       </div>
       <div className="chatbox-outside-box">
         <div className="chatbox-my">
-            <h1 className="chatbox-my-therapist">My Therapist</h1>
+          <h1 className="chatbox-my-therapist">My Therapist</h1>
         </div>
         <div className="chatbox-msg-balao">
           {messages.map((message, index) => (
             <div key={index} className={`${styles.message} ${message.role}`}>
-              <strong>{message.role}: </strong>
+              <strong className="what">{message.role}: </strong>
               {message.text}
             </div>
           ))}
         </div>
         {error && <p className="chatbox-error-msg">{error}</p>}
-        <form onSubmit={handleSubmit} className="chatbox-form">
-          <input
-            type="text"
-            value={inputValue}
-            onChange={(e) => setInputValue(e.target.value)}
-            className="chatbox-input-box"
-          />
-          <button type="submit" className="fodase">
-            <img src="/images/send-btn.png" className="chatbox-send-icon"></img>
-          </button>
-        </form>
+        <div className="chatbox-input-container">
+          <form onSubmit={handleSubmit} className="chatbox-form">
+            <input
+              type="text"
+              value={inputValue}
+              onChange={(e) => setInputValue(e.target.value)}
+              className="chatbox-input-box"
+            />
+            <button type="submit" className="fodase">
+              <img src="/images/send-btn.png" className="chatbox-send-icon"></img>
+            </button>
+          </form>
+        </div>
+
       </div>
 
     </div>
