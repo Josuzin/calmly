@@ -11,10 +11,11 @@ import Profile from "../../components/Profile"
 import MeditationMuscle from "../../components/MeditationMuscle";
 import Journaling from "../../components/Journaling";
 import ChatPage from "../../components/ChatPage";
+import HomePageHappy from "../../components/HomePageHappy"
 
 export default function Home() {
   return (
-    <HomePage/>
+    <HomePageHappy/>
 
   );
 }

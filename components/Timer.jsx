@@ -55,7 +55,7 @@ export default function Timer() {
         <nav class="timer-navbar-box"></nav>
         <section class="timer-content-box">
 
-          <div className="timer-h1-box"><h1>Timer</h1>
+          <div className="timer-h1-box"><h1 className="timer-title-estiloso">Timer</h1>
           </div>
           <div class="timer-animation-box">
             <div class="timer-counting">
@@ -67,7 +67,7 @@ export default function Timer() {
           <div class="timer-music-section-box">
             <div class="timer-music-img-box">
               <div class="timer-music-photo-box">
-                <img src="timer-music-cover.png" alt="music cover" class="timer-cover-size" />
+                <img src="/images/timer-music-cover.png" alt="music cover" class="timer-cover-size" />
               </div>
               <div class="timer-music-title-box">
                 <div class="timer-music-flex-box">
@@ -79,21 +79,20 @@ export default function Timer() {
             <div class="timer-play-btn-box">
               <div class="timer-replay-box">
                 <button class="timer-btn-replay" onClick={handleReset}>
-                  <img class="timer-icon-replay" src="/images/icon-replay.png" alt="Replay Icon"></img>
+                  <span className="replay-yes-true">Replay</span>
                 </button>
               </div>
               <div class="timer-play-box">
                   <button class="timer-btn-play" onClick={handleStartPause}>
-                    <img 
-                      className="play-pause"
-                      src={isRunning ? "/images/icon-pause.png" : "/images/icon-play.png"} 
-                      alt={isRunning ? "Pause Icon" : "Play Icon"} 
-                    />
+                    <span className="play-pause-options">
+                      {isRunning ? <span className="pause-para-centrar">Pause</span>: "Play"} 
+                    </span>
+                     
                 </button>
               </div>
               <div class="timer-pause-box">
                 <button class="timer-btn-pause">
-                  <i class="fa-solid fa-square"></i>
+                  <spanc class="go-home-please">Home</spanc>
                 </button>
               </div>
             </div>
