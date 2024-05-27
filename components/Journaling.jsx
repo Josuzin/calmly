@@ -41,23 +41,23 @@ export default function Journaling() {
                                 </div>
                                 <div class="jn-subtitle-box-flex">
                                     <div class="jn-subtitle-box">
-                                        <li class="jn-subtitle">Stress and Anxiety</li>
+                                        <li class="jn-subtitle">- Stress and Anxiety</li>
                                         <button class="jn-btn">Start Writing</button>
                                     </div>
                                     <div class="jn-subtitle-box">
-                                        <li class="jn-subtitle">Anger and Frustration</li>
+                                        <li class="jn-subtitle">- Anger and Frustration</li>
                                         <button class="jn-btn">Start Writing</button>
                                     </div>
                                     <div class="jn-subtitle-box">
-                                        <li class="jn-subtitle">Happiness and Joy</li>
+                                        <li class="jn-subtitle">- Happiness and Joy</li>
                                         <button class="jn-btn">Start Writing</button>
                                     </div>
                                     <div class="jn-subtitle-box">
-                                        <li class="jn-subtitle">Fear and Insecurity</li>
+                                        <li class="jn-subtitle">- Fear and Insecurity</li>
                                         <button class="jn-btn">Start Writing</button>
                                     </div>
                                     <div class="jn-subtitle-box">
-                                        <li class="jn-subtitle">Sadness and Loss</li>
+                                        <li class="jn-subtitle">- Sadness and Loss</li>
                                         <button class="jn-btn">Start Writing</button>
                                     </div>
                                 </div>
@@ -68,23 +68,23 @@ export default function Journaling() {
                                 </div>
                                 <div class="jn-subtitle-box-flex">
                                     <div class="jn-subtitle-box">
-                                        <li class="jn-subtitle">Daily Check-In</li>
+                                        <li class="jn-subtitle">- Daily Check-In</li>
                                         <button class="jn-btn">Start Writing</button>
                                     </div>
                                     <div class="jn-subtitle-box">
-                                        <li class="jn-subtitle">Gratitude</li>
+                                        <li class="jn-subtitle">- Gratitude</li>
                                         <button class="jn-btn">Start Writing</button>
                                     </div>
                                     <div class="jn-subtitle-box">
-                                        <li class="jn-subtitle">Personal Growth</li>
+                                        <li class="jn-subtitle">- Personal Growth</li>
                                         <button class="jn-btn">Start Writing</button>
                                     </div>
                                     <div class="jn-subtitle-box">
-                                        <li class="jn-subtitle">Achievements</li>
+                                        <li class="jn-subtitle">- Achievements</li>
                                         <button class="jn-btn">Start Writing</button>
                                     </div>
                                     <div class="jn-subtitle-box">
-                                        <li class="jn-subtitle">Improvement</li>
+                                        <li class="jn-subtitle">- Improvement</li>
                                         <button class="jn-btn">Start Writing</button>
                                     </div>
                                 </div>
@@ -95,23 +95,23 @@ export default function Journaling() {
                                 </div>
                                 <div class="jn-subtitle-box-flex">
                                     <div class="jn-subtitle-box">
-                                        <li class="jn-subtitle">Short-Term Goals</li>
+                                        <li class="jn-subtitle">- Short-Term Goals</li>
                                         <button class="jn-btn">Start Writing</button>
                                     </div>
                                     <div class="jn-subtitle-box">
-                                        <li class="jn-subtitle">Long-Term Vision</li>
+                                        <li class="jn-subtitle">- Long-Term Vision</li>
                                         <button class="jn-btn">Start Writing</button>
                                     </div>
                                     <div class="jn-subtitle-box">
-                                        <li class="jn-subtitle">Bucket List</li>
+                                        <li class="jn-subtitle">- Bucket List</li>
                                         <button class="jn-btn">Start Writing</button>
                                     </div>
                                     <div class="jn-subtitle-box">
-                                        <li class="jn-subtitle">Personal Values</li>
+                                        <li class="jn-subtitle">- Personal Values</li>
                                         <button class="jn-btn">Start Writing</button>
                                     </div>
                                     <div class="jn-subtitle-box">
-                                        <li class="jn-subtitle">Inspiration</li>
+                                        <li class="jn-subtitle">- Inspiration</li>
                                         <button class="jn-btn">Start Writing</button>
                                     </div>
                                 </div>
@@ -124,23 +124,23 @@ export default function Journaling() {
                                 </div>
                                 <div class="jn-subtitle-box-flex">
                                     <div class="jn-subtitle-box">
-                                        <li class="jn-subtitle">Support System</li>
+                                        <li class="jn-subtitle">- Support System</li>
                                         <button class="jn-btn">Start Writing</button>
                                     </div>
                                     <div class="jn-subtitle-box">
-                                        <li class="jn-subtitle">Conflict Resolution</li>
+                                        <li class="jn-subtitle">- Conflict Resolution</li>
                                         <button class="jn-btn">Start Writing</button>
                                     </div>
                                     <div class="jn-subtitle-box">
-                                        <li class="jn-subtitle">Communication</li>
+                                        <li class="jn-subtitle">- Communication</li>
                                         <button class="jn-btn">Start Writing</button>
                                     </div>
                                     <div class="jn-subtitle-box">
-                                        <li class="jn-subtitle">Boundaries</li>
+                                        <li class="jn-subtitle">- Boundaries</li>
                                         <button class="jn-btn">Start Writing</button>
                                     </div>
                                     <div class="jn-subtitle-box">
-                                        <li class="jn-subtitle">Connection</li>
+                                        <li class="jn-subtitle">- Connection</li>
                                         <button class="jn-btn">Start Writing</button>
                                     </div>
                                 </div>
