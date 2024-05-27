@@ -83,7 +83,8 @@ export default function Timer() {
                 </button>
               </div>
               <div class="timer-play-box">
-                <button class="timer-btn-play">
+                  <button class="timer-btn-play" onClick={handleStartPause}>
+                    {isRunning ? "Pause" : "Start"}
                   <i class="fa-solid fa-pause"></i>
                 </button>
               </div>
