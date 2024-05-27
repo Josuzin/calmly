@@ -120,7 +120,16 @@ p{
 .emergency{
     margin-top: 2.1667vw;
     background-color: transparent;
-    border: 0.1vw solid; 
+    border: 0.1vw solid;
+    transition: transform 0.3s;
+}
+
+.emergency:hover {
+    transform: scale(1.05); 
+}
+
+.emergency:active {
+    transform: scale(0.95);
 }
 
 .toggle-container {
@@ -172,3 +181,4 @@ p{
     background-color: transparent;
     border:none;
 }
+
