@@ -55,7 +55,7 @@ a:hover {
   color: #d278ae;
 }
 
-h1 {
+.first-page-title {
   font-size: 50px;
   animation: appearFromLeft 1s ease-in-out forwards;
 }

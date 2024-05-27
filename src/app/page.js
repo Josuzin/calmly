@@ -20,7 +20,6 @@ import HomePageCalm from "../../components/HomePageCalm";
 
 export default function Home() {
   return (
-    <Timer/>  
-
+    <ChatPage/>  
   );
 }
