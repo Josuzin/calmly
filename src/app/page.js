@@ -10,10 +10,11 @@ import FirstPage from "../../components/FirstPage";
 import Profile from "../../components/Profile"
 import MeditationMuscle from "../../components/MeditationMuscle";
 import Journaling from "../../components/Journaling";
+import ChatPage from "../../components/ChatPage";
 
 export default function Home() {
   return (
-    <Timer/>
+    <HomePage/>
 
   );
 }

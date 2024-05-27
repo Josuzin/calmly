@@ -1,6 +1,7 @@
 import Link from "next/link"
 import styles from "../styles/HomePage.css"
 import SideBar from "./SideBar"
+import Chatbox from "./Chatbox"
 
 export default function HomePage() {
     return (
@@ -93,8 +94,8 @@ export default function HomePage() {
                                 </div>
                             </div>
                             <div class="porra-chat-box">
-                                <div class="porra-top-chat-box">
-                                    <div class="porra-therapist-box">
+                                {/* <div class="porra-top-chat-box"> */}
+                                    {/* <div class="porra-therapist-box">
                                         <h1 class="porra-therapist">My Therapist</h1>
                                     </div>
                                     <div class="porra-icon">
@@ -126,8 +127,9 @@ export default function HomePage() {
                                         <button class="porra-send-btn">
                                             <i class="fa-solid fa-arrow-up"></i>
                                         </button>
-                                    </div>
-                                </div>
+                                    </div> */}
+                                    <Chatbox/>
+                                {/* </div> */}
                             </div>
                         </div>
                     </div>

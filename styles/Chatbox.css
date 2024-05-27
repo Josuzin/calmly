@@ -2,39 +2,19 @@
     color: black;
 }
 
-.chatbox-container {
-    background-image: url("/images/fundo.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    min-height: 100vh;
-    display: flex;
-    justify-content: space-between;
-}
-
-.chatbox-history-title,
 .chatbox-my-therapist {
     font-size: 1.563vw;
     font-weight: 500;
     color: #D7D7D7;
 }
 
-.chatbox-history-box,
 .chatbox-outside-box {
     background-color: rgba(22, 17, 53, 0.8);
-
+    height: 96%;
+    object-fit: contain                                                                                                                                                 
 }
 
-.chatbox-history-box {
-    padding: 2.5vw 1vw;
-    width: 16vw;
-    margin-left: 14.5vw;
-    margin-top: 1vw;
-    margin-bottom: 1vw;
-    border-radius: 0.5vw;
-}
-
-.chatbox-outside-box {
+.chatbox-outside-box {                                                                                                                                                                                              
     margin-top: 1vw;
     margin-left: 1vw;
     margin-bottom: 1vw;
