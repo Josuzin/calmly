@@ -55,7 +55,7 @@ export default function Timer() {
         <nav class="timer-navbar-box"></nav>
         <section class="timer-content-box">
 
-          <div className="timer-h1-box"><h1>Timer</h1>
+          <div className="timer-h1-box"><h1 className="timer-title-estiloso">Timer</h1>
           </div>
           <div class="timer-animation-box">
             <div class="timer-counting">
@@ -67,7 +67,7 @@ export default function Timer() {
           <div class="timer-music-section-box">
             <div class="timer-music-img-box">
               <div class="timer-music-photo-box">
-                <img src="timer-music-cover.png" alt="music cover" class="timer-cover-size" />
+                <img src="/images/timer-music-cover.png" alt="music cover" class="timer-cover-size" />
               </div>
               <div class="timer-music-title-box">
                 <div class="timer-music-flex-box">

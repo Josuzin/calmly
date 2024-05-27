@@ -235,3 +235,8 @@
   font-size: 0.6vw;
   margin-left: -0.9vw;
 }
+
+.timer-title-estiloso {
+  font-weight: 500;
+  text-transform: uppercase;
+}
