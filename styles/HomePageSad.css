@@ -6,8 +6,8 @@
   box-sizing: border-box;
 }
 
-.page-main-main {
-  background-image: url("/images/homepage-happybg.png");
+.page-main-main-sad {
+  background-image: url("/images/homepage-sadbg.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -52,7 +52,7 @@
   display: flex;
 }
 
-.porra-track {
+.porra-track-sad {
   background-color: rgba(107, 154, 154, 0.3);
   margin-top: 0.521vw;
   height: 23vw;

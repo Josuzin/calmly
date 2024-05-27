@@ -4,7 +4,7 @@ import SideBarHappy from "./SideBarHappy"
 
 export default function HomePage() {
     return (
-        <div className="page-main-main">
+        <div className="page-main-main-happy">
             <SideBarHappy />
             <div class="porra-page-flex-box">
                 <section class="porra-main-content-box">
@@ -67,7 +67,7 @@ export default function HomePage() {
                                 <div class="porra-phrase-box-happy">
                                     <p class="porra-phrase">"Be the energy you wish to attract.”</p>
                                 </div>
-                                <div class="porra-track">
+                                <div class="porra-track-happy">
                                 <div class="porra-medi-track">
                                     <h3 class="porra-tracker-title">
                                         Meditation Tracker

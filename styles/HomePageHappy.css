@@ -6,7 +6,7 @@
   box-sizing: border-box;
 }
 
-.page-main-main {
+.page-main-main-happy {
   background-image: url("/images/homepage-happybg.png");
     background-size: cover;
     background-repeat: no-repeat;
@@ -52,7 +52,7 @@
   display: flex;
 }
 
-.porra-track {
+.porra-track-happy {
   background-color: rgba(107, 154, 154, 0.3);
   margin-top: 0.521vw;
   height: 23vw;
