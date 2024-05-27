@@ -9,14 +9,17 @@ export default function SideBar() {
       </div>
       <div className="lista">
         <ul>
-          <li>
-            <img
-              src="/images/home icon.png"
-              alt="Icon Home"
-              className="icon-home"
-            />
-            <p className="p-home">Home</p>
-          </li>
+          <Link href={"/"}>
+            <li>
+              <img
+                src="/images/home icon.png"
+                alt="Icon Home"
+                className="icon-home"
+              />
+              <p className="p-home">Home</p>
+            </li>
+          </Link>
+          <Link href={"/meditation"}>
           <li>
             <img
               src="/images/meditation icon.png"
@@ -25,6 +28,8 @@ export default function SideBar() {
             />
             <p className="p-meditation">Meditation</p>
           </li>
+          </Link>
+          <Link href={"/journaling"}>
           <li>
             <img
               src="/images/journaling icon.png"
@@ -32,7 +37,9 @@ export default function SideBar() {
               className="icon-journaling"
             />
             <p className="p-journaling">Journaling</p>
-          </li>
+            </li>
+          </Link>
+          <Link href={"/timer"}>
           <li>
             <img
               src="/images/timer icon.png"
@@ -41,6 +48,8 @@ export default function SideBar() {
             />
             <p className="p-timer">Timer</p>
           </li>
+          </Link>
+          <Link href={"/profile"}>
           <li>
             <img
               src="/images/profile icon.png"
@@ -48,15 +57,16 @@ export default function SideBar() {
               className="icon-profile"
             />
             <p className="p-profile">Profile</p>
-          </li>
+            </li>
+          </Link>
         </ul>
         <div className="emergency-div">
           <button className="emergency">Emergency</button>
         </div>
-        <div class="toggle-container">
-          <input type="checkbox" id="toggle" class="toggle-input" />
-          <label class="toggle" for="toggle">
-            <div class="toggle-ball"></div>
+        <div className="toggle-container">
+          <input type="checkbox" id="toggle" className="toggle-input" />
+          <label className="toggle" htmlFor="toggle">
+            <div className="toggle-ball"></div>
           </label>
         </div>
         <div>

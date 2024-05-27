@@ -9,22 +9,21 @@
 }
 
 .chatbox-outside-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
     background-color: rgba(22, 17, 53, 0.8);
-    height: 96%;
-    object-fit: contain                                                                                                                                                 
-}
+    object-fit: contain;                                                                                                                                              
 
-.chatbox-outside-box {                                                                                                                                                                                              
-    margin-top: 1vw;
-    margin-left: 1vw;
-    margin-bottom: 1vw;
-    margin-right: 1vw;
     border-radius: 0.5vw;
-}
 
-.chatbox-outside-box {
     padding: 2.5vw 4vw;
-    width: 72vw;
+    width: 100%;
+    height: 100%;
+
+    
 }
 
 .chatbox-input-box {
@@ -37,41 +36,40 @@
 
 .chatbox-form {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    gap: 1rem;
+    /* justify-content: center;
+    align-items: center; */
 }
 
 .chatbox-send-icon {
-    width: 2vw;
-    height: 2vw;
-}
-
-.fodase {
-    padding: 0;
+    width: 2rem;
+    height: 2rem;
 }
 
  .chatbox-input-container {
-    position: fixed;
+    /* position: fixed;
     bottom: 3vw; 
     left: calc(46vw + 1vw); 
     display: flex;
-    justify-content: center;
+    justify-content: center; */
     /* background-color: rgba(22, 17, 53, 0.8); */
     /* box-shadow: 0 -2px 10px rgba(0,0,0,0.5);  */
  }
 
-.fodase {
-    position: absolute;
-    right: 0.2vw;
+.botaoEnviar {
+    background-color: transparent;
+    /* position: absolute;
+    right: 0.2vw; */
+    padding: 0;
     box-shadow: 0 -2px 10px rgba(0,0,0,0.5);
 }
 
-.fodase:hover {
+.botaoEnviar:hover {
   transform: scale(1);  
   transition: transform 0.2s ease-in-out;  
 }
 
-.fodase:active {  
+.botaoEnviar:active {  
   transform: scale(0.9); 
   transition: transform 0.1s ease-in-out;
   border: none;
@@ -79,4 +77,50 @@
 
 .chatbox-history-title {
     text-align: start;
+}
+
+/* //CHAT PAGE */
+.dugudadaduguduguda {
+    width: 100%;
+    margin: 1.2rem;
+}
+
+
+.message {
+    display: flex;
+    gap: 1rem;
+    width: 50%
+}
+
+.user {
+    align-self: end;
+    width: fit-content;
+    background-color: rgba(42, 34, 86, 1);
+    border-radius: 4rem;
+    padding: 1rem;
+    margin: 1rem;
+    text-align: right;
+    justify-content: end;
+}
+.assistant {
+    text-align: left;
+    justify-content: start;
+}
+
+.chatbox-msg-balao{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-height: 70vh;
+    overflow: auto;
+    padding-right: 1rem;
+}
+
+.chatbox-msg-balao div span {
+    display: inline;
+}
+.chatbox-msg-balao div img {
+    width: 1.2rem;
+    height: 1.2rem;
+    flex-shrink: 0;
 }

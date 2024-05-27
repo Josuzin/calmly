@@ -46,6 +46,7 @@ const Chatbox = () => {
   }, [model, messages, chat]);
 
   const handleSubmit = async (e) => {
+    console.log("OLA SOU UMA FRUTA MAS V")
     e.preventDefault();
     if (!inputValue.trim()) return;
 
@@ -61,7 +62,7 @@ const Chatbox = () => {
       const result = await chat.sendMessage(inputValue.trim());
       console.log(result);
       const assistantMessage = { text: await result.response.text(), role: 'assistant' };
-      setMessages((prevMessages) => [...prevMessages, userMessage, assistantMessage]);
+      setMessages((prevMessages) => [...prevMessages, assistantMessage]);
     } catch (error) {
       setError('An error occurred while sending the message.');
     }
@@ -83,35 +84,40 @@ const Chatbox = () => {
     //       </div>
     //     </div>
     //   </div>
-      <div className="chatbox-outside-box">
-        <div className="chatbox-my">
-          <h1 className="chatbox-my-therapist">My Therapist</h1>
-        </div>
-        <div className="chatbox-msg-balao">
-          {messages.map((message, index) => (
-            <div key={index} className={`${styles.message} ${message.role}`}>
-              <strong className="what">{message.role}: </strong>
-              {message.text}
-            </div>
-          ))}
-        </div>
-        {error && <p className="chatbox-error-msg">{error}</p>}
-        <div className="chatbox-input-container">
-          <form onSubmit={handleSubmit} className="chatbox-form">
-            <input
-              type="text"
-              value={inputValue}
-              onChange={(e) => setInputValue(e.target.value)}
-              className="chatbox-input-box"
-            />
-            <button type="submit" className="fodase">
-              <img src="/images/send-btn.png" className="chatbox-send-icon"></img>
-            </button>
-          </form>
-        </div>
-      </div>
 
-    // </div>
+    <div className="chatbox-outside-box">
+      <div className="chatbox-my">
+        <h1 className="chatbox-my-therapist">My Therapist</h1>
+      </div>
+      <div className="chatbox-msg-balao">
+        {messages.map((message, index) => (
+          <div key={index} className={`message ${message.role}`}>
+
+            {message.role === `assistant` && <img src='./images/chat.png' />}
+            <span>
+              {message.text}
+            </span>
+
+          </div>
+        ))}
+      </div>
+      {error && <p className="chatbox-error-msg">{error}</p>}
+      <div className="chatbox-input-container">
+        <form onSubmit={handleSubmit} className="chatbox-form">
+          <input
+            type="text"
+            value={inputValue}
+            onChange={(e) => setInputValue(e.target.value)}
+            className="chatbox-input-box"
+          />
+          <button type="submit" className="botaoEnviar">
+            <img src="/images/send-btn.png" className="chatbox-send-icon"></img>
+          </button>
+        </form>
+
+      </div>
+    </div>
+
   );
 };
 
