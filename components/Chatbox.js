@@ -110,7 +110,7 @@ const Chatbox = () => {
             type="text"
             value={inputValue}
             onChange={(e) => setInputValue(e.target.value)}
-            className="chatbox-input-box"
+            className="chatbox-input-boxy"
           />
           <button type="submit" className="botaoEnviar">
             <img src="/images/send-btn.png" className="chatbox-send-icon"></img>

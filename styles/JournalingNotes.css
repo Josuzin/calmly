@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "poppins", sans-serif;
+  background-image: url("/images/fundo.png");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #fff;
+}
+
+.note-page-box {
+  display: flex;
+  margin-top: 4vw;
+  margin-bottom: 2vw;
+}
+
+.note-first-row {
+  display: flex;
+  gap: 8vw;
+}
+
+.note-content-box {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.note-ul {
+  list-style-type: disc;
+  margin: 0;
+  padding-left: 20px;
+}
+
+/* .note-p {
+  margin-top: 1vw;
+  margin-bottom: 0.3vw;
+} */
+
+.note-li {
+  margin-bottom: 0.5vw;
+  margin-top: 0;
+}
+
+.note-navbar {
+  width: 12.5vw;
+  background: none;
+}
+
+.note-btn-back {
+  font-size: 0.625vw;
+  opacity: 0.7;
+}
+
+.note-daily {
+  font-size: 1.25vw;
+  font-weight: 600;
+  text-align: start;
+}
+
+.note-p,
+.note-ul {
+  font-size: 0.625vw;
+  color: D8D8D8;
+}
+
+.note-p {
+  margin-bottom: 0.5vw;
+}
+
+.note-cover-photo {
+  width: 22.604vw;
+  margin-right: 5vw;
+}
+
+.note-book-box {
+  padding: 2vw;
+  background-color: rgba(13, 10, 41, 0.8);
+  border-radius: 0.5vw;
+
+}
+
+.note-write-here {
+  background-color: #BEBDBD;
+  padding: 2vw 3vw;
+  height: 20vw;
+  border-top-left-radius: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.note-save-btn {
+  align-self: flex-end;
+}
+
+.note-write-here-text {
+  font-size: 0.781vw;
+  color: #363636;
+}
+
+.note-write-here {
+  display: flex;
+  flex-direction: column;
+}
+
+.note-save-btn {
+  width: fit-content;
+  padding: 0.3vw 1.5vw;
+  font-size: 0.625vw;
+  border-radius: 50px;
+  border: none;
+  background-color: #D278AE;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.note-save-btn:hover {
+  background-color: #b5658e;
+  transform: scale(1.05);
+}
+
+.note-save-btn:active {
+  transform: scale(0.95);
+}
+
+.note-back-y {
+  color: #fff;
+  font-size: 0.625vw;
+  text-decoration: none;
+  margin-right: 6vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1vw;
+  opacity: 0.7;
+}
+
+.fa-chevron-left {
+  font-size: 1vw;
+  color: #fff;
+  opacity: 0.7;
+}
+
+.note-left-text {
+  margin-bottom: 1vw;
+  margin-top: 1vw;
+  color: #D8D8D8;
+}
+
+.note-daily {
+  color: #fff;
+}
