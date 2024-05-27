@@ -9,7 +9,7 @@ export default function HomePage() {
             <div class="porra-page-flex-box">
                 <section class="porra-main-content-box">
                     <div class="porra-para-flex">
-                        <div class="porra-mood-box-happy">
+                        <div class="porra-mood-box-sad">
                             <div class="porra-whats-your-mood">
                                 <h1 class="porra-mood-title">
                                     What’s your mood<br/>
@@ -64,7 +64,7 @@ export default function HomePage() {
                         </div>
                         <div class="porra-sec-div">
                             <div class="porra-track-box">
-                                <div class="porra-phrase-box-happy">
+                                <div class="porra-phrase-box-sad">
                                     <p class="porra-phrase">"Be the energy you wish to attract.”</p>
                                 </div>
                                 <div class="porra-track-sad">

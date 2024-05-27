@@ -2,8 +2,8 @@
     box-sizing: border-box;
   }
   
-  .sidebar-sad {
-    background-color: rgba(0, 0, 0, 0.65);
+  .sidebar-calm {
+    background-color: rgba(51, 20, 92, 0.6);
     color: white;
     width: 13.5vw;
     height: 100%;

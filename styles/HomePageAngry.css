@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap');
+  
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.page-main-main-angry {
+  background-image: url("/images/homepage-angrybg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+  color: #fff;
+  font-family: "poppins", sans-serif;
+  position: fixed;
+}
+
+.porra-page-flex-box {
+  display: flex;
+  margin-left: 13vw;
+}
+
+.porra-para-flex {
+  display: flex;
+  flex-direction: column;
+}
+
+.porra-carinhas {
+  display: flex;
+  gap: 3.125vw;
+}
+
+.porra-happy,
+.porra-sad,
+.porra-angry,
+.porra-stressed,
+.porra-calm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.313vw;
+}
+
+.porra-sec-div {
+  display: flex;
+  margin-top: 0.521vw;
+}
+
+.porra-top-chat-box {
+  display: flex;
+}
+
+.porra-track-angry {
+  background-color: rgba(0, 0, 0, 0.3);
+  margin-top: 0.521vw;
+  height: 23vw;
+  width: 25vw;
+  border-radius: 0.521vw;
+}
+
+.porra-track-box {
+  margin-right: 0.521vw;
+}
+
+.porra-tracker-title {
+  font-size: 1.563vw;
+  font-weight: 500;
+  text-align: center;
+  padding-top: 0.833vw;
+  color: #D7D7D7;
+}
+
+.porra-days-text {
+  font-size: 2.2vw;
+  text-align: center;
+  margin-left: 8.2vw;
+}
+
+.porra-streak-text {
+  font-size: 1.875vw;
+}
+
+.porra-circle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 3.946vw;
+}
+
+/* .ellipse {
+  background-color: transparent; 
+  width: 200px; 
+  height: 200px; 
+  border-radius: 50%;
+  border: 1px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-bottom: 20px; 
+} */
+
+.porra-mood-title {
+  font-size: 2.5vw;
+  font-weight: 600;
+  text-align: start;
+}
+
+.porra-mood-box-angry {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: rgba(0, 0, 0, 0.2);
+  height: 38vh;
+  width: 85.7vw;
+  padding: 1.525vw 45.25vw 3.125vw 3.25vw;
+  border-radius: 0.521vw;
+}
+
+.porra-main-content-box {
+  margin: 0.781vw;
+}
+
+.porra-happy-theme,
+.porra-sad-theme,
+.porra-angry-theme,
+.porra-stressed-theme,
+.porra-calm-theme {
+  color: #fff;
+  text-decoration: none;
+}
+
+.porra-phrase {
+  font-size: 0.9vw;
+  color: #D7D7D7;
+  text-align: center;
+}
+
+.porra-phrase-box-angry {
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 1.2vw 2.25vw 1vw 2.25vw;
+  border-radius: 0.521vw;
+  height: 8vh;
+}
+
+.porra-chat-box {
+  background-color: rgba(22, 17, 53, 0.8);
+  border-radius: 0.521vw;
+  /* padding: 18px 600px 22px 50px; */
+  padding: 0.938vw 2.604vw;
+  width: 60.256vw;
+  height: 57.5vh;
+}
+
+.porra-therapist {
+  font-size: 1.563vw;
+  font-weight: 500;
+  margin-bottom: 1.538vw;
+  margin-left: 20vw;
+}
+
+.porra-chat-says,
+.porra-user-msg-content {
+  font-size: 0.729vw;
+}
+
+.porra-top-chat-box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.porra-user-msg-fim {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.porra-user-msg {
+  display: inline-block;
+  background-color: #2A2256;
+padding: 0.625vw 1.042vw;
+border-radius: 2.604vw;
+margin-top: 1.823vw;
+margin-bottom: 1.823vw;
+}
+
+.porra-first-msg {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1.146vw;
+}
+
+.porra-send-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.porra-send-flex {
+  background-color: #464257;
+  width: 65%;
+  padding: 8px;
+  border: none;
+  border-radius: 50px;
+}
+
+.fa-expand {
+  font-size: 1.25vw;
+  color: #ACACAC;
+}
+
+.porra-send-box {
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+}
+
+.porra-send-flex {
+  display: flex;
+  align-items: center;
+  border-radius: 4px; 
+  border-radius: 50px;
+  overflow: hidden;
+}
+
+.porra-send-input {
+  background-color: #464257;
+  border: none; 
+  padding: 0.625vw 1.042vw;
+  flex: 1; 
+  font-size: 1em;
+}
+
+.porra-send-input:focus {
+  outline: none;
+}
+
+.porra-send-btn {
+  background-color: #6A6292; 
+  border: none; 
+  padding: 0.625vw 1.042vw;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+}
+
+.porra-send-btn i {
+  color: #B7B1D2; 
+  font-size: 1.5em;
+}

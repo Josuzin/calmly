@@ -2,8 +2,8 @@
     box-sizing: border-box;
   }
   
-  .sidebar-sad {
-    background-color: rgba(0, 0, 0, 0.65);
+  .sidebar-stressed {
+    background-color: rgba(18, 8, 30, 0.9);
     color: white;
     width: 13.5vw;
     height: 100%;

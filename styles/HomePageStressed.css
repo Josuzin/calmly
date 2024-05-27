@@ -6,8 +6,8 @@
   box-sizing: border-box;
 }
 
-.page-main-main-sad {
-  background-image: url("/images/homepage-sadbg.png");
+.page-main-main-stressed {
+  background-image: url("/images/homepage-stressedbg.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -52,8 +52,8 @@
   display: flex;
 }
 
-.porra-track-sad {
-  background-color: rgba(0, 0, 0, 0.3);
+.porra-track-stressed {
+  background-color: rgba(0, 0, 0, 0.1);
   margin-top: 0.521vw;
   height: 23vw;
   width: 25vw;
@@ -108,11 +108,11 @@
   text-align: start;
 }
 
-.porra-mood-box-sad {
+.porra-mood-box-stressed {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(217, 217, 217, 0.2);
   height: 38vh;
   width: 85.7vw;
   padding: 1.525vw 45.25vw 3.125vw 3.25vw;
@@ -138,8 +138,8 @@
   text-align: center;
 }
 
-.porra-phrase-box-sad {
-  background-color: rgba(0, 0, 0, 0.3);
+.porra-phrase-box-stressed {
+  background-color: rgba(217, 217, 217, 0.2);
   padding: 1.2vw 2.25vw 1vw 2.25vw;
   border-radius: 0.521vw;
   height: 8vh;

@@ -3,7 +3,7 @@ import styles from "../styles/SideBarSad.css";
 
 export default function SideBar() {
   return (
-    <div className="sidebar-happy">
+    <div className="sidebar-sad">
       <div className="Logo">
         <img src="images/Rectangle_28.webp" alt="logo calm.ly" />
       </div>
