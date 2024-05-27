@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react';
 import { GoogleGenerativeAI, HarmCategory, HarmBlockThreshold } from '@google/generative-ai';
 import styles from '../styles/Chatbox.css'; // 
 import SideBar from './SideBar';
+import Link from 'next/link';
 
 const Chatbox = () => {
   const [messages, setMessages] = useState([]);
@@ -88,6 +89,7 @@ const Chatbox = () => {
     <div className="chatbox-outside-box">
       <div className="chatbox-my">
         <h1 className="chatbox-my-therapist">My Therapist</h1>
+        <Link href={"/" ? "/Chat" : "/"} className='chatbox-link'><img src='/images/icon-expand.png' alt='icon expand'className='chatbox-expand'/></Link>
       </div>
       <div className="chatbox-msg-balao">
         {messages.map((message, index) => (

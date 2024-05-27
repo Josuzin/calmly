@@ -1,5 +1,6 @@
 import styles from "../styles/MeditationMuscle.css"
 import SideBar from "./SideBar"
+import Link from "next/link"
 
 export default function MeditationMuscle() {
   return (
@@ -14,7 +15,7 @@ export default function MeditationMuscle() {
             <div className="med-goback-nd-pic">
               <a href=""><i className="fa-solid fa-chevron-left"></i></a>
 
-              <a href="" className="med-back">Back</a>
+              <Link href={"/meditation"}><p className="med-back">Back</p></Link>
             </div>
             <div className="med-pic">
               <img src="/images/Rectangle_35.png" alt="med cover" className="med-cover" />
@@ -79,7 +80,7 @@ export default function MeditationMuscle() {
               
             </div>
             <div className="med-btn-last">
-              <button className="med-btn-done">Done</button>
+              <Link href={"/meditation"}><button className="med-btn-done">Done</button></Link>
             </div>
           </div>
         </section>

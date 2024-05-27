@@ -6,6 +6,7 @@
     font-size: 1.563vw;
     font-weight: 500;
     color: #D7D7D7;
+    justify-self: center
 }
 
 .chatbox-outside-box {
@@ -46,15 +47,22 @@
     height: 2rem;
 }
 
- .chatbox-input-container {
-    /* position: fixed;
-    bottom: 3vw; 
-    left: calc(46vw + 1vw); 
+.chatbox-my{
     display: flex;
-    justify-content: center; */
-    /* background-color: rgba(22, 17, 53, 0.8); */
-    /* box-shadow: 0 -2px 10px rgba(0,0,0,0.5);  */
- }
+    flex-direction: row;
+    width: 100%;
+}
+
+.chatbox-expand{
+    align-items: right;
+    width: 1rem;
+    height: 1rem;
+    justify-self: end;
+}
+
+.chatbox-link{
+    transition: ease-in;
+}
 
 .botaoEnviar {
     background-color: transparent;

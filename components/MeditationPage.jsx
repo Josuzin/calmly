@@ -39,9 +39,9 @@ export default function MeditationPage() {
                                 <p className="text">
                                     This can help reduce physical tension and promote relaxation.
                                 </p>
-                                <div className="btn-da-medit">
+                                {/* <div className="btn-da-medit">
                                     <button className="btn-thr">Dive in</button>
-                                </div>
+                                </div> */}
                             </div>
                         </div>
                         <div className="ok">
@@ -49,9 +49,9 @@ export default function MeditationPage() {
                             <h4>Breathing Meditation</h4>
                             <div className="porra">
                                 <p className="text">This helps to anchor your mind and create a sense of calm.</p>
-                                <div className="btn-da-medit">
+                                {/* <div className="btn-da-medit">
                                     <button className="btn-thr">Dive in</button>
-                                </div>
+                                </div> */}
                             </div>
                         </div>
                         <div className="ok">
@@ -61,9 +61,10 @@ export default function MeditationPage() {
                                 <p className="text">
                                     Notice the sensations, thoughts, and emotions that arise without
                                     judgment.
-                                </p><div className="btn-da-medit">
+                                </p>
+                                {/* <div className="btn-da-medit">
                                     <button className="btn-thr">Dive in</button>
-                                </div>
+                                </div> */}
                             </div>
                         </div>
                         <div className="ok">
@@ -74,9 +75,9 @@ export default function MeditationPage() {
                                     Engage all your senses to make the visualization as vivid as
                                     possible.
                                 </p>
-                                <div className="btn-da-medit">
+                                {/* <div className="btn-da-medit">
                                   <button className="btn-thr">Dive in</button>  
-                                </div>
+                                </div> */}
                             </div>
                         </div>
                         <div className="ok">
@@ -87,11 +88,15 @@ export default function MeditationPage() {
                                     Transcend ordinary thought processes and reach a state of deep
                                     rest and relaxation.
                                 </p>
-                                <div className="btn-da-medit">
-                                  <button className="btn-thr">Dive in</button>  
-                                </div>
                             </div>
                         </div>
+                    </div>
+                    <div className="btn-da-medit">
+                        <Link href={"/Progressive_Muscle_Relaxation"}><button className="btn-one">Dive in</button></Link>
+                        <button className="btn-two">Dive in</button>  
+                        <button className="btn-thr">Dive in</button>  
+                        <button className="btn-fou">Dive in</button>  
+                        <button className="btn-fiv">Dive in</button>  
                     </div>
                     <div className="show-more">
                         <a href="">Show More</a>
