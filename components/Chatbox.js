@@ -68,21 +68,21 @@ const Chatbox = () => {
   };
 
   return (
-    <div className="chatbox-container">
-      <SideBar />
-      <div className="chatbox-history-box">
-        <div className="chatbox-history-title-box">
-          <h2 className="chatbox-history-title">History</h2>
-        </div>
-        <div className="chatbox-history-convo">
-          <div className="chatbox-date-convo-box">
-            <p className="chatbox-date"></p>
-          </div>
-          <div className="chatbox-convo-box">
-            <p className="chatbox-convo-go"></p>
-          </div>
-        </div>
-      </div>
+    // <div className="chatbox-container">
+    //   <SideBar />
+    //   <div className="chatbox-history-box">
+    //     <div className="chatbox-history-title-box">
+    //       <h2 className="chatbox-history-title">History</h2>
+    //     </div>
+    //     <div className="chatbox-history-convo">
+    //       <div className="chatbox-date-convo-box">
+    //         <p className="chatbox-date"></p>
+    //       </div>
+    //       <div className="chatbox-convo-box">
+    //         <p className="chatbox-convo-go"></p>
+    //       </div>
+    //     </div>
+    //   </div>
       <div className="chatbox-outside-box">
         <div className="chatbox-my">
           <h1 className="chatbox-my-therapist">My Therapist</h1>
@@ -109,10 +109,9 @@ const Chatbox = () => {
             </button>
           </form>
         </div>
-
       </div>
 
-    </div>
+    // </div>
   );
 };
 
