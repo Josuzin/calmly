@@ -146,7 +146,6 @@
 }
 
 .play-pause{
-  width: 10vw;
   object-fit: contain;
 }
 
@@ -217,6 +216,22 @@
   cursor: pointer;
 }
 
+.replay-yes-true {
+  margin-left: -1vw;
+  font-size: 0.6vw;
+}
 
+.play-pause-options {
+  font-size: 1vw;
+  margin-left: -0.9vw;
+}
 
+.pause-para-centrar {
+  margin-left: -0.2vw;
+  font-size: 0.8vw;
+}
 
+.go-home-please {
+  font-size: 0.6vw;
+  margin-left: -0.9vw;
+}

@@ -79,21 +79,20 @@ export default function Timer() {
             <div class="timer-play-btn-box">
               <div class="timer-replay-box">
                 <button class="timer-btn-replay" onClick={handleReset}>
-                  <img class="timer-icon-replay" src="/images/icon-replay.png" alt="Replay Icon"></img>
+                  <span className="replay-yes-true">Replay</span>
                 </button>
               </div>
               <div class="timer-play-box">
                   <button class="timer-btn-play" onClick={handleStartPause}>
-                    <img 
-                      className="play-pause"
-                      src={isRunning ? "/images/icon-pause.png" : "/images/icon-play.png"} 
-                      alt={isRunning ? "Pause Icon" : "Play Icon"} 
-                    />
+                    <span className="play-pause-options">
+                      {isRunning ? <span className="pause-para-centrar">Pause</span>: "Play"} 
+                    </span>
+                     
                 </button>
               </div>
               <div class="timer-pause-box">
                 <button class="timer-btn-pause">
-                  <i class="fa-solid fa-square"></i>
+                  <spanc class="go-home-please">Home</spanc>
                 </button>
               </div>
             </div>
