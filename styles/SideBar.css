@@ -34,7 +34,7 @@ li{
 }
 
 .p-home{
-    margin-left: 1.0417vw;
+    margin-left: 1.7417vw;
     position: absolute;
     cursor: pointer;
 }
@@ -50,7 +50,7 @@ li{
 }
 
 .p-meditation{
-    margin-left: 1.0417vw;
+    margin-left: 1.7417vw;
     position: absolute;
     cursor: pointer;
 }
@@ -66,7 +66,7 @@ li{
 }
 
 .p-journaling{
-    margin-left: 1.0417vw;
+    margin-left: 1.7417vw;
     position: absolute;
     cursor: pointer;
 }
@@ -82,7 +82,7 @@ li{
 }
 
 .p-timer{
-    margin-left: 1.0417vw;
+    margin-left: 1.7417vw;
     position: absolute;
     cursor: pointer;
 }
@@ -99,7 +99,7 @@ li{
 }
 
 .p-profile{
-    margin-left: 1.0417vw;
+    margin-left: 1.7417vw;
     cursor: pointer;
 }
 
@@ -118,10 +118,17 @@ p{
 }
 
 .emergency{
-    margin-top: 4.1667vw;
+    margin-top: 2.1667vw;
+    background-color: transparent;
+    border: 0.1vw solid; 
 }
 
 .toggle{
     margin-top: 10.4167vw;
     margin-right: -2.0833vw;
+}
+
+.logout{
+    background-color: transparent;
+    border:none;
 }

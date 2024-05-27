@@ -31,10 +31,13 @@ export default function SideBar() {
           </li>
         </ul>
         <div className="emergency-div">
-          <button className="emergency"></button>
+          <button className="emergency">Emergency</button>
         </div>
         <div className="toggle-div">
           <button className="toggle"></button>
+        </div>
+        <div>
+          <button className="logout">Logout</button>
         </div>
       </div>
     </div>

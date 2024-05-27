@@ -44,9 +44,9 @@ export default function Timer() {
   };
 
   return (
-    <div>
+    <div className="timer-page-body">
       <SideBar/>
-      <div>
+      <div className="timer-wrapper">
       <div class="timer-animation-1"></div>
       <div class="timer-animation-2"></div>
       <div class="timer-animation-3"></div>
@@ -78,14 +78,17 @@ export default function Timer() {
             </div>
             <div class="timer-play-btn-box">
               <div class="timer-replay-box">
-                <button class="timer-btn-replay">
-                  <i class="fa-solid fa-rotate-right"></i>
+                <button class="timer-btn-replay" onClick={handleReset}>
+                  <img class="timer-icon-replay" src="/images/icon-replay.png" alt="Replay Icon"></img>
                 </button>
               </div>
               <div class="timer-play-box">
                   <button class="timer-btn-play" onClick={handleStartPause}>
-                    {isRunning ? "Pause" : "Start"}
-                  <i class="fa-solid fa-pause"></i>
+                    <img 
+                      className="play-pause"
+                      src={isRunning ? "/images/icon-pause.png" : "/images/icon-play.png"} 
+                      alt={isRunning ? "Pause Icon" : "Play Icon"} 
+                    />
                 </button>
               </div>
               <div class="timer-pause-box">
@@ -108,8 +111,8 @@ export default function Timer() {
           </div>
         )}
 
-        <button onClick={handleStartPause}>{isRunning ? "Pause" : "Start"}</button>
-        <button onClick={handleReset}>Reset</button>
+        {/* <button onClick={handleStartPause}>{isRunning ? "Pause" : "Start"}</button> */}
+        {/* <button onClick={handleReset}>Reset</button> */}
       </div>
 
 

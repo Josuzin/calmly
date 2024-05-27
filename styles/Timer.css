@@ -4,13 +4,17 @@
   box-sizing: border-box;
 }
 
-body {
+.timer-page-body {
   font-family: "poppins", sans-serif;
-  background-image: url("/images/fundo.png");
+  background-image: url("/images/timer-bg.png");
   background-size: 100% auto;
   background-repeat: no-repeat;
   background-position: center;
   color: #fff;
+}
+
+.timer-wrapper{
+  margin-left: -10vw;
 }
 
 .timer-para-flex {
@@ -141,6 +145,11 @@ body {
   cursor: pointer;
 }
 
+.play-pause{
+  width: 10vw;
+  object-fit: contain;
+}
+
 .timer-replay-box {
   display: flex;
   justify-content: center;
@@ -159,8 +168,8 @@ body {
   align-items: center;
 }
 
-.fa-pause {
-  font-size: 2.083vw;
+.timer-icon-replay {
+  width: 2.083vw;
   color: #fff;
 }
 
