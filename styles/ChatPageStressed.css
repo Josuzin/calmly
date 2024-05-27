@@ -1,0 +1,26 @@
+.chatbox-container-stressed {
+  background-image: url("/images/homepage-stressedbg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100vh;
+  display: flex;
+  justify-content: space-between;
+}
+
+.chatbox-history-title {
+  font-size: 1.563vw;
+  font-weight: 500;
+  color: #D7D7D7;
+}
+
+.chatbox-history-box-stressed{
+  background-color: rgba(154, 42, 91, 0.4); 
+  padding: 2.5vw 1vw;
+  width: 16vw;
+  margin-left: 14.5vw;
+  margin-top: 1vw;
+  margin-bottom: 1vw;
+  border-radius: 0.5vw;
+}
+

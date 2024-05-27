@@ -16,11 +16,15 @@ import HomePageSad from "../../components/HomePageSad";
 import HomePageAngry from "../../components/HomePageAngry";
 import HomePageStressed from "../../components/HomePageStressed";
 import HomePageCalm from "../../components/HomePageCalm";
-
+import ChatPageHappy from "../../components/ChatPageHappy";
+import ChatPageSad from "../../components/ChatPageSad";
+import ChatPageAngry from "../../components/ChatPageAngry";
+import ChatPageStressed from "../../components/ChatPageStressed";
+import ChatPageCalm from "../../components/ChatPageCalm";
 
 export default function Home() {
   return (
-    <HomePage/>  
+    <ChatPageHappy/>  
 
   );
 }

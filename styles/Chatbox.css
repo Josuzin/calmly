@@ -109,10 +109,14 @@
     margin: 1rem;
     text-align: right;
     justify-content: end;
+    color:#fff;
+    font-weight: 300;
 }
 .assistant {
     text-align: left;
     justify-content: start;
+    color: #fff;
+    font-weight: 300;
 }
 
 .chatbox-msg-balao{

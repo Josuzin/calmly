@@ -252,3 +252,11 @@ margin-bottom: 1.823vw;
   color: #B7B1D2; 
   font-size: 1.5em;
 }
+
+.porra-happy-theme:hover, 
+.porra-sad-theme:hover, 
+.porra-angry-theme:hover, 
+.porra-stressed-theme:hover, 
+.porra-calm-theme:hover {
+  color: #fff;
+}

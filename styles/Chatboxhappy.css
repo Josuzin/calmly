@@ -1,0 +1,138 @@
+.message-list {
+  color: black;
+}
+
+.chatbox-my-therapist {
+  font-size: 1.563vw;
+  font-weight: 500;
+  color: #D7D7D7;
+  justify-self: center
+}
+
+.chatbox-outside-box-happy {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.3); 
+  object-fit: contain;                                                                                                                                              
+
+  border-radius: 0.5vw;
+
+  padding: 2.5vw 4vw;
+  width: 100%;
+  height: 100%;
+
+  
+}
+
+.chatbox-input-box-happy {
+  background-color: #AD8A49; 
+  border-radius: 50px;
+  padding: 0.5vw 1vw;
+  color: #d4d4d4;
+  width: 37vw;
+}
+
+.chatbox-form {
+  display: flex;
+  gap: 1rem;
+  /* justify-content: center;
+  align-items: center; */
+}
+
+.chatbox-send-icon-calm {
+  width: 2rem;
+  height: 2rem;
+  color: #B7B1D2;
+}
+
+.chatbox-my{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.chatbox-expand{
+  align-items: right;
+  width: 1rem;
+  height: 1rem;
+  justify-self: end;
+}
+
+.chatbox-link{
+  transition: ease-in;
+}
+
+.botaoEnviarcalm {
+  background-color: transparent;
+  /* position: absolute;
+  right: 0.2vw; */
+  padding: 0;
+  box-shadow: 0 -2px 10px rgba(0,0,0,0.5);
+}
+
+.botaoEnviar:hover {
+transform: scale(1);  
+transition: transform 0.2s ease-in-out;  
+}
+
+.botaoEnviar:active {  
+transform: scale(0.9); 
+transition: transform 0.1s ease-in-out;
+border: none;
+}
+
+.chatbox-history-title {
+  text-align: start;
+}
+
+/* //CHAT PAGE */
+.dugudadaduguduguda {
+  width: 100%;
+  margin: 1.2rem;
+}
+
+
+.message {
+  display: flex;
+  gap: 1rem;
+  width: 50%
+}
+
+.user {
+  align-self: end;
+  width: fit-content;
+  background-color: rgba(42, 34, 86, 1);
+  border-radius: 4rem;
+  padding: 1rem;
+  margin: 1rem;
+  text-align: right;
+  justify-content: end;
+  color:#fff;
+  font-weight: 300;
+}
+.assistant {
+  text-align: left;
+  justify-content: start;
+  color: #fff;
+  font-weight: 300;
+}
+
+.chatbox-msg-balao{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-height: 70vh;
+  overflow: auto;
+  padding-right: 1rem;
+}
+
+.chatbox-msg-balao div span {
+  display: inline;
+}
+.chatbox-msg-balao div img {
+  width: 1.2rem;
+  height: 1.2rem;
+  flex-shrink: 0;
+}
