@@ -106,6 +106,11 @@
   .jn-btn:hover {
     background-color: #c44792;
   }
+
+  .jn-btn:active {
+  transform: scale(0.95);
+  border: none;
+}
   
   .jn-my-entries-box {
     margin-bottom: 1.042vw;
@@ -153,7 +158,7 @@
     font-size: 0.729vw;
     font-weight: 300;
     margin-bottom: 0;
-    margin-top: 0.5vw;
+    margin-top: 0;
   }
   .jn-btn {
     font-size: 0.521vw;
@@ -162,6 +167,9 @@
   .jn-subtitle-box {
     display: flex;
     gap: 2.083vw;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
   }
   
   .jn-my-entries {

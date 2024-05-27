@@ -98,11 +98,14 @@ figure {
 }
 
 .btn:active {
+  transform: translateY(0); 
+}
+/* .btn:active {
   background-color: black;
   color: #fff;
   border-color: black;
   transform: translateY(0.0521vw);
-}
+} */
 
 .btn-box {
   display: flex;

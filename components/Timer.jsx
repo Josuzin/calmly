@@ -134,7 +134,7 @@ export default function Timer() {
                   </button>
                 </div>
                 <div class="timer-pause-box">
-                  <button class="timer-btn-pause">
+                  <button class="timer-btn-homey">
                     <spanc class="go-home-please">Home</spanc>
                   </button>
                 </div>
@@ -146,39 +146,39 @@ export default function Timer() {
             <div className="time-selection">
               <button
                 onClick={() => handleSelectTime(3)}
-                className="timer-btn-3"
+                className="timer-btn-a"
               >
-                3 minutos
+                3 minuts
               </button>
               <button
                 onClick={() => handleSelectTime(5)}
-                className="timer-btn-5"
+                className="timer-btn-a"
               >
-                5 minutos
+                5 minuts
               </button>
               <button
                 onClick={() => handleSelectTime(10)}
-                className="timer-btn-10"
+                className="timer-btn-a"
               >
-                10 minutos
+                10 minuts
               </button>
               <button
                 onClick={() => handleSelectTime(15)}
-                className="timer-btn-15"
+                className="timer-btn-a"
               >
-                15 minutos
+                15 minuts
               </button>
               <button
                 onClick={() => handleSelectTime(20)}
-                className="timer-btn-20"
+                className="timer-btn-a"
               >
-                20 minutos
+                20 minuts
               </button>
               <button
                 onClick={() => handleSelectTime(30)}
-                className="timer-btn-30"
+                className="timer-btn-a"
               >
-                30 minutos
+                30 minuts
               </button>
             </div>
           )}

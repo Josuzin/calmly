@@ -134,7 +134,7 @@
   
   button:active {
     box-shadow: 0 0 0.263vw rgba(16, 13, 46, 0.5);
-    background-color: black;
+    /* background-color: black; */
     color: white;
     border: 0.105vw solid black;
   }

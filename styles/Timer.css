@@ -127,7 +127,7 @@
 }
 
 .timer-btn-replay,
-.timer-btn-pause {
+.timer-btn-homey {
   width: 3.125vw;
   height: 3.125vw;
   cursor: pointer;
@@ -204,7 +204,7 @@
   left: 80vw;
   display: flex;
   flex-direction: column;
-  gap: 2vw;
+  gap: 1.5vw;
 }
 
 .timer-btn-style {
@@ -239,4 +239,39 @@
 .timer-title-estiloso {
   font-weight: 500;
   text-transform: uppercase;
+}
+
+.timer-btn-a {
+  background-color: #864D82; 
+  font-size: 0.7vw;
+  font-weight: 300;
+  border: 2px solid #D278AE; 
+  color: white;
+  padding: 0.5vw 1vw;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease, border-color 0.3s ease; 
+}
+
+.timer-btn-a:hover {
+  background-color: #D278AE; 
+  border-color: #864D82; 
+  transform: translateY(-3px); 
+}
+
+.timer-btn-a:active {
+  transform: translateY(0); 
+}
+
+.timer-btn-play, .timer-btn-replay, .timer-btn-homey {
+  transition: background-color 0.3s ease, transform 0.2s ease, border-color 0.3s ease; 
+}
+
+.timer-btn-play:hover, .timer-btn-replay:hover, .timer-btn-homey:hover {
+  background-color: #D278AE; 
+  border-color: #864D82;
+  transform: translateY(-3px);
+}
+
+.timer-btn-play:active, .timer-btn-replay:active, .timer-btn-homey:active {
+  transform: translateY(0); 
 }
