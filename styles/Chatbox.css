@@ -9,7 +9,7 @@
     justify-self: center
 }
 
-.chatbox-outside-box {
+.Chatbox{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -101,7 +101,7 @@
     width: 50%
 }
 
-.user {
+.theme-default .user {
     align-self: end;
     width: fit-content;
     background-color: rgba(42, 34, 86, 1);
@@ -113,7 +113,8 @@
     color:#fff;
     font-weight: 300;
 }
-.assistant {
+
+.theme-default .assistant {
     text-align: left;
     justify-content: start;
     color: #fff;

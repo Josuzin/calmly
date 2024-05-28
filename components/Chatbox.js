@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react';
 import { GoogleGenerativeAI, HarmCategory, HarmBlockThreshold } from '@google/generative-ai';
 import styles from '../styles/Chatbox.css'; // 
 import SideBar from './SideBar';
-import Link from 'next/link';
+import ToggleLink from "./buttonExpand"
 
 const Chatbox = () => {
   const [messages, setMessages] = useState([]);
@@ -69,6 +69,12 @@ const Chatbox = () => {
     }
   };
 
+  const [theme, setTheme] = useState('theme-default');
+
+  const toggleTheme = () => {
+    setTheme((prevTheme) => (prevTheme === 'theme-default' ? 'theme-default' : 'theme-default'));
+  };
+
   return (
     // <div className="chatbox-container">
     //   <SideBar />
@@ -86,11 +92,11 @@ const Chatbox = () => {
     //     </div>
     //   </div>
 
-    <div className="chatbox-outside-box">
+    <div className={`Chatbox ${theme}`}>
       <div className="chatbox-my">
         <div className='coco'></div>
         <h1 className="chatbox-my-therapist">My Therapist</h1>
-        <Link href={"/" ? "/Chat" : "/"} className='chatbox-link'><img src='/images/icon-expand.png' alt='icon expand'className='chatbox-expand'/></Link>
+          <ToggleLink />
       </div>
       <div className="chatbox-msg-balao">
         {messages.map((message, index) => (
