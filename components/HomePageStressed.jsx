@@ -1,11 +1,11 @@
 import Link from "next/link"
 import styles from "../styles/HomePageStressed.css"
-import SideBarStressed from "./SideBarStressed"
+import SideBar from "./SideBar"
 
 export default function HomePage() {
     return (
         <div className="page-main-main-stressed">
-            <SideBarStressed />
+            <SideBar />
             <div className="porra-page-flex-box">
                 <section className="porra-main-content-box">
                     <div className="porra-para-flex">

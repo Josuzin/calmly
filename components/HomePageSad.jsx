@@ -1,11 +1,11 @@
 import Link from "next/link"
 import styles from "../styles/HomePageSad.css"
-import SideBarSad from "./SideBarSad"
+import SideBar from "./SideBar"
 
 export default function HomePage() {
     return (
         <div className="page-main-main-sad">
-            <SideBarSad />
+            <SideBar />
             <div className="porra-page-flex-box">
                 <section className="porra-main-content-box">
                     <div className="porra-para-flex">

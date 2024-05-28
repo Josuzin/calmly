@@ -1,12 +1,12 @@
 import Link from "next/link";
 import styles from "../styles/ChatPageAngry.css";
 import Chatboxangry from "./Chatboxangry";
-import SideBarAngry from "./SideBarAngry";
+import SideBar from "./SideBar";
 
 export default function ChatPage() {
     return (
         <div className="chatbox-container-angry">
-            <SideBarAngry />
+            <SideBar />
             <div className="chatbox-history-box-angry">
                 <div className="chatbox-history-title-box">
                     <h2 className="chatbox-history-title">History</h2>

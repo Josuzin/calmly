@@ -26,5 +26,5 @@ import CreateAcc from "../../components/CreateAcc";
 import Toggle from "../../components/Toggle";
 
 export default function Home() {
-  return <HomePage/>;
+  return <ChatPageCalm />;
 }

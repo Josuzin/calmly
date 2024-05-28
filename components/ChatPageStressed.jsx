@@ -1,12 +1,12 @@
 import Link from "next/link";
 import styles from "../styles/ChatPageStressed.css";
 import Chatboxstressed from "./Chatboxstressed";
-import SideBarStressed from "./SideBarStressed";
+import SideBar from "./SideBar";
 
 export default function ChatPage() {
     return (
         <div className="chatbox-container-stressed">
-            <SideBarStressed />
+            <SideBar />
             <div className="chatbox-history-box-stressed">
                 <div className="chatbox-history-title-box">
                     <h2 className="chatbox-history-title">History</h2>

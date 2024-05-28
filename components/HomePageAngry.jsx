@@ -1,11 +1,11 @@
 import Link from "next/link"
 import styles from "../styles/HomePageAngry.css"
-import SideBarAngry from "./SideBarAngry"
+import SideBar from "./SideBar"
 
 export default function HomePage() {
     return (
         <div className="page-main-main-angry">
-            <SideBarAngry />
+            <SideBar />
             <div className="porra-page-flex-box">
                 <section className="porra-main-content-box">
                     <div className="porra-para-flex">
