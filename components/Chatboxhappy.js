@@ -113,7 +113,7 @@ const Chatbox = () => {
             className="chatbox-input-box-happy"
           />
           <button type="submit" className="botaoEnviar">
-            <img src="/images/send-btn.png" className="chatbox-send-icon"></img>
+            <img src="/images/send-btn.png" className="chatbox-send-icon-happy"></img>
           </button>
         </form>
 

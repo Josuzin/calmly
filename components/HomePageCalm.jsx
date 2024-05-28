@@ -167,7 +167,7 @@ export default function HomePage() {
                 <div class="porra-send-box">
                   <div class="porra-send-flex">
                     <input type="text" class="porra-send-input" />
-                    <button class="porra-send-btn">
+                    <button class="porra-send-btn-calm">
                       <i class="fa-solid fa-arrow-up"></i>
                     </button>
                   </div>
