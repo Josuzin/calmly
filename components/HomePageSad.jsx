@@ -11,7 +11,7 @@ export default function HomePage() {
                     <div class="porra-para-flex">
                         <div class="porra-mood-box-sad">
                             <div class="porra-whats-your-mood">
-                                <h1 class="porra-mood-title">
+                                <h1 class="porra-mood-title-sad">
                                     What’s your mood<br/>
                                     today?
                                 </h1>

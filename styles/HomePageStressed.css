@@ -102,10 +102,23 @@
   margin-bottom: 20px; 
 } */
 
-.porra-mood-title {
+.porra-mood-title-stressed {
   font-size: 2.5vw;
   font-weight: 600;
-  text-align: start;
+  text-align: start;animation: slideDown 1s ease-in-out;
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+
+@keyframes slideDown {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 .porra-mood-box-stressed {
