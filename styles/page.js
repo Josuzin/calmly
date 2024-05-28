@@ -23,8 +23,7 @@ import ChatPageStressed from "../../components/ChatPageStressed";
 import ChatPageCalm from "../../components/ChatPageCalm";
 import JournalingNotes from "../../components/JournalingNotes";
 import CreateAcc from "../../components/CreateAcc";
-import Toggle from "../../components/Toggle";
 
 export default function Home() {
-  return <HomePage/>;
+  return <ChatPage />;
 }
