@@ -22,7 +22,8 @@ import ChatPageAngry from "../../components/ChatPageAngry";
 import ChatPageStressed from "../../components/ChatPageStressed";
 import ChatPageCalm from "../../components/ChatPageCalm";
 import JournalingNotes from "../../components/JournalingNotes";
+import CreateAcc from "../../components/CreateAcc";
 
 export default function Home() {
-  return <ChatPageAngry/>;
+  return <ChatPageCalm />;
 }

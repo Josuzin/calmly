@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #252353;
+  color: black;
+  font-family: "poppins", sans-serif;
+  background-image: url("/images/Rectangle_31.png");
+  background-size: cover;
+}
+
+.wrapper {
+  width: 27vw;
+  background-color: rgba(255, 255, 255, 0.3);
+  padding-top: 0;
+  padding-bottom: 1.0417vw;
+  padding-left: 2.6042vw;
+  padding-right: 2.6042vw;
+  border-radius: 0.5208vw;
+}
+
+h2 {
+  font-size: 1.1458vw;
+  font-weight: 500;
+  text-align: center;
+  color: white;
+}
+
+.h1-create-acc {
+  font-weight: 300;
+  font-size: 1.875vw;
+  margin-bottom: 1.0417vw;
+  color: white;
+  text-align: center;
+}
+
+.e,
+.p {
+  font-size: 0.9292vw;
+  margin-top: 1.3021vw;
+  margin-bottom: 0.2604vw;
+  color: white;
+  font-weight: 300;
+}
+
+input {
+  width: 100%;
+  padding: 0.4167vw;
+  border: none;
+  border-radius: 0.4167vw;
+  outline: none;
+}
+
+.acc {
+  font-size: 0.625vw;
+  margin-top: 2.0833vw;
+  color: white;
+}
+
+.logo {
+  width: 8.8125vw;
+  height: auto;
+}
+
+figure {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0.5208vw;
+}
+
+.btn-create-acc {
+  margin-top: 4.0833vw;
+  margin-bottom: 1vw;
+  padding: 0.3646vw 2.0833vw;
+  font-size: 1.042vw;
+  font-weight: 300;
+  color: #fff;
+  border-radius: 2.6042vw;
+  background: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease,
+    border-color 0.3s ease;
+  background-color: #d278ae;
+}
+
+.btn-create-acc:hover {
+  background-color: #d278ae;
+  color: #fff;
+  border-color: #d278ae;
+  transform: translateY(-3px);
+}
+
+.btn-create-acc:active {
+  transform: translateY(0);
+}
+/* .btn:active {
+  background-color: black;
+  color: #fff;
+  border-color: black;
+  transform: translateY(0.0521vw);
+} */
+
+.btn-create-acc-box {
+  display: flex;
+  justify-content: center;
+}
+
+.acc {
+  text-align: center;
+  font-weight: 300;
+}
+
+.signup {
+  transition: text-decoration 0.3s ease;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.signup:hover {
+  text-decoration: underline white;
+}
+
+.signup:active {
+  color: #d278ae;
+  text-decoration: underline #d278ae;
+}

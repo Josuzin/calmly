@@ -94,6 +94,7 @@ const Chatbox = () => {
 
     <div className={`Chatboxangry ${theme}`}>
       <div className="chatbox-my">
+        <div className='coco'></div>
         <h1 className="chatbox-my-therapist">My Therapist</h1>
         <Link href={"/" ? "/Chat" : "/"} className='chatbox-link'><img src='/images/icon-expand.png' alt='icon expand'className='chatbox-expand'/></Link>
       </div>
