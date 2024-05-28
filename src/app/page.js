@@ -24,5 +24,5 @@ import ChatPageCalm from "../../components/ChatPageCalm";
 import JournalingNotes from "../../components/JournalingNotes";
 
 export default function Home() {
-  return <Journaling />;
+  return <ChatPageAngry/>;
 }

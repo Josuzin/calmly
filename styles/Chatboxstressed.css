@@ -9,7 +9,7 @@
   justify-self: center
 }
 
-.chatbox-outside-box-stressed {
+.Chatboxstressed {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -101,10 +101,10 @@ border: none;
   width: 50%
 }
 
-.user {
+.theme-stressed .user {
   align-self: end;
   width: fit-content;
-  background-color: rgba(42, 34, 86, 1);
+  background-color: rgba(233, 124, 91, 1);
   border-radius: 4rem;
   padding: 1rem;
   margin: 1rem;
@@ -113,7 +113,7 @@ border: none;
   color:#fff;
   font-weight: 300;
 }
-.assistant {
+.theme-stressed .assistant {
   text-align: left;
   justify-content: start;
   color: #fff;

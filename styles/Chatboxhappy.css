@@ -9,7 +9,7 @@
   justify-self: center
 }
 
-.chatbox-outside-box-happy {
+.Chatboxhappy {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -97,13 +97,13 @@ border: none;
 .message {
   display: flex;
   gap: 1rem;
-  width: 50%
+  max-width: 50%
 }
 
-.user {
+.theme-happy .user {
   align-self: end;
   width: fit-content;
-  background-color: rgba(42, 34, 86, 1);
+  background-color: rgba(255, 195, 0, 1);
   border-radius: 4rem;
   padding: 1rem;
   margin: 1rem;
@@ -112,7 +112,7 @@ border: none;
   color:#fff;
   font-weight: 300;
 }
-.assistant {
+.theme-happy .assistant {
   text-align: left;
   justify-content: start;
   color: #fff;

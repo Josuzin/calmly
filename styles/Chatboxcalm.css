@@ -9,7 +9,7 @@
   justify-self: center
 }
 
-.chatbox-outside-box-calm {
+.Chatboxcalm {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -101,10 +101,10 @@ border: none;
   width: 50%
 }
 
-.user {
+.theme-calm .user {
   align-self: end;
   width: fit-content;
-  background-color: rgba(42, 34, 86, 1);
+  background-color: rgba(184, 93, 156, 1);
   border-radius: 4rem;
   padding: 1rem;
   margin: 1rem;
@@ -113,7 +113,8 @@ border: none;
   color:#fff;
   font-weight: 300;
 }
-.assistant {
+
+.theme-calm .assistant {
   text-align: left;
   justify-content: start;
   color: #fff;

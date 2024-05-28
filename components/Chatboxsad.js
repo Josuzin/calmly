@@ -69,6 +69,12 @@ const Chatbox = () => {
     }
   };
 
+  const [theme, setTheme] = useState('theme-sad');
+
+  const toggleTheme = () => {
+    setTheme((prevTheme) => (prevTheme === 'theme-sad' ? 'theme-default' : 'theme-sad'));
+  };
+
   return (
     // <div className="chatbox-container">
     //   <SideBar />
@@ -86,7 +92,7 @@ const Chatbox = () => {
     //     </div>
     //   </div>
 
-    <div className="chatbox-outside-box-sad">
+    <div className={`Chatboxsad ${theme}`}>
       <div className="chatbox-my">
         <h1 className="chatbox-my-therapist">My Therapist</h1>
         <Link href={"/" ? "/Chat" : "/"} className='chatbox-link'><img src='/images/icon-expand.png' alt='icon expand'className='chatbox-expand'/></Link>
