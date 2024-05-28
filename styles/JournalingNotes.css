@@ -86,21 +86,18 @@ body {
 
 }
 
-.note-write-here {
+.note-write-here-text {
   background-color: #BEBDBD;
   padding: 2vw 3vw;
-  height: 20vw;
+  height: 100%;
+  width: 100%;
   border-top-left-radius: 50px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-}
-
-.note-save-btn {
-  align-self: flex-end;
-}
-
-.note-write-here-text {
+  max-height: 50vh;
+  max-width: 80vw;
+  overflow: auto;
   font-size: 0.781vw;
   color: #363636;
 }
@@ -108,6 +105,8 @@ body {
 .note-write-here {
   display: flex;
   flex-direction: column;
+  height: 20vw;
+  width: 60vw;
 }
 
 .note-save-btn {
@@ -116,6 +115,8 @@ body {
   font-size: 0.625vw;
   border-radius: 50px;
   border: none;
+  align-self: flex-end;
+  margin-top: 1rem;
   background-color: #D278AE;
   color: #fff;
   cursor: pointer;

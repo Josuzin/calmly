@@ -14,10 +14,10 @@ export default function Journaling() {
       <section className="note-content-box">
         <div className="note-back-box">
           <div className="note-back">
-            <a href="" className="note-back-y">
+            <Link href={"/journaling"} className="note-back-y">
               <i className="fa-solid fa-chevron-left"></i>
               Back
-            </a>
+            </Link>
           </div>
         </div>
         <div className="note-main-content-box">
@@ -54,7 +54,7 @@ export default function Journaling() {
           </div>
           <div className="note-book-box">
             <div className="note-write-here">
-              <span className="note-write-here-text">Write here...</span>
+              <textarea className="note-write-here-text" placeholder="Write here..." />
               <button className="note-save-btn">Save</button>
             </div>
 
