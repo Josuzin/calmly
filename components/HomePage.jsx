@@ -10,7 +10,7 @@ import AudioPlayer from "react-h5-audio-player";
 import "react-h5-audio-player/lib/styles.css";
 
 export default function HomePage() {
-  const [caraSelecionada, selecionarCara] = useState("happy");
+  const [caraSelecionada, selecionarCara] = useState("calm");
   return (
     <div className="page-main-main">
       <SideBar />
@@ -124,14 +124,14 @@ export default function HomePage() {
                       autoPlay
                       src={
                         caraSelecionada === "happy"
-                          ? "/musics/music1.mp3"
+                          ? "/musics/happy.mp3"
                           : caraSelecionada === "angry"
-                          ? "valor se cara estiver angry"
+                          ? "/musics/angry.mp3"
                           : caraSelecionada === "sad"
-                          ? ""
+                          ? "/musics/sad.mp3"
                           : caraSelecionada === "stressed"
-                          ? ""
-                          : caraSelecionada === "calm" && ""
+                          ? "/musics/stressed.mp3"
+                          : caraSelecionada === "calm" && "/musics/calm.mp3"
                       }
                     />
                   </div>
