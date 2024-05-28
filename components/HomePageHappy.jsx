@@ -1,8 +1,16 @@
+"use client";
 import Link from "next/link"
 import styles from "../styles/HomePageHappy.css"
 import SideBar from "./SideBar"
+import Moods from "./Mood"
 
-export default function HomePage() {
+export default function HomePage({ handleMood }) {
+
+    function handleChangeMood(num) {
+        handleMood(num)
+        return
+      }
+
     return (
         <div className="page-main-main-happy">
             <SideBar />
@@ -16,51 +24,7 @@ export default function HomePage() {
                                     today?
                                 </h1>
                             </div>
-                            <div className="porra-carinhas">
-                                <div className="porra-happy">
-                                    <div className="porra-happy-box">
-                                        <a href="" className="porra-happy-click">
-                                            <img src="/images/happy.png" alt="happy" className="porra-happy-icon"/>
-                                        </a>
-                                    </div>
-                                    <div className="porra-happy-word">
-                                        <Link href={"/Happy"}><p className="porra-happy-theme">Happy</p></Link>
-                                    </div>
-                                </div>
-                                <div className="porra-sad">
-                                    <div className="porra-sad-box">
-                                        <Link href={"/Sad"}><img src="/images/sad.png" alt="sad" className="porra-sad-icon"/></Link>
-                                    </div>
-                                    <div className="porra-sad-word">
-                                    <Link href={"/Sad"}><p className="porra-sad-theme">Sad</p></Link>
-                                    </div>
-                                </div>
-                                <div className="porra-angry">
-                                    <div className="porra-angry-box">
-                                    <Link href={"/Angry"}><img src="/images/angry.png" alt="angry" className="porra-angry-icon"/></Link>
-                                    </div>
-                                    <div className="porra-angry-word">
-                                    <Link href={"/Angry"}><p className="porra-angry-theme">Angry</p></Link>
-                                    </div>
-                                </div>
-                                <div className="porra-stressed">
-                                    <div className="porra-stressed-box">
-                                    <Link href={"/Stressed"}><img src="/images/stressed.png" alt="stressed"
-                                            className="porra-stressed-icon"/></Link>
-                                    </div>
-                                    <div className="porra-stressed-word">
-                                    <Link href={"/Stressed"}><p className="porra-stressed-theme">Stressed</p></Link>
-                                    </div>
-                                </div>
-                                <div className="porra-calm">
-                                    <div className="porra-calm-box">
-                                    <Link href={"/Calm"}><img src="/images/calm.png" alt="calm" className="porra-calm-icon"/></Link>
-                                    </div>
-                                    <div className="porra-calm-word">
-                                    <Link href={"/Calm"}><p className="porra-calm-theme">Calm</p></Link>
-                                    </div>
-                                </div>
-                            </div>
+                            <Moods handleChangeMood={handleChangeMood} />
                         </div>
                         <div className="porra-sec-div">
                             <div className="porra-track-box">
