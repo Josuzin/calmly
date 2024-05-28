@@ -25,5 +25,5 @@ import JournalingNotes from "../../components/JournalingNotes";
 import CreateAcc from "../../components/CreateAcc";
 
 export default function Home() {
-  return <LoginForm />;
+  return <ChatPageCalm />;
 }

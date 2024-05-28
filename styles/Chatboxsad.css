@@ -48,9 +48,10 @@
 }
 
 .chatbox-my{
-  display: flex;
-  flex-direction: row;
-  width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
 }
 
 .chatbox-expand{

@@ -88,18 +88,21 @@ const Chatbox = () => {
 
     <div className="chatbox-outside-box-happy">
       <div className="chatbox-my">
+        <div className="coco"></div>
         <h1 className="chatbox-my-therapist">My Therapist</h1>
-        <Link href={"/" ? "/Chat" : "/"} className='chatbox-link'><img src='/images/icon-expand.png' alt='icon expand'className='chatbox-expand'/></Link>
+        <Link href={"/" ? "/Chat" : "/"} className="chatbox-link">
+          <img
+            src="/images/icon-expand.png"
+            alt="icon expand"
+            className="chatbox-expand"
+          />
+        </Link>
       </div>
       <div className="chatbox-msg-balao">
         {messages.map((message, index) => (
           <div key={index} className={`message ${message.role}`}>
-
-            {message.role === `assistant` && <img src='./images/chat.png' />}
-            <span>
-              {message.text}
-            </span>
-
+            {message.role === `assistant` && <img src="./images/chat.png" />}
+            <span>{message.text}</span>
           </div>
         ))}
       </div>
@@ -113,13 +116,14 @@ const Chatbox = () => {
             className="chatbox-input-box-happy"
           />
           <button type="submit" className="botaoEnviar">
-            <img src="/images/send-btn.png" className="chatbox-send-icon-happy"></img>
+            <img
+              src="/images/send-btn.png"
+              className="chatbox-send-icon-happy"
+            ></img>
           </button>
         </form>
-
       </div>
     </div>
-
   );
 };
 
