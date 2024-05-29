@@ -9,7 +9,6 @@ export default function SideBar() {
       <div className="Logo">
         <img src="images/Rectangle_28.webp" alt="logo calm.ly" />
       </div>
-      <Toggle />
       <div className="lista">
         <ul>
           <Link href={"/"}>
@@ -67,15 +66,13 @@ export default function SideBar() {
         <div className="emergency-div">
           <button className="emergency">Emergency</button>
         </div>
-        {/* <div className="toggle-container">
-          <input type="checkbox" id="toggle" className="toggle-input"/>
-          <label className="toggle" htmlFor="toggle">
-            <div className="toggle-ball"></div>
-          </label>
-        </div> */}
-
-        <div>
-          <LogoutButton/>
+        <div className="toggleElogout">
+          <div className="div-toggle">
+            <Toggle />
+          </div>
+          <div className="div-logout">
+            <LogoutButton />
+            </div>
         </div>
       </div>
     </div>

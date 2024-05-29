@@ -1,5 +1,5 @@
 import Link from "next/link";
-import styles from "../styles/Toggle.css";
+import "../styles/SideBar.css";
 
 export default function SideBar() {
   return (

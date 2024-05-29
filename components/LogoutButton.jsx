@@ -10,7 +10,9 @@ const LogoutButton = () => {
     router.push('/loginform')
     }
     return (
-        <button onClick={handleLogout} className='logout-button'>Logout</button>
+        <div className="logout">
+            <button onClick={handleLogout} className='logout-button'>Logout</button>
+        </div>
     )
 }
 

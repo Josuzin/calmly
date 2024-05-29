@@ -132,11 +132,27 @@ p {
   transform: scale(0.95);
 }
 
+.toggleElogout{
+  display: flex;
+  flex-direction: column;
+  margin-top: 20vh;
+}
+
+
+.sidebar-toggle {
+  /* background-color: rgba(16, 13, 46, 0.8); */
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .toggle-container {
   position: relative;
-  width: 3.125vw;
-  height: 1.563vw;
-  margin-top: 10vw;
+  width: 3.3vw;
+  height: 1.6vw;
+  left: 3vw;
+  bottom: 5vh;
 }
 
 .toggle {
@@ -152,7 +168,7 @@ p {
 .toggle-ball {
   position: absolute;
   top: 50%;
-  left: 0.208vw;
+  left: 0.090vw;
   width: 1.667vw;
   height: 1.667vw;
   background: linear-gradient(135deg, #0becfe, #1a5de9);
@@ -172,12 +188,14 @@ p {
   transform: translate(1.458vw, -50%);
 }
 
-.toggle {
-  margin-top: 10.4167vw;
-  margin-right: -2.0833vw;
+
+.logout{
+  cursor: pointer;
 }
 
-.logout {
+.logout-button {
   background-color: transparent;
   border: none;
+  cursor: pointer;
+  color: rgba(216, 216, 216, 0.8)
 }
