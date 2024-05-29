@@ -66,12 +66,11 @@ background-color: rgba(12, 11, 21, 0.8);
   transition: ease-in;
 }
 
-.botaoEnviarcalm {
+.botaoEnviarangry {
   background-color: transparent;
   /* position: absolute;
   right: 0.2vw; */
   padding: 0;
-  box-shadow: 0 -2px 10px rgba(0,0,0,0.5);
 }
 
 .botaoEnviar:hover {

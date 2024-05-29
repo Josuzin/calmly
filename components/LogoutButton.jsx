@@ -1,6 +1,6 @@
 'use client'
 import { signOut } from "next-auth/react";
-import { useRouter } from "next/router";
+import { useRouter } from "next/navigation";
 
 const LogoutButton = () => {
     const router = useRouter();
@@ -10,7 +10,7 @@ const LogoutButton = () => {
     router.push('/loginform')
     }
     return (
-        <button onClick={handleLogout} className='logout-button'>Logout Porra</button>
+        <button onClick={handleLogout} className='logout-button'>Logout</button>
     )
 }
 
