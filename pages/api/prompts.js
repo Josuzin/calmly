@@ -1,16 +1,19 @@
-import connectMongoDB from '../../utils/connectMongoDB';
-import Prompt from '../../models/Prompt';
+import connectToDatabase from "../../database/mongodb";
+import Prompt from "../../models/promptsbd";
 
 export default async function handler(req, res) {
-  await connectMongoDB();
+  await connectToDatabase();
 
   if (req.method === 'GET') {
-    const { category } = req.query;
+    const { id } = req.query;
     try {
-      const prompts = await Prompt.find({ promptCategory: category });
-      res.status(200).json(prompts);
+      const prompt = await Prompt.findById(id);
+      if (!prompt) {
+        return res.status(404).json({ error: 'Prompt not found' });
+      }
+      res.status(200).json(prompt);
     } catch (error) {
-      res.status(500).json({ error: 'Failed to load prompts' });
+      res.status(500).json({ error: 'Failed to load prompt' });
     }
   }
 }
