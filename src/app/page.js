@@ -45,7 +45,7 @@ export default function Home() {
             : mood === 4 ? <HomePageStressed handleMood={handleMood}/>
               : mood === 5 ? <HomePageCalm handleMood={handleMood} />
                 : <HomePage handleMood={handleMood} />} */}
-      <MeditationTracker></MeditationTracker>
+      <ChatPage/>
     </>
   );
 }

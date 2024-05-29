@@ -1,5 +1,5 @@
 'use client';
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { GoogleGenerativeAI, HarmCategory, HarmBlockThreshold } from '@google/generative-ai';
 import styles from '../styles/Chatbox.css'; // 
 import SideBar from './SideBar';
@@ -15,6 +15,8 @@ const Chatbox = () => {
   const apiKey = process.env.NEXT_PUBLIC_GOOGLE_GEN_AI_KEY; // Use NEXT_PUBLIC_ prefix for frontend environment variables
   const genAI = new GoogleGenerativeAI(apiKey);
   const model = genAI.getGenerativeModel({ model: 'gemini-1.5-pro-latest' });
+
+  const chatEndRef = useRef(null);
 
   useEffect(() => {
     const initChat = async () => {
@@ -76,6 +78,13 @@ const Chatbox = () => {
     setTheme((prevTheme) => (prevTheme === 'theme-default' ? 'theme-default' : 'theme-default'));
   };
 
+  useEffect(() => {
+    if (chatEndRef.current) {
+      chatEndRef.current.scrollIntoView({ behavior: 'smooth' });
+    }
+  }, [messages]);
+
+
   return (
     // <div className="chatbox-container">
     //   <SideBar />
@@ -97,7 +106,7 @@ const Chatbox = () => {
       <div className="chatbox-my">
         <div className='coco'></div>
         <h1 className="chatbox-my-therapist">My Therapist</h1>
-        <Link href={"/" ? "/Chat" : "/"} className='chatbox-link'><img src='/images/icon-expand.png' alt='icon expand'className='chatbox-expand'/></Link>
+        <Link href={"/" ? "/Chat" : "/"} className='chatbox-link'><img src='/images/icon-expand.png' alt='icon expand' className='chatbox-expand' /></Link>
       </div>
       <div className="chatbox-msg-balao">
         {messages.map((message, index) => (
@@ -110,6 +119,7 @@ const Chatbox = () => {
 
           </div>
         ))}
+        <div ref={chatEndRef} />
       </div>
       {error && <p className="chatbox-error-msg">{error}</p>}
       <div className="chatbox-input-container">
