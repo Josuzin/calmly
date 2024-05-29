@@ -1,5 +1,5 @@
 'use client';
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { GoogleGenerativeAI, HarmCategory, HarmBlockThreshold } from '@google/generative-ai';
 import styles from '../styles/Chatboxhappy.css'; // 
 import SideBar from './SideBar';
@@ -14,6 +14,8 @@ const Chatbox = () => {
   const apiKey = process.env.NEXT_PUBLIC_GOOGLE_GEN_AI_KEY; // Use NEXT_PUBLIC_ prefix for frontend environment variables
   const genAI = new GoogleGenerativeAI(apiKey);
   const model = genAI.getGenerativeModel({ model: 'gemini-1.5-pro-latest' });
+
+  const chatEndRef = useRef(null);
 
   useEffect(() => {
     const initChat = async () => {
@@ -75,6 +77,13 @@ const Chatbox = () => {
     setTheme((prevTheme) => (prevTheme === 'theme-happy' ? 'theme-default' : 'theme-happy'));
   };
 
+  useEffect(() => {
+    if (chatEndRef.current) {
+      chatEndRef.current.scrollIntoView({ behavior: 'smooth' });
+    }
+  }, [messages]);
+
+
   return (
     // <div className="chatbox-container">
     //   <SideBar />
@@ -111,6 +120,7 @@ const Chatbox = () => {
             <span>{message.text}</span>
           </div>
         ))}
+        <div ref={chatEndRef} />
       </div>
       {error && <p className="chatbox-error-msg">{error}</p>}
       <div className="chatbox-input-container">
