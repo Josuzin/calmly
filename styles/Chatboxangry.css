@@ -98,7 +98,10 @@ border: none;
 .message {
   display: flex;
   gap: 1rem;
-  width: 50%
+  width: 50%;
+  /* flex-direction: column;
+  word-wrap: break-word;
+  word-break: break-word; */
 }
 
 .theme-angry .user {
@@ -112,6 +115,7 @@ border: none;
   justify-content: end;
   color:#fff;
   font-weight: 300;
+  max-width: 50%;
 }
 
 .theme-angry .assistant {

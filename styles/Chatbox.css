@@ -98,7 +98,7 @@
 .message {
     display: flex;
     gap: 1rem;
-    width: 50%
+    width: 50%;
 }
 
 .theme-default .user {
@@ -112,6 +112,7 @@
     justify-content: end;
     color:#fff;
     font-weight: 300;
+    max-width: 50%;
 }
 
 .theme-default .assistant {
