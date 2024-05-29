@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-body {
+.note-main {
   font-family: "poppins", sans-serif;
   background-image: url("/images/fundo.png");
   background-size: 100% auto;

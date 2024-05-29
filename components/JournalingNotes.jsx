@@ -4,13 +4,9 @@ import SideBar from "./SideBar"
 
 export default function Journaling() {
   return (
-    <div>
-      <SideBar />
+    <div className="note-main">
       <div className="note-page-box">
-      
-      <nav className="note-navbar">
-       
-      </nav>
+      <SideBar />
       <section className="note-content-box">
         <div className="note-back-box">
           <div className="note-back">

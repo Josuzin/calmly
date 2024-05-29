@@ -1,11 +1,12 @@
 // pages/category/[category].js
-import { useRouter } from "next/router";
+"use client";
+import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 import Link from "next/link";
 
 const CategorySquare = () => {
   const router = useRouter();
-  const { category } = router.query;
+  const category = router.query;
   const [prompts, setPrompts] = useState([]);
 
   useEffect(() => {
