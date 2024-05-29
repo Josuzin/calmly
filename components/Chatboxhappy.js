@@ -96,7 +96,7 @@ const Chatbox = () => {
       <div className="chatbox-my">
         <div className="coco"></div>
         <h1 className="chatbox-my-therapist">My Therapist</h1>
-        <Link href={"/" ? "/Chat" : "/"} className="chatbox-link">
+        <Link href={"/" ? "/ChatHappy" : "/"} className="chatbox-link">
           <img
             src="/images/icon-expand.png"
             alt="icon expand"
@@ -121,7 +121,7 @@ const Chatbox = () => {
             onChange={(e) => setInputValue(e.target.value)}
             className="chatbox-input-box-happy"
           />
-          <button type="submit" className="botaoEnviar">
+          <button type="submit" className="botaoEnviarhappy">
             <img
               src="/images/send-btn.png"
               className="chatbox-send-icon-happy"

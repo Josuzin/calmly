@@ -75,7 +75,7 @@ export default function SideBar() {
         </div> */}
 
         <div>
-          {/* <LogoutButton/> */}
+          <LogoutButton/>
         </div>
       </div>
     </div>

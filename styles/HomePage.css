@@ -129,7 +129,7 @@
   background-color: rgba(22, 17, 53, 0.3);
   height: 38vh;
   width: 85.7vw;
-  padding: 3.25vw;
+  padding: 1.525vw 10.25vw 3.125vw 3.25vw;
   border-radius: 0.521vw;
 }
 
@@ -160,10 +160,7 @@
 }
 
 .porra-chat-box {
-  background-color: rgba(22, 17, 53, 0.8);
   border-radius: 0.521vw;
-  /* padding: 18px 600px 22px 50px; */
-  /* padding: 0.938vw 2.604vw; */
   width: 60.256vw;
   height: 57.5vh;
 }
@@ -291,6 +288,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-top: 5vw;
 }
 .porra-mood-direita .porra-mood-image img {
   height: var(--image-card-height);
@@ -298,6 +296,7 @@
 }
 
 .porra-mood-song {
+  padding-top: 3vw;
 }
 
 .porra-mood-direita .rhap_container {

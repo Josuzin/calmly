@@ -123,12 +123,12 @@
 
 .porra-mood-box-calm {
   display: flex;
-  flex-direction: column;
   justify-content: flex-start;
+  justify-content: space-between;
   background-color: rgba(217, 217, 217, 0.2);
   height: 38vh;
   width: 85.7vw;
-  padding: 1.525vw 45.25vw 3.125vw 3.25vw;
+  padding: 1.525vw 10.25vw 3.125vw 3.25vw;
   border-radius: 0.521vw;
 }
 
@@ -158,11 +158,8 @@
   height: 8vh;
 }
 
-.porra-chat-box {
-  background-color: rgba(22, 17, 53, 0.8);
+.porra-chat-box { 
   border-radius: 0.521vw;
-  /* padding: 18px 600px 22px 50px; */
-  padding: 0.938vw 2.604vw;
   width: 60.256vw;
   height: 57.5vh;
 }
@@ -264,4 +261,35 @@
 .porra-send-btn i {
   color: #b7b1d2;
   font-size: 1.5em;
+}
+
+.porra-mood-direita .porra-mood-image {
+  --image-card-height: 120px;
+  width: 120px;
+  height: var(--image-card-height);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5vw;
+}
+.porra-mood-direita .porra-mood-image img {
+  height: var(--image-card-height);
+  width: auto;
+}
+
+.porra-mood-song {
+  padding-top: 3vw;
+}
+
+.porra-mood-direita .rhap_container {
+  background-color: transparent;
+}
+
+.porra-mood-esquerda {
+  display: flex;
+  flex-direction: column;
+}
+.porra-mood-esquerda {
+  display: flex;
+  flex-direction: column;
 }
