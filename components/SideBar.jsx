@@ -1,6 +1,7 @@
 import Link from "next/link";
 import styles from "../styles/SideBar.css";
 import Toggle from "./Toggle";
+import LogoutButton from "./LogoutButton";
 
 export default function SideBar() {
   return (
@@ -21,7 +22,7 @@ export default function SideBar() {
               <p className="p-home">Home</p>
             </li>
           </Link>
-          <Link href={"/meditation"}>
+          <Link href="/meditation">
             <li>
               <img
                 src="/images/meditation icon.png"
@@ -31,7 +32,7 @@ export default function SideBar() {
               <p className="p-meditation">Meditation</p>
             </li>
           </Link>
-          <Link href={"/journaling"}>
+          <Link href="/journaling">
             <li>
               <img
                 src="/images/journaling icon.png"
@@ -41,7 +42,7 @@ export default function SideBar() {
               <p className="p-journaling">Journaling</p>
             </li>
           </Link>
-          <Link href={"/timer"}>
+          <Link href="/timer">
             <li>
               <img
                 src="/images/timer icon.png"
@@ -51,7 +52,7 @@ export default function SideBar() {
               <p className="p-timer">Timer</p>
             </li>
           </Link>
-          <Link href={"/profile"}>
+          <Link href="/profile">
             <li>
               <img
                 src="/images/profile icon.png"
@@ -74,7 +75,7 @@ export default function SideBar() {
         </div> */}
 
         <div>
-          <button className="logout">Logout</button>
+          {/* <LogoutButton/> */}
         </div>
       </div>
     </div>

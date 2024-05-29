@@ -148,37 +148,37 @@ export default function Timer() {
                 onClick={() => handleSelectTime(3)}
                 className="timer-btn-a"
               >
-                3 minuts
+                3 minutes
               </button>
               <button
                 onClick={() => handleSelectTime(5)}
                 className="timer-btn-a"
               >
-                5 minuts
+                5 minutes
               </button>
               <button
                 onClick={() => handleSelectTime(10)}
                 className="timer-btn-a"
               >
-                10 minuts
+                10 minutes
               </button>
               <button
                 onClick={() => handleSelectTime(15)}
                 className="timer-btn-a"
               >
-                15 minuts
+                15 minutes
               </button>
               <button
                 onClick={() => handleSelectTime(20)}
                 className="timer-btn-a"
               >
-                20 minuts
+                20 minutes
               </button>
               <button
                 onClick={() => handleSelectTime(30)}
                 className="timer-btn-a"
               >
-                30 minuts
+                30 minutes
               </button>
             </div>
           )}
