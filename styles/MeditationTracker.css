@@ -1,0 +1,37 @@
+.porra-track {
+  background-color: rgba(22, 17, 53, 0.3);
+  margin-top: 0.521vw;
+  height: 23vw;
+  width: 25vw;
+  border-radius: 0.521vw;
+}
+
+.porra-track-box {
+  margin-right: 0.521vw;
+}
+
+.porra-tracker-title {
+  font-size: 1.563vw;
+  font-weight: 500;
+  text-align: center;
+  padding-top: 0.833vw;
+  color: #d7d7d7;
+}
+
+.porra-tracker-title {
+  font-size: 1.563vw;
+  font-weight: 500;
+  text-align: center;
+  padding-top: 0.833vw;
+  color: #d7d7d7;
+}
+
+.porra-days-text {
+  font-size: 2.2vw;
+  text-align: center;
+  margin-left: 8.2vw;
+}
+
+.porra-streak-text {
+  font-size: 1.875vw;
+}

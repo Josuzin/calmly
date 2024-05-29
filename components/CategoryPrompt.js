@@ -1,22 +1,38 @@
-// src/components/CategoryList.js
-import React from 'react';
-import { Link } from 'react-router-dom';
+// pages/category/[category].js
+import { useRouter } from "next/router";
+import { useEffect, useState } from "react";
+import Link from "next/link";
 
-const CategoryList = ({ categories }) => {
+const CategorySquare = () => {
+  const router = useRouter();
+  const { category } = router.query;
+  const [prompts, setPrompts] = useState([]);
+
+  useEffect(() => {
+    if (category) {
+      fetch(`/api/prompts?category=${category}`)
+        .then((res) => res.json())
+        .then((data) => setPrompts(data))
+        .catch((error) => console.error("Error fetching prompts:", error));
+    }
+  }, [category]);
+
   return (
     <div>
-      <h2>Categories</h2>
+      <h2>Prompts in Category: {category}</h2>
       <ul>
-        {categories.map((category) => (
-          <li key={category.name}>
-            <h3>{category.name}</h3>
-            <ul>
-              {category.prompts.map((prompt) => (
-                <li key={prompt._id}>
-                  <Link to={`/journal/${prompt._id}`}>{prompt.title}</Link>
-                </li>
-              ))}
-            </ul>
+        {prompts.map((prompt) => (
+          <li key={prompt._id}>
+            <div className="jn-subtitle-box-flex">
+              <div className="jn-subtitle-box">
+                <li className="jn-subtitle">- {prompt.title}</li>
+                <Link href={`/prompt/${prompt._id}`}>
+                  <a>
+                    <button className="jn-btn">Start Writing</button>
+                  </a>
+                </Link>
+              </div>
+            </div>
           </li>
         ))}
       </ul>
@@ -24,4 +40,4 @@ const CategoryList = ({ categories }) => {
   );
 };
 
-export default CategoryList;
+export default CategorySquare;
