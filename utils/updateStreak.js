@@ -15,7 +15,7 @@ export const updateMeditationStreak = async (userId, date) => {
     return user
   }
 
-  const oneDAy = 24 * 60 * 60 * 1000;
+  const oneDay = 24 * 60 * 60 * 1000;
   if(today.getTime() - lastMeditationDate.getTime() === oneDay){
     user.meditationStreak += 1;
   }else {
