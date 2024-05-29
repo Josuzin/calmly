@@ -37,10 +37,12 @@ li {
   margin-left: 1.7417vw;
   position: absolute;
   cursor: pointer;
+  color: #fff;
 }
 
 .p-home:hover {
   font-weight: 600;
+  color: #fff;
 }
 
 .icon-meditation {
@@ -53,10 +55,12 @@ li {
   margin-left: 1.7417vw;
   position: absolute;
   cursor: pointer;
+
 }
 
 .p-meditation:hover {
   font-weight: 600;
+  color: #fff;
 }
 
 .icon-journaling {
@@ -69,10 +73,12 @@ li {
   margin-left: 1.7417vw;
   position: absolute;
   cursor: pointer;
+
 }
 
 .p-journaling:hover {
   font-weight: 600;
+  color: #fff;
 }
 
 .icon-timer {
@@ -89,6 +95,7 @@ li {
 
 .p-timer:hover {
   font-weight: 600;
+  color: #fff;
 }
 
 .icon-profile {
@@ -105,6 +112,7 @@ li {
 
 .p-profile:hover {
   font-weight: 600;
+  color: #fff;
 }
 
 .lista {
@@ -132,7 +140,7 @@ p {
   transform: scale(0.95);
 }
 
-.toggleElogout{
+.toggleElogout {
   display: flex;
   flex-direction: column;
   margin-top: 20vh;
@@ -176,20 +184,21 @@ p {
   transition: transform 0.3s;
   transform: translateY(-50%);
 }
+
 .toggle-input[type="checkbox"] {
   display: none;
 }
 
-.toggle-input[type="checkbox"]:checked + .toggle {
+.toggle-input[type="checkbox"]:checked+.toggle {
   background: linear-gradient(135deg, #1a5de9, #0becfe);
 }
 
-.toggle-input[type="checkbox"]:checked + .toggle .toggle-ball {
+.toggle-input[type="checkbox"]:checked+.toggle .toggle-ball {
   transform: translate(1.458vw, -50%);
 }
 
 
-.logout{
+.logout {
   cursor: pointer;
 }
 
@@ -198,4 +207,28 @@ p {
   border: none;
   cursor: pointer;
   color: rgba(216, 216, 216, 0.8)
+}
+
+.p-home::after,
+.p-meditation::after,
+.p-timer::after,
+.p-profile::after,
+.p-journaling::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 100%;
+  background-color: #D278AE;
+  transform: scaleX(0);
+
+  transition: transform 0.3s ease;
+  transform-origin: left;
+}
+
+.p-home:hover::after,
+.p-meditation:hover::after,
+.p-timer:hover::after,
+.p-profile:hover::after,
+.p-journaling:hover::after {
+  transform: scaleX(1);
 }
