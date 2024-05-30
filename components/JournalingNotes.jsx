@@ -1,6 +1,7 @@
 import Link from "next/link"
 import styles from "../styles/JournalingNotes.css"
 import SideBar from "./SideBar"
+import JournalForm from "./JournalForm"
 
 export default function Journaling() {
   return (
@@ -53,10 +54,7 @@ export default function Journaling() {
             </div>
           </div>
           <div className="note-book-box">
-            <div className="note-write-here">
-              <textarea className="note-write-here-text" placeholder="Write here..." />
-              <button className="note-save-btn">Save</button>
-            </div>
+           <JournalForm />
 
           </div>
         </div>
