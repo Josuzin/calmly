@@ -37,7 +37,7 @@ export default function Home() {
 
   return (
     <>
-      {
+      {/* {
     mood === 0 ? <HomePage handleMood={handleMood} />
       : mood === 1 ? <HomePageHappy handleMood={handleMood}/>
         : mood === 2 ? <HomePageSad handleMood={handleMood}/>
@@ -45,7 +45,8 @@ export default function Home() {
             : mood === 4 ? <HomePageStressed handleMood={handleMood}/>
               : mood === 5 ? <HomePageCalm handleMood={handleMood} />
                 : <HomePage handleMood={handleMood} />}
-      
+       */}
+       <MeditationMuscle/>
        
     </>
   );
