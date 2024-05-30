@@ -122,6 +122,7 @@ body {
   border: none;
   align-self: flex-end;
   margin-top: 1rem;
+  margin-left: 5rem;
   background-color: #D278AE;
   color: #fff;
   cursor: pointer;

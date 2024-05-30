@@ -53,10 +53,7 @@ export default function Journaling() {
               <img src="/images/jn-bg.png" alt="photo" className="note-cover-photo" />
             </div>
           </div>
-          <div className="note-book-box">
            <JournalForm />
-
-          </div>
         </div>
       </section>
     </div>
