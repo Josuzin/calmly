@@ -1,5 +1,5 @@
 // components/JournalForm.js
-
+"use client";
 import { useState } from "react";
 
 function JournalForm({ userId, onEntryAdded }) {

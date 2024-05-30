@@ -1,5 +1,5 @@
 // components/PromptList.js
-
+"use client";
 import { useState, useEffect } from 'react';
 import JournalForm from './JournalForm';
 
