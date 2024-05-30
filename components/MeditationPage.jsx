@@ -2,6 +2,7 @@ import Link from "next/link"
 import styles from "../styles/MeditationPage.css"
 import SideBar from "./SideBar"
 import Image from "next/image";
+import MeditationTracker from "./MeditationTracker";
 
 export default function MeditationPage() {
     return (
@@ -27,9 +28,7 @@ export default function MeditationPage() {
                                 from wandering by providing a continuous thread of thought.
                             </p>
                         </div>
-                        <div className="meditation tracker">
-                            {/* adicionar meditation tracker*/}
-                        </div>
+                            <MeditationTracker/>
                     </div>
                     <div className="meditation-options-box">
                         <div className="ok">
