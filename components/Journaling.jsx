@@ -47,22 +47,30 @@ export default function Journaling() {
                     </h2>
                   </div>
                   <div className="jn-subtitle-box-flex">
-                    <PromptList />
+                    {/* <PromptList /> */}
                     <div className="jn-subtitle-box">
                       <li className="jn-subtitle">- Anger and Frustration</li>
-                      <button className="jn-btn">Start Writing</button>
+                      <Link href={"/Journaling_Notes"}>
+                        <button className="jn-btn">Start Writing</button>
+                      </Link>
                     </div>
                     <div className="jn-subtitle-box">
                       <li className="jn-subtitle">- Happiness and Joy</li>
-                      <button className="jn-btn">Start Writing</button>
+                      <Link href={"/Journaling_Notes"}>
+                        <button className="jn-btn">Start Writing</button>
+                      </Link>
                     </div>
                     <div className="jn-subtitle-box">
                       <li className="jn-subtitle">- Fear and Insecurity</li>
-                      <button className="jn-btn">Start Writing</button>
+                      <Link href={"/Journaling_Notes"}>
+                        <button className="jn-btn">Start Writing</button>
+                      </Link>
                     </div>
                     <div className="jn-subtitle-box">
                       <li className="jn-subtitle">- Sadness and Loss</li>
-                      <button className="jn-btn">Start Writing</button>
+                      <Link href={"/Journaling_Notes"}>
+                        <button className="jn-btn">Start Writing</button>
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -79,19 +87,27 @@ export default function Journaling() {
                     </div>
                     <div className="jn-subtitle-box">
                       <li className="jn-subtitle">- Gratitude</li>
-                      <button className="jn-btn">Start Writing</button>
+                      <Link href={"/Journaling_Notes"}>
+                        <button className="jn-btn">Start Writing</button>
+                      </Link>
                     </div>
                     <div className="jn-subtitle-box">
                       <li className="jn-subtitle">- Personal Growth</li>
-                      <button className="jn-btn">Start Writing</button>
+                      <Link href={"/Journaling_Notes"}>
+                        <button className="jn-btn">Start Writing</button>
+                      </Link>
                     </div>
                     <div className="jn-subtitle-box">
                       <li className="jn-subtitle">- Achievements</li>
-                      <button className="jn-btn">Start Writing</button>
+                      <Link href={"/Journaling_Notes"}>
+                        <button className="jn-btn">Start Writing</button>
+                      </Link>
                     </div>
                     <div className="jn-subtitle-box">
                       <li className="jn-subtitle">- Improvement</li>
-                      <button className="jn-btn">Start Writing</button>
+                      <Link href={"/Journaling_Notes"}>
+                        <button className="jn-btn">Start Writing</button>
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -102,23 +118,33 @@ export default function Journaling() {
                   <div className="jn-subtitle-box-flex">
                     <div className="jn-subtitle-box">
                       <li className="jn-subtitle">- Short-Term Goals</li>
-                      <button className="jn-btn">Start Writing</button>
+                      <Link href={"/Journaling_Notes"}>
+                        <button className="jn-btn">Start Writing</button>
+                      </Link>
                     </div>
                     <div className="jn-subtitle-box">
                       <li className="jn-subtitle">- Long-Term Vision</li>
-                      <button className="jn-btn">Start Writing</button>
+                      <Link href={"/Journaling_Notes"}>
+                        <button className="jn-btn">Start Writing</button>
+                      </Link>
                     </div>
                     <div className="jn-subtitle-box">
                       <li className="jn-subtitle">- Bucket List</li>
-                      <button className="jn-btn">Start Writing</button>
+                      <Link href={"/Journaling_Notes"}>
+                        <button className="jn-btn">Start Writing</button>
+                      </Link>
                     </div>
                     <div className="jn-subtitle-box">
                       <li className="jn-subtitle">- Personal Values</li>
-                      <button className="jn-btn">Start Writing</button>
+                      <Link href={"/Journaling_Notes"}>
+                        <button className="jn-btn">Start Writing</button>
+                      </Link>
                     </div>
                     <div className="jn-subtitle-box">
                       <li className="jn-subtitle">- Inspiration</li>
-                      <button className="jn-btn">Start Writing</button>
+                      <Link href={"/Journaling_Notes"}>
+                        <button className="jn-btn">Start Writing</button>
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -131,23 +157,33 @@ export default function Journaling() {
                   <div className="jn-subtitle-box-flex">
                     <div className="jn-subtitle-box">
                       <li className="jn-subtitle">- Support System</li>
-                      <button className="jn-btn">Start Writing</button>
+                      <Link href={"/Journaling_Notes"}>
+                        <button className="jn-btn">Start Writing</button>
+                      </Link>
                     </div>
                     <div className="jn-subtitle-box">
                       <li className="jn-subtitle">- Conflict Resolution</li>
-                      <button className="jn-btn">Start Writing</button>
+                      <Link href={"/Journaling_Notes"}>
+                        <button className="jn-btn">Start Writing</button>
+                      </Link>
                     </div>
                     <div className="jn-subtitle-box">
                       <li className="jn-subtitle">- Communication</li>
-                      <button className="jn-btn">Start Writing</button>
+                      <Link href={"/Journaling_Notes"}>
+                        <button className="jn-btn">Start Writing</button>
+                      </Link>
                     </div>
                     <div className="jn-subtitle-box">
                       <li className="jn-subtitle">- Boundaries</li>
-                      <button className="jn-btn">Start Writing</button>
+                      <Link href={"/Journaling_Notes"}>
+                        <button className="jn-btn">Start Writing</button>
+                      </Link>
                     </div>
                     <div className="jn-subtitle-box">
                       <li className="jn-subtitle">- Connection</li>
-                      <button className="jn-btn">Start Writing</button>
+                      <Link href={"/Journaling_Notes"}>
+                        <button className="jn-btn">Start Writing</button>
+                      </Link>
                     </div>
                   </div>
                 </div>

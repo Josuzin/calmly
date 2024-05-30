@@ -92,10 +92,10 @@ export default function MeditationPage() {
                     </div>
                     <div className="btn-da-medit">
                         <Link href={"/Progressive_Muscle_Relaxation"}><button className="btn-one">Dive in</button></Link>
-                        <button className="btn-two">Dive in</button>  
-                        <button className="btn-thr">Dive in</button>  
-                        <button className="btn-fou">Dive in</button>  
-                        <button className="btn-fiv">Dive in</button>  
+                        <Link href={"/Progressive_Muscle_Relaxation"}><button className="btn-two">Dive in</button></Link>  
+                        <Link href={"/Progressive_Muscle_Relaxation"}><button className="btn-thr">Dive in</button></Link>  
+                        <Link href={"/Progressive_Muscle_Relaxation"}><button className="btn-fou">Dive in</button></Link>  
+                        <Link href={"/Progressive_Muscle_Relaxation"}><button className="btn-fiv">Dive in</button></Link>  
                     </div>
                     <div className="show-more">
                         <a href="">Show More</a>
