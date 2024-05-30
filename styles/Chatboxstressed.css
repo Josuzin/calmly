@@ -35,6 +35,11 @@
   width: 37vw;
 }
 
+.chatbox-input-boxy-stressed:focus {
+  outline: none; 
+  border: none;  
+}
+
 .chatbox-form {
   display: flex;
   gap: 1rem;

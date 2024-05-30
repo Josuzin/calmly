@@ -110,6 +110,7 @@ const Chatbox = () => {
             src="/images/icon-expand.png"
             alt="icon expand"
             className="chatbox-expand"
+            placeholder='Write your thoughts here...'
           />
         </Link>
       </div>

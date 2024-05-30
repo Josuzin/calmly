@@ -109,6 +109,7 @@ const Chatbox = () => {
             src="/images/icon-expand.png"
             alt="icon expand"
             className="chatbox-expand"
+            placeholder='Write your thoughts here...'
           />
         </Link>
       </div>
@@ -129,6 +130,7 @@ const Chatbox = () => {
             value={inputValue}
             onChange={(e) => setInputValue(e.target.value)}
             className="chatbox-input-box-sad"
+  
           />
           <button type="submit" className="botaoEnviarcalm">
             <img

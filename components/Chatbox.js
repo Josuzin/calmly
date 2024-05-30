@@ -6,7 +6,7 @@ import SideBar from './SideBar';
 import Link from 'next/link';
 import { useRouter } from 'next/router'
 
-const Chatbox = () => {
+const Chatbox = ({onNewMessage}) => {
   const [messages, setMessages] = useState([]);
   const [inputValue, setInputValue] = useState('');
   const [error, setError] = useState(null);
@@ -61,6 +61,7 @@ const Chatbox = () => {
     const response = await result.response.text();
     console.log(response)
 
+    onNewMessage(userMessage);
 
     try {
       const result = await chat.sendMessage(inputValue.trim());
@@ -134,7 +135,6 @@ const Chatbox = () => {
             <img src="/images/send-btn.png" className="chatbox-send-icon"></img>
           </button>
         </form>
-
       </div>
     </div>
 
