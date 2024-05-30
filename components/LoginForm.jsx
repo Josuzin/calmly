@@ -1,3 +1,4 @@
+"use client";
 import Link from "next/link";
 import React, { useState } from "react";
 import Image from "next/image";
@@ -28,7 +29,7 @@ export default function LoginForm() {
     if (result.status === 200) {
 
     }
-    router.replace("/xixi");
+    router.replace("/LoginForm");
   };
 
   
