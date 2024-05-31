@@ -30,24 +30,7 @@ export default function HomePage({ handleMood }) {
 
   return (
     <div className="page-main-main">
-      <>
-      <SideBar handleMood={handleMood} />
-      {mood === 0 ? (
-        <HomePage handleMood={handleMood} />
-      ) : mood === 1 ? (
-        <HomePage handleMood={handleMood} />
-      ) : mood === 2 ? (
-        <HomePage handleMood={handleMood} />
-      ) : mood === 3 ? (
-        <HomePage handleMood={handleMood} />
-      ) : mood === 4 ? (
-        <HomePage handleMood={handleMood} />
-      ) : mood === 5 ? (
-        <HomePage handleMood={handleMood} />
-      ) : (
-        <HomePage handleMood={handleMood} />
-      )}
-    </>
+      <SideBar />
       <div className="porra-page-flex-box">
         <section className="porra-main-content-box">
           <div className="porra-para-flex">
