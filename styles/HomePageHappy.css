@@ -307,3 +307,8 @@
 .iconify--mdi {
   color: #fff;
 }
+
+.rhap_container.rhap_loop--off.rhap_play-status--playing {
+  border: none;
+  
+}
