@@ -21,14 +21,33 @@ import MeditationTracker from "./MeditationTracker";
 export default function HomePage({ handleMood }) {
   const [caraSelecionada, selecionarCara] = useState("happy");
 
+  const [mood, setMood] = useState(0);                                                                                           
+                                                                                              
   function handleChangeMood(num) {
     handleMood(num);
     return;
-  }
+  }                                             
 
   return (
     <div className="page-main-main">
-      <SideBar />
+      <>
+      <SideBar handleMood={handleMood} />
+      {mood === 0 ? (
+        <HomePage handleMood={handleMood} />
+      ) : mood === 1 ? (
+        <HomePage handleMood={handleMood} />
+      ) : mood === 2 ? (
+        <HomePage handleMood={handleMood} />
+      ) : mood === 3 ? (
+        <HomePage handleMood={handleMood} />
+      ) : mood === 4 ? (
+        <HomePage handleMood={handleMood} />
+      ) : mood === 5 ? (
+        <HomePage handleMood={handleMood} />
+      ) : (
+        <HomePage handleMood={handleMood} />
+      )}
+    </>
       <div className="porra-page-flex-box">
         <section className="porra-main-content-box">
           <div className="porra-para-flex">

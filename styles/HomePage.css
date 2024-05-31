@@ -6,6 +6,10 @@
   box-sizing: border-box;
 }
 
+*::selection{
+  background-color: rgba(210, 120, 174, 0.7);
+}
+
 .page-main-main {
   background-image: url("/images/home-bg.png");
   background-size: cover;

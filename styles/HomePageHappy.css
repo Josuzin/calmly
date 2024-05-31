@@ -279,6 +279,7 @@
 
 .porra-mood-song {
   padding-top: 3vw;
+  border: none;
 }
 
 .porra-mood-direita .rhap_container {
@@ -292,4 +293,8 @@
 .porra-mood-esquerda {
   display: flex;
   flex-direction: column;
+}
+
+.happy-gif{
+  border-radius: 12px;
 }

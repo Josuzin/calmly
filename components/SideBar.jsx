@@ -3,7 +3,7 @@ import  "../styles/SideBar.css";
 import Toggle from "./Toggle";
 import LogoutButton from "./LogoutButton";
 
-export default function SideBar() {
+export default function SideBar({ handleMood }) {
   return (
     <div className="sidebar">
       <div className="Logo">
@@ -68,7 +68,7 @@ export default function SideBar() {
         </div>
         <div className="toggleElogout">
           <div className="div-toggle">
-            <Toggle />
+            <Toggle handleMood={handleMood}/>
           </div>
           <div className="div-logout">
             <LogoutButton />

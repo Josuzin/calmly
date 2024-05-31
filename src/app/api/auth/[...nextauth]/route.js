@@ -20,7 +20,7 @@ const authOptions = {
   },
   secret: process.env.NEXTAUTH_SECRET,
   pages: {
-    signIn: "/",
+    signIn: "/Home",
   },
 };
 const handler = NextAuth(authOptions);
