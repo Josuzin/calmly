@@ -134,3 +134,9 @@ figure {
   color: #d278ae;
   text-decoration: underline #d278ae;
 }
+
+.btn-box {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}

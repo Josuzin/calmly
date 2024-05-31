@@ -38,12 +38,15 @@ export default function FirstPage() {
                 Discover Your Potential now
               </h1>
             </div>
-            <p className="pi">
+            <div><p className="pi">
               Maximize Productivity, Minimize Effort, and
               <br />
               Unleash Your Best Self at Your Fingertips.
-            </p>
-            <button className="first-page-btn">Create account</button>
+            </p></div>
+            <div><Link href="/CreateAcc">
+              <button className="first-page-btn">Create account</button>
+            </Link></div>
+            
           </section>
           <figure className="desenho">
             <Image src={Desenho} alt="desenho" />
