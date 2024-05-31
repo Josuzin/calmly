@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from "react";
 import styles from "/styles/Timer.css";
 import SideBar from "./SideBar";
+import Link from "next/link";
 
 export default function Timer() {
   const [seconds, setSeconds] = useState(0);
@@ -135,7 +136,9 @@ export default function Timer() {
                 </div>
                 <div class="timer-pause-box">
                   <button class="timer-btn-homey">
-                    <spanc class="go-home-please">Home</spanc>
+                    <Link href="/Home">
+                      <span class="go-home-please">Home</span>
+                    </Link>
                   </button>
                 </div>
               </div>
