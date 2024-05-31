@@ -8,6 +8,7 @@ import Moods from "./Mood"
 import AudioPlayer from "react-h5-audio-player";
 import "react-h5-audio-player/lib/styles.css";
 import { useEffect, useState } from "react";
+import MeditationTracker from "./MeditationTracker";
 
 export default function HomePage({handleMood}) {
     const [caraSelecionada, selecionarCara] = useState("happy");
@@ -66,30 +67,7 @@ export default function HomePage({handleMood}) {
                                 <div className="porra-phrase-box-sad">
                                     <p className="porra-phrase">"Be the energy you wish to attract.”</p>
                                 </div>
-                                <div className="porra-track-sad">
-                                <div className="porra-medi-track">
-                                    <h3 className="porra-tracker-title">
-                                        Meditation Tracker
-                                    </h3>
-                                </div>
-                                    <div className="porra-circle">
-                                        {/* <div classNameName="ellipse"> */}
-                                            <div className="porra-green-face">
-                                                <img src="/images/chill.png" alt="chill" className="porra-green"/>
-                                            </div>
-                                            <div className="porra-days">
-                                                <h4 className="porra-days-text">
-                                                    22 days
-                                                </h4>
-                                            </div>
-                                            <div className="porra-streak">
-                                                <h5 className="porra-streak-text">
-                                                    streak
-                                                </h5>
-                                            </div>
-                                        {/* </div> */}
-                                    </div>
-                                </div>
+                                <MeditationTracker/>
                             </div>
                             <div className="porra-chat-box">
                             <Chatboxsad />

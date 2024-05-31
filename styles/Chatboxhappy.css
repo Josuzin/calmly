@@ -34,6 +34,11 @@
   width: 37vw;
 }
 
+.chatbox-input-boxy-happy:focus {
+  outline: none; 
+  border: none;  
+}
+
 .chatbox-form {
   display: flex;
   gap: 1rem;
@@ -97,7 +102,10 @@ border: none;
 .message {
   display: flex;
   gap: 1rem;
-  max-width: 50%
+  width: 50%;
+  /* flex-direction: column;
+  word-wrap: break-word;
+  word-break: break-word; */
 }
 
 .theme-happy .user {
@@ -111,6 +119,7 @@ border: none;
   justify-content: end;
   color:#fff;
   font-weight: 300;
+  max-width: 50%;
 }
 .theme-happy .assistant {
   text-align: left;

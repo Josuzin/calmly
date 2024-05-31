@@ -1,5 +1,5 @@
 import Link from "next/link";
-import styles from "../styles/SideBar.css";
+import  "../styles/SideBar.css";
 import Toggle from "./Toggle";
 import LogoutButton from "./LogoutButton";
 
@@ -11,7 +11,7 @@ export default function SideBar() {
       </div>
       <div className="lista">
         <ul>
-          <Link href={"/"}>
+          <Link href="/Home">
             <li>
               <img
                 src="/images/home icon.png"
