@@ -9,13 +9,13 @@
   background-image: url("../images/firstpage.png");
   font-family: "poppins", sans-serif;
   background-size: cover;
-  background-color: #1B183E
+  background-color: #1b183e;
 }
-
 
 .first-page-title {
   text-align: start;
-  font-weight: 700;
+  font-weight: 800;
+  color: #fff;
 }
 
 .pai {
