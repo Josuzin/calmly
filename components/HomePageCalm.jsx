@@ -10,7 +10,7 @@ import "react-h5-audio-player/lib/styles.css";
 import MeditationTracker from "./MeditationTracker";
 
 export default function HomePage({handleMood}) {
-  const [caraSelecionada, selecionarCara] = useState("happy");
+  const [caraSelecionada, selecionarCara] = useState("calm");
 
   function handleChangeMood(num) {
     handleMood(num)
@@ -37,7 +37,7 @@ export default function HomePage({handleMood}) {
             {caraSelecionada && (
               <div className="porra-mood-direita">
                 <div className="porra-mood-image">
-                  <img src="https://www.gazetadigital.com.br/storage/webdisco/2019/03/29/1200x900/c875c5e289bd5093f016383d52f9a6a2.jpg" />
+                  <img className= "calm-gif" src="/images/angry.gif" />
                 </div>
                 <div className="porra-mood-song">
                   <AudioPlayer
@@ -47,14 +47,14 @@ export default function HomePage({handleMood}) {
                     autoPlay
                     src={
                       caraSelecionada === "happy"
-                        ? "/musics/music1.mp3"
+                        ? "/musics/happy.mp3"
                         : caraSelecionada === "angry"
-                        ? "/musics/music2.mp3"
+                        ? "/musics/angry.mp3"
                         : caraSelecionada === "sad"
-                        ? "/musics/music3.mp3"
+                        ? "/musics/sad.mp3"
                         : caraSelecionada === "stressed"
-                        ? "/musics/music4.mp3"
-                        : caraSelecionada === "calm" && "/musics/music5.mp3"
+                        ? "/musics/stressed.mp3"
+                        : caraSelecionada === "calm" && "/musics/calm.mp3"
                     }
                   />
                 </div>
