@@ -29,7 +29,7 @@ export default function LoginForm() {
     if (result.status === 200) {
 
     }
-    router.replace("/");
+    router.replace("/Home");
   };
 
   

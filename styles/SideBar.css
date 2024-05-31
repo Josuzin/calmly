@@ -1,149 +1,138 @@
 * {
   box-sizing: border-box;
 }
-
 .sidebar {
   background-color: rgba(16, 13, 46, 0.8);
   color: white;
-  width: 11.2rem; /* 13.5vw */
+  width: 13.5vw;
   height: 100%;
-  padding: 1.25rem 0; /* 1.0417vw */
+  padding: 1.0417vw 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   position: fixed;
 }
-
 .Logo {
-  width: 6rem; /* 7.2083vw */
-  margin-bottom: 0.625rem; /* 0.5208vw */
-  margin-top: 2rem; /* 2.6042vw */
+  width: 7.2083vw;
+  margin-bottom: 0.5208vw;
+  margin-top: 2.6042vw;
 }
-
 li {
   display: flex;
   flex-direction: row;
-  margin-top: 1rem; /* 2.8646vw */
-  margin-bottom: 2.5rem; /* 2.0833vw */
+  margin-top: 2.8646vw;
+  margin-bottom: 2.0833vw;
 }
-
 .icon-home {
   position: absolute;
-  width: 1rem; /* 1vw */
-  left: 3rem; /* 3.0833vw */
+  width: 1vw;
+  left: 3.0833vw;
 }
-
 .p-home {
-  margin-left: 3.3rem;
+  margin-left: 3rem;
   position: absolute;
   cursor: pointer;
   color: #fff;
 }
 
 .p-home:hover {
-  font-weight: 500;
+  font-weight: 600;
   color: #fff;
 }
 
 .icon-meditation {
   position: absolute;
-  width: 1rem; /* 1vw */
-  left: 3rem; /* 3.0833vw */
+  width: 1vw;
+  left: 3.0833vw;
 }
-
 .p-meditation {
-  margin-left: 3.3rem;
+  margin-left: 3rem;
   position: absolute;
   cursor: pointer;
+
 }
 
 .p-meditation:hover {
-  font-weight: 500;
+  font-weight: 600;
   color: #fff;
 }
 
 .icon-journaling {
   position: absolute;
-  width: 1rem; /* 0.9vw */
-  left: 3rem; /* 3.0833vw */
+  width: 0.9vw;
+  left: 3.0833vw;
 }
-
 .p-journaling {
-  margin-left: 3.3rem;
+  margin-left: 3rem;
   position: absolute;
   cursor: pointer;
+
 }
 
 .p-journaling:hover {
-  font-weight: 500;
+  font-weight: 600;
   color: #fff;
 }
 
 .icon-timer {
   position: absolute;
-  width: 1.2rem; /* 1.1vw */
-  left: 2.8rem; /* 3.0833vw */
+  width: 1.1vw;
+  left: 3.0833vw;
 }
-
 .p-timer {
-  margin-left: 3.3rem;
+  margin-left: 3rem;
   position: absolute;
   cursor: pointer;
 }
 
 .p-timer:hover {
-  font-weight: 500;
+  font-weight: 600;
   color: #fff;
 }
 
 .icon-profile {
   position: absolute;
-  width: 1.4rem; /* 1.3vw */
-  left: 2.8rem; /* 3.0833vw */
-  margin-top: -0.4rem; /* -0.4804vw */
+  width: 1.3vw;
+  left: 3.0833vw;
+  margin-top: -0.4804vw;
 }
-
 .p-profile {
-  margin-left: 3.3rem;
+  margin-left: 3rem;
   cursor: pointer;
 }
 
 .p-profile:hover {
-  font-weight: 500;
+  font-weight: 600;
   color: #fff;
 }
 
 .lista {
   list-style-type: none;
-  font-size: 0.7rem; /* 0.68vw */
-  margin-top: 2rem; /* 2.6042vw */
+  font-size: 0.68vw;
+  margin-top: 2.6042vw;
 }
-
 p {
-  margin-left: 0.625rem; /* 0.5208vw */
+  margin-left: 0.5208vw;
 }
-
 .emergency {
-  margin-top: 0.5rem; /* 2.1667vw */
+  margin-top: 2.1667vw;
   background-color: transparent;
-  border: 0.12rem solid; /* 0.1vw */
+  border: 0.1vw solid;
   transition: transform 0.3s;
 }
-
 .emergency:hover {
   transform: scale(1.05);
 }
-
 .emergency:active {
   transform: scale(0.95);
 }
 
+
 .toggleElogout {
   display: flex;
   flex-direction: column;
-  margin-top: 6rem;
+  margin-top: 20vh;
 }
-
 .sidebar-toggle {
   /* background-color: rgba(16, 13, 46, 0.8); */
   color: white;
@@ -151,29 +140,28 @@ p {
   flex-direction: column;
   align-items: center;
 }
-
 .toggle-container {
   position: relative;
-  width: 2.8rem;
-  height: 1.5rem;
-  left: 3.6rem;
+  width: 3.3vw;
+  height: 1.6vw;
+  left: 3vw;
+  bottom: 5vh;
 }
-
 .toggle {
   position: absolute;
   cursor: pointer;
   width: 100%;
   height: 100%;
   background: linear-gradient(135deg, #0becfe, #1a5de9);
-  border-radius: 1.875rem; /* 1.563vw */
+  border-radius: 1.563vw;
   transition: background 0.3s;
 }
-
 .toggle-ball {
   position: absolute;
   top: 50%;
-  width: 1.7rem;
-  height: 1.7rem;
+  left: 0.090vw;
+  width: 1.667vw;
+  height: 1.667vw;
   background: linear-gradient(135deg, #0becfe, #1a5de9);
   border-radius: 50%;
   transition: transform 0.3s;
@@ -184,12 +172,14 @@ p {
   display: none;
 }
 
-.toggle-input[type="checkbox"]:checked + .toggle {
+
+.toggle-input[type="checkbox"]:checked+.toggle {
   background: linear-gradient(135deg, #1a5de9, #0becfe);
 }
 
-.toggle-input[type="checkbox"]:checked + .toggle .toggle-ball {
-  transform: translate(1.75rem, -50%); /* 1.458vw */
+
+.toggle-input[type="checkbox"]:checked+.toggle .toggle-ball {
+  transform: translate(1.458vw, -50%);
 }
 
 .logout {
@@ -200,7 +190,7 @@ p {
   background-color: transparent;
   border: none;
   cursor: pointer;
-  color: rgba(216, 216, 216, 0.8);
+  color: rgba(216, 216, 216, 0.8)
 }
 
 .p-home::after,
@@ -214,6 +204,7 @@ p {
   width: 100%;
   background-color: #D278AE;
   transform: scaleX(0);
+
   transition: transform 0.3s ease;
   transform-origin: left;
 }

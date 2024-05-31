@@ -49,6 +49,12 @@ export default function Journaling() {
                   <div className="jn-subtitle-box-flex">
                     {/* <PromptList /> */}
                     <div className="jn-subtitle-box">
+                      <li className="jn-subtitle">- Stress and Anxiety</li>
+                      <Link href={"/Journaling_Notes"}>
+                        <button className="jn-btn">Start Writing</button>
+                      </Link>
+                    </div>
+                    <div className="jn-subtitle-box">
                       <li className="jn-subtitle">- Anger and Frustration</li>
                       <Link href={"/Journaling_Notes"}>
                         <button className="jn-btn">Start Writing</button>
