@@ -26,7 +26,8 @@ export default function LoginForm() {
     }
     if (result.status === 200) {
     }
-    router.replace("/xixi");
+    router.replace("/Home");
+    // router.replace("/xixi");
   };
 
   return (
@@ -64,9 +65,11 @@ export default function LoginForm() {
             />
           </div>
           <div className="btn-box">
-            <button type="submit" className="btn-create-acc">
-              Create Account
-            </button>
+            <Link href="/Home">
+              <button type="submit" className="btn-create-acc">
+                Create Account
+              </button>
+            </Link>
           </div>
           {error && <p className="error">{error}</p>}
           <div className="register-link">
