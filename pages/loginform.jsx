@@ -1,3 +1,4 @@
+
 'use client'
 import Link from "next/link";
 import React, { useState } from "react";
@@ -7,13 +8,11 @@ import "/styles/LoginForm.css";
 
 import { signIn } from "next-auth/react";
 import { useRouter } from "next/navigation";
-
-
-
-
+import { connectToDatabase } from "../utils/mongodb";
 
 
 export default function LoginForm() {
+
   const router = useRouter();
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
@@ -36,7 +35,6 @@ export default function LoginForm() {
     router.replace("/");
   };
 
-  
   return (
     <div className="body">
       <div className="login-box">

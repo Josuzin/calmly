@@ -21,11 +21,11 @@ const MeditationTracker = ({ userId }) => {
     const fetchAndUpdateStreak = async () => {
       try {
         const updatedUser = await updateMeditationStreak(
-          "665704e0388c99aa4df5a323"
+          "664c5bf71783d389154c828e"
         );
-        console.log(updatedUser);
+        console.log("dkjasdlkjs",updatedUser);
         if (updatedUser) {
-          setUser(updatedUser);
+          setUser(updatedUser.res[0]);
         }
       } catch (error) {
         console.error("Failed to update meditation streak", error);
@@ -49,7 +49,7 @@ const MeditationTracker = ({ userId }) => {
           <img src="/images/chill.png" alt="chill" className="porra-green" />
         </div>
         <div className="porra-days">
-          <h4 className="porra-days-text">{user.name} days</h4>
+          <h4 className="porra-days-text">{user.currentStreak} days</h4>
         </div>
         <div className="porra-streak">
           <h5 className="porra-streak-text">streak</h5>

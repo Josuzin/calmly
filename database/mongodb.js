@@ -1,52 +1,45 @@
-// // import mongoose from 'mongoose';
+import { MongoClient } from 'mongodb';
 
-export const connectMongoDB = async () => {
-    let client;
-    try {
-        client = await mongoose.connect(process.env.MONGO_URI);
-        console.log("MongoDB connected");
-    } catch (error) {
-        console.log("MongoDB error", error);
+// const uri = 'mongodb://localhost:27017/CalmLy';
+const uri = 'mongodb://localhost:27017';
+// const options = {
+//   useNewUrlParser: true,
+//   useUnifiedTopology: true,
+// };
+
+// let cachedClient = null;
+// let cachedDb = null;
+
+// export async function connectToDatabase() {
+//   if (cachedDb) {
+//     return cachedDb;
+//   }
+
+//   try {
+//     const client = await MongoClient.connect(uri, options);
+//     const db = client.db();
+//     cachedClient = client;
+//     cachedDb = db;
+//     return db;
+//   } catch (error) {
+//     console.error('Error connecting to MongoDB:', error);
+//     throw error;
+//   }
+// }
+
+let client
+async function connectToMongo() {
+  try {
+    if (!client) {
+      client = await MongoClient.connect(uri)
     }
     return client;
-};
-
-const MONGODB_URI = process.env.MONGODB_URI;
-
-if (!MONGODB_URI) {
-    throw new Error(
-        'Por favor, defina a variável de ambiente MONGODB_URI no seu arquivo .env.local'
-    );
+  } catch (err) {
+    console.log(err)
+  }
 }
 
-let cached = global.mongoose;
-
-if (!cached) {
-    cached = global.mongoose = { conn: null, promise: null };
-}
-
-async function connectToDatabase() {
-    if (cached.conn) {
-        return cached.conn;
-    }
-
-    if (!cached.promise) {
-        const opts = {
-            useNewUrlParser: true,
-            useUnifiedTopology: true,
-        };
-
-        cached.promise = mongoose.connect(MONGODB_URI, opts).then((mongoose) => {
-            return mongoose;
-        });
-    }
-    cached.conn = await cached.promise;
-    return cached.conn;
-}
-
-export default connectToDatabase;
-
-export async function getMongoCollection(collectionName) {
-    const client = await connectMongoDB();
-    return client.db("CalmLy").collection(collectionName);
-}
+export async function connectToDatabase(collectionName) {
+    const client = await connectToMongo()
+    return client.db("CalmLy").collection(collectionName)
+  }

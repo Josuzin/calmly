@@ -47,8 +47,8 @@ export default function ChatPage() {
                 <div className="chatbox-history-convo">
                     {history.map((msg, index) => (
                         <div key={index} className={`chatbox-message ${msg.role}`}>
-                            <span className="chatbox-timestamp">{new Date(msg.timestamp).toLocaleString()}</span>
-                            <p>{msg.text}</p>
+                            <span className="chatbox-timestamp">{new Date(msg.timestamp).toLocaleDateString()}</span>
+                            <p>{msg.text.slice(0, 50)+"..."}</p>
                         </div>
                     ))}
                 </div>

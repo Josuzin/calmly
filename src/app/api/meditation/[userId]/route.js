@@ -1,9 +1,9 @@
 import { ObjectId } from "mongodb";
-import { getMongoCollection } from "../../../../../database/mongodb";
+import { connectToDatabase } from "../../../../../database/mongodb";
 
 export async function GET(request) {
   const userId = request.url.split("/").at(-1);
-  const coll = await getMongoCollection("User");
+  const coll = await connectToDatabase("users");
   const id = new ObjectId(userId);
   const res = await coll.find({ _id: id }).toArray();
   const today = new Date();

@@ -7,7 +7,7 @@ const LogoutButton = () => {
     
     const handleLogout = async () => {
         await signOut ({redirect: false})
-    router.push('/')
+    router.push('/Loginform')
     }
     return (
         <div className="logout">

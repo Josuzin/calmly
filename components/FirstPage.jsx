@@ -27,7 +27,7 @@ export default function FirstPage() {
             <Image src={Logo} alt="logo" className="logo" />
           </figure>
           <div className="signin-box">
-            <Link href="/LoginForm">Sign in</Link>
+            <Link href="/loginform">Sign in</Link>
           </div>
         </nav>
         <div className="pai">

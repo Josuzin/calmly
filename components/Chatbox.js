@@ -56,8 +56,8 @@ const Chatbox = ({onNewMessage}) => {
 
     const userMessage = { text: inputValue.trim(), role: 'user' };
     setMessages((prevMessages) => [...prevMessages, userMessage]);
-    setInputValue('');
-    const result = await chat.sendMessage("ola");
+    const result = await chat.sendMessage('');
+    setInputValue("");
     const response = await result.response.text();
     console.log(response)
 
@@ -67,7 +67,9 @@ const Chatbox = ({onNewMessage}) => {
       const result = await chat.sendMessage(inputValue.trim());
       console.log(result);
       const assistantMessage = { text: await result.response.text(), role: 'assistant' };
+
       setMessages((prevMessages) => [...prevMessages, assistantMessage]);
+      onNewMessage(assistantMessage)
     } catch (error) {
       setError('An error occurred while sending the message.');
     }
