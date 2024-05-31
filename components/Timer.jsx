@@ -120,7 +120,7 @@ export default function Timer() {
               <div class="timer-play-btn-box">
                 <div class="timer-replay-box">
                   <button class="timer-btn-replay" onClick={handleReset}>
-                    <span className="replay-yes-true">Replay</span>
+                    <span className="replay-yes-true">Restart</span>
                   </button>
                 </div>
                 <div class="timer-play-box">

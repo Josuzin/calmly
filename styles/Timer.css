@@ -239,6 +239,8 @@
 .timer-title-estiloso {
   font-weight: 500;
   text-transform: uppercase;
+  font-size: 48px;
+  color: #D7D7D7;
 }
 
 .timer-btn-a {
