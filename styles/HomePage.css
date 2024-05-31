@@ -30,6 +30,7 @@
 .porra-carinhas {
   display: flex;
   gap: 3.125vw;
+  margin-top: 2vw;
 }
 
 .porra-happy,
