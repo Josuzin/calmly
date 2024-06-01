@@ -1,0 +1,22 @@
+.med-muscle-controls {
+  display: flex;
+  justify-content: space-between;
+}
+
+.med-muscle-btns {
+  background-color: #864E82;
+  padding: 0.3vw 1vw;
+  font-size: 0.8vw;
+  border-radius: 2vw;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.med-muscle-btns:hover {
+  background-color: #A567A6;
+  transform: scale(1.05);
+}
+
+.med-muscle-btns:active {
+  transform: scale(0.95);
+}

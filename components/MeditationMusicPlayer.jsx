@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef } from "react";
+import styles from "../styles/MeditationMusicPlayer.css";
 
 const MeditationMusicPlayer = ({ src }) => {
   const [isPlaying, setIsPlaying] = useState(true);
@@ -26,12 +27,12 @@ const MeditationMusicPlayer = ({ src }) => {
   };
 
   return (
-    <div>
+    <div className="med-muscle-controls">
       <audio ref={audioRef} src={src} />
-      <button onClick={handlePlayPause} style={{ marginRight: "10px" }}>
+      <button className="med-muscle-btns" onClick={handlePlayPause} style={{ marginRight: "10px" }}>
         {isPlaying ? "Pause" : "Play"}
       </button>
-      <button onClick={handleRestart}>Restart</button>
+      <button className="med-muscle-btns" onClick={handleRestart}>Restart</button>
     </div>
   );
 };
