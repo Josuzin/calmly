@@ -1,0 +1,218 @@
+* {
+  box-sizing: border-box;
+}
+.sidebar-happy {
+  background-color: rgba(0, 91, 111, 0.4);
+  color: white;
+  width: 13.5vw;
+  height: 100%;
+  padding: 1.0417vw 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+}
+.Logo {
+  width: 7.2083vw;
+  margin-bottom: 0.5208vw;
+  margin-top: 2.6042vw;
+}
+li {
+  display: flex;
+  flex-direction: row;
+  margin-top: 2.8646vw;
+  margin-bottom: 2.0833vw;
+}
+.icon-home {
+  position: absolute;
+  width: 1vw;
+  left: 3.0833vw;
+}
+.p-home {
+  margin-left: 3rem;
+  position: absolute;
+  cursor: pointer;
+  color: #fff;
+}
+
+.p-home:hover {
+  font-weight: 600;
+  color: #fff;
+}
+
+.icon-meditation {
+  position: absolute;
+  width: 1vw;
+  left: 3.0833vw;
+}
+.p-meditation {
+  margin-left: 3rem;
+  position: absolute;
+  cursor: pointer;
+
+}
+
+.p-meditation:hover {
+  font-weight: 600;
+  color: #fff;
+}
+
+.icon-journaling {
+  position: absolute;
+  width: 0.9vw;
+  left: 3.0833vw;
+}
+.p-journaling {
+  margin-left: 3rem;
+  position: absolute;
+  cursor: pointer;
+
+}
+
+.p-journaling:hover {
+  font-weight: 600;
+  color: #fff;
+}
+
+.icon-timer {
+  position: absolute;
+  width: 1.1vw;
+  left: 3.0833vw;
+}
+.p-timer {
+  margin-left: 3rem;
+  position: absolute;
+  cursor: pointer;
+}
+
+.p-timer:hover {
+  font-weight: 600;
+  color: #fff;
+}
+
+.icon-profile {
+  position: absolute;
+  width: 1.3vw;
+  left: 3.0833vw;
+  margin-top: -0.4804vw;
+}
+.p-profile {
+  margin-left: 3rem;
+  cursor: pointer;
+}
+
+.p-profile:hover {
+  font-weight: 600;
+  color: #fff;
+}
+
+.lista {
+  list-style-type: none;
+  font-size: 0.68vw;
+  margin-top: 2.6042vw;
+}
+p {
+  margin-left: 0.5208vw;
+}
+.emergency {
+  margin-top: 2.1667vw;
+  background-color: transparent;
+  border: 0.1vw solid;
+  transition: transform 0.3s;
+}
+.emergency:hover {
+  transform: scale(1.05);
+}
+.emergency:active {
+  transform: scale(0.95);
+}
+
+
+.toggleElogout {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20vh;
+}
+.sidebar-toggle {
+  /* background-color: rgba(16, 13, 46, 0.8); */
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.toggle-container {
+  position: relative;
+  width: 3.3vw;
+  height: 1.6vw;
+  left: 3vw;
+  bottom: 5vh;
+}
+.toggle {
+  position: absolute;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #0becfe, #1a5de9);
+  border-radius: 1.563vw;
+  transition: background 0.3s;
+}
+.toggle-ball {
+  position: absolute;
+  top: 50%;
+  left: 0.090vw;
+  width: 1.667vw;
+  height: 1.667vw;
+  background: linear-gradient(135deg, #0becfe, #1a5de9);
+  border-radius: 50%;
+  transition: transform 0.3s;
+  transform: translateY(-50%);
+}
+
+.toggle-input[type="checkbox"] {
+  display: none;
+}
+
+
+.toggle-input[type="checkbox"]:checked+.toggle {
+  background: linear-gradient(135deg, #1a5de9, #0becfe);
+}
+
+
+.toggle-input[type="checkbox"]:checked+.toggle .toggle-ball {
+  transform: translate(1.458vw, -50%);
+}
+
+.logout {
+  cursor: pointer;
+}
+
+.logout-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color: rgba(216, 216, 216, 0.8)
+}
+
+.p-home::after,
+.p-meditation::after,
+.p-timer::after,
+.p-profile::after,
+.p-journaling::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 100%;
+  background-color: #D278AE;
+  transform: scaleX(0);
+
+  transition: transform 0.3s ease;
+  transform-origin: left;
+}
+
+.p-home:hover::after,
+.p-meditation:hover::after,
+.p-timer:hover::after,
+.p-profile:hover::after,
+.p-journaling:hover::after {
+  transform: scaleX(1);
+}

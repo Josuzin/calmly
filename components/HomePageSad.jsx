@@ -2,7 +2,7 @@
 
 import Link from "next/link"
 import styles from "../styles/HomePageSad.css"
-import SideBar from "./SideBar"
+import SideBarSad from "./SideBarSad"
 import Chatboxsad from "./Chatboxsad";
 import Moods from "./Mood"
 import AudioPlayer from "react-h5-audio-player";
@@ -20,7 +20,7 @@ export default function HomePage({handleMood}) {
 
     return (
       <div className="page-main-main-sad">
-        <SideBar />
+        <SideBarSad />
         <div className="porra-page-flex-box">
           <section className="porra-main-content-box">
             <div className="porra-para-flex">

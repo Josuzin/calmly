@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import styles from "../styles/HomePageStressed.css";
-import SideBar from "./SideBar";
+import SideBarStressed from "./SideBarStressed";
 import Chatboxstressed from "./Chatboxstressed";
 import Moods from "./Mood";
 import AudioPlayer from "react-h5-audio-player";
@@ -19,7 +19,7 @@ export default function HomePage({ handleMood }) {
 
   return (
     <div className="page-main-main-stressed">
-      <SideBar />
+      <SideBarStressed />
       <div className="porra-page-flex-box">
         <section className="porra-main-content-box">
           <div className="porra-para-flex">

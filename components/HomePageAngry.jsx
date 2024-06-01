@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import styles from "../styles/HomePageAngry.css";
-import SideBar from "./SideBar";
+import SideBarAngry from "./SideBarAngry";
 import Chatboxangry from "./Chatboxangry";
 import Moods from "./Mood";
 import { useEffect, useState } from "react";
@@ -19,7 +19,7 @@ export default function HomePage({ handleMood }) {
 
   return (
     <div className="page-main-main-angry">
-      <SideBar />
+      <SideBarAngry />
       <div className="porra-page-flex-box">
         <section className="porra-main-content-box">
           <div className="porra-para-flex">

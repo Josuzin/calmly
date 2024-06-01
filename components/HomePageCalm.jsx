@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import styles from "../styles/HomePageCalm.css";
-import SideBar from "./SideBar";
+import SideBarCalm from "./SideBarCalm";
 import Chatboxcalm from "./Chatboxcalm";
 import Moods from "./Mood"
 import { useEffect, useState } from "react";
@@ -19,7 +19,7 @@ export default function HomePage({handleMood}) {
 
   return (
     <div className="page-main-main-calm">
-      <SideBar />
+      <SideBarCalm />
       <div className="porra-page-flex-box">
         <section className="porra-main-content-box">
           <div className="porra-para-flex">

@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import styles from "../styles/HomePageHappy.css";
-import SideBar from "./SideBar";
+import SideBarHappy from "./SideBarHappy";
 import Chatboxhappy from "./Chatboxhappy";
 import Moods from "./Mood";
 import AudioPlayer from "react-h5-audio-player";
@@ -19,7 +19,7 @@ export default function HomePage({ handleMood }) {
 
   return (
     <div className="page-main-main-happy">
-      <SideBar />
+      <SideBarHappy />
       <div className="porra-page-flex-box">
         <section className="porra-main-content-box">
           <div className="porra-para-flex">
