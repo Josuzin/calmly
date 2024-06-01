@@ -264,21 +264,20 @@ margin-bottom: 1.823vw;
   font-size: 1.5em;
 }
 .porra-mood-direita .porra-mood-image {
-  --image-card-height: 120px;
-  width: 120px;
-  height: var(--image-card-height);
+  width: 300px;
   display: flex;
   justify-content: center;
   align-items: center;
   padding-top: 5vw;
 }
+
 .porra-mood-direita .porra-mood-image img {
-  height: var(--image-card-height);
-  width: auto;
+  width: 200px;
+  height: 150px;
 }
 
 .porra-mood-song {
-  padding-top: 3vw;
+  margin-top: 0.6vw;
 }
 
 .porra-mood-direita .rhap_container {
