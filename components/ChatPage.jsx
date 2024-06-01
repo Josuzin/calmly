@@ -48,13 +48,16 @@ export default function ChatPage() {
                     {history.map((msg, index) => (
                         <div key={index} className={`chatbox-message ${msg.role}`}>
                             <span className="chatbox-timestamp">{new Date(msg.timestamp).toLocaleDateString()}</span>
-                            <p>{msg.text.slice(0, 50)+"..."}</p>
+                            <div className="chatbox-msg-history-rectangle">
+                                <p>{msg.text.length <= 15 ? msg.text : msg.text.slice(0, 50) + "..."}</p>
+                            </div>
+
                         </div>
                     ))}
                 </div>
             </div>
             <div className="dugudadaduguduguda">
-                <Chatbox onNewMessage={saveMessage}/>
+                <Chatbox onNewMessage={saveMessage} />
             </div>
         </div>
     )

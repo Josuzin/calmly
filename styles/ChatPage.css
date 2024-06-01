@@ -24,3 +24,19 @@
     border-radius: 0.5vw;
 }
 
+.chatbox-history-convo {
+    margin-top: 2vw;
+    color: #fff;
+    margin-bottom: 1vw;
+}
+
+.chatbox-timestamp {
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.chatbox-msg-history-rectangle {
+    background-color: rgba(37, 43, 94, 0.7);
+    padding: 0.5vw 0.8vw;
+    border-radius: 0.7vw;
+}
