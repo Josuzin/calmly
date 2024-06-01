@@ -295,3 +295,7 @@ margin-bottom: 1.823vw;
   display: flex;
   flex-direction: column;
 }
+
+.stressed-gif {
+  border-radius: 5px;
+}

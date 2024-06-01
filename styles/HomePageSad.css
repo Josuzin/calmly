@@ -293,3 +293,7 @@ margin-bottom: 1.823vw;
   display: flex;
   flex-direction: column;
 }
+
+.sad-gif {
+  border-radius: 5px;
+}

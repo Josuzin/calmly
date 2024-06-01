@@ -37,7 +37,7 @@ export default function HomePage({handleMood}) {
             {caraSelecionada && (
               <div className="porra-mood-direita">
                 <div className="porra-mood-image">
-                  <img className= "calm-gif" src="/images/angry.gif" />
+                  <img className= "calm-gif" src="/images/calm.webp"/>
                 </div>
                 <div className="porra-mood-song">
                   <AudioPlayer

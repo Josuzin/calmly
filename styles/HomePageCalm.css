@@ -294,3 +294,7 @@
   display: flex;
   flex-direction: column;
 }
+
+.calm-gif {
+  border-radius: 5px;
+}
