@@ -5,12 +5,13 @@
   } */
 
 .jn-page {
-  font-family: "poppins", sans-serif;
+  font-family: "Poppins", sans-serif;
   background-image: url("/images/fundo.png");
-  background-size: 100% 100%;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   color: #fff;
+  min-height: 100vh;
 }
 
 .jn-page-box {
