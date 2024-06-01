@@ -56,7 +56,7 @@
   background-color: rgba(22, 17, 53, 0.8);
   border-radius: 0.521vw;
   padding: 1.042vw 2.604vw;
-  height: 27vw;
+  height: 28.5vw;
 }
 
 .jn-grid-box {
@@ -69,7 +69,7 @@
   border-radius: 0.521vw;
   padding: 0.542vw 1.083vw;
   background-color: rgba(22, 17, 53, 0.8);
-  height: 25vh;
+  height: 28vh;
 }
 
 .jn-card-title-box {
@@ -185,6 +185,7 @@
 .jn-text {
   color: #d8d8d8;
   font-weight: 100;
+  margin-left: 0;
 }
 
 .jn-text-box {
@@ -218,5 +219,5 @@
 }
 
 .jn-pic {
-  width: 68.604vw;
+  width: 85vw;
 }
