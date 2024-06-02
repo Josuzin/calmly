@@ -137,9 +137,29 @@
   flex: 1;
 }
 
-.jn-diary-content-box {
+.jn-diary-content-box1 , .jn-diary-content-box2 , .jn-diary-content-box3, .jn-diary-content-box4 , .jn-diary-content-box5 , .jn-diary-content-box6 {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 2vh;
+  background-color: #2c3165;
+  padding: 0.781vw 1.302vw;
+  border-radius: 0.481vw;
+}
+
+.jn-diary-content-box1 , .jn-diary-content-box6 {
+  background-color: rgba(244, 153, 96, 0.6);
+}
+
+.jn-diary-content-box2 , .jn-diary-content-box4{
+  background-color: rgba(200, 105, 163, 0.6);
+}
+
+.jn-diary-content-box3{
+  background-color: rgba(44, 49, 101, 0.6);
+}
+
+.jn-diary-content-box5{
+  background-color: rgba(61, 16, 65, 0.6);
 }
 
 .jn-diary-title-write-box {
@@ -205,12 +225,6 @@
   font-size: 0.729vw;
   font-weight: 400;
   margin-top: 0;
-}
-
-.jn-diary-content-box {
-  background-color: #2c3165;
-  padding: 0.781vw 1.302vw;
-  border-radius: 0.481vw;
 }
 
 .jn-algum-titulo-box {

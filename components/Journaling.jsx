@@ -208,7 +208,37 @@ export default function Journaling() {
                     <h4 className="jn-date">Date</h4>
                   </div>
                 </div>
-                <div className="jn-diary-content-box">
+                <div className="jn-diary-content-box1">
+                  <div className="jn-algum-titulo-box">
+                    <h4 className="jn-diary-title-write-box">algum titulo</h4>
+                  </div>
+                  <span className="jn-date-of-note">alguma data</span>
+                </div>
+                <div className="jn-diary-content-box2">
+                  <div className="jn-algum-titulo-box">
+                    <h4 className="jn-diary-title-write-box">algum titulo</h4>
+                  </div>
+                  <span className="jn-date-of-note">alguma data</span>
+                </div>
+                <div className="jn-diary-content-box3">
+                  <div className="jn-algum-titulo-box">
+                    <h4 className="jn-diary-title-write-box">algum titulo</h4>
+                  </div>
+                  <span className="jn-date-of-note">alguma data</span>
+                </div>
+                <div className="jn-diary-content-box4">
+                  <div className="jn-algum-titulo-box">
+                    <h4 className="jn-diary-title-write-box">algum titulo</h4>
+                  </div>
+                  <span className="jn-date-of-note">alguma data</span>
+                </div>
+                <div className="jn-diary-content-box5">
+                  <div className="jn-algum-titulo-box">
+                    <h4 className="jn-diary-title-write-box">algum titulo</h4>
+                  </div>
+                  <span className="jn-date-of-note">alguma data</span>
+                </div>
+                <div className="jn-diary-content-box6">
                   <div className="jn-algum-titulo-box">
                     <h4 className="jn-diary-title-write-box">algum titulo</h4>
                   </div>

@@ -8,7 +8,7 @@ import "/styles/LoginForm.css";
 
 import { signIn } from "next-auth/react";
 import { useRouter } from "next/navigation";
-import { connectToDatabase } from "../utils/mongodb";
+
 
 
 export default function LoginForm() {
@@ -32,7 +32,7 @@ export default function LoginForm() {
     if (result.status === 200) {
 
     }
-    router.replace("/");
+    router.replace("/Home");
   };
 
   return (
