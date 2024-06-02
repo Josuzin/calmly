@@ -236,3 +236,56 @@
 .jn-pic {
   width: 85vw;
 }
+
+.jn-right-content-box {
+  position: relative;
+}
+
+/* Estilos para o modal customizado */
+.custom-modal-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+
+.custom-modal-content {
+  background: rgba(190, 189, 189, 1);
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 500px;
+  width: 100%;
+  color: black;
+}
+
+.custom-modal-content h4 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.custom-modal-content p {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.custom-modal-content button {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  background: #f06292;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.custom-modal-content button:hover {
+  background: #e91e63;
+}
