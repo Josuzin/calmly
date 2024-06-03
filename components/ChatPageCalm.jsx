@@ -1,12 +1,12 @@
 import Link from "next/link";
 import styles from "../styles/ChatPageCalm.css";
 import Chatboxcalm from "./Chatboxcalm";
-import SideBar from "./SideBar";
+import SideBarCalm from "./SideBarCalm";
 
 export default function ChatPage() {
     return (
         <div className="chatbox-container-calm">
-            <SideBar />
+            <SideBarCalm />
             <div className="chatbox-history-box-calm">
                 <div className="chatbox-history-title-box">
                     <h2 className="chatbox-history-title">History</h2>

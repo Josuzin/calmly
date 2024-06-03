@@ -1,12 +1,12 @@
 import Link from "next/link";
 import styles from "../styles/ChatPageHappy.css";
 import Chatboxhappy from "./Chatboxhappy";
-import SideBar from "./SideBar";
+import SideBarHappy from "./SideBarHappy";
 
 export default function ChatPage() {
     return (
         <div className="chatbox-container-happy">
-            <SideBar />
+            <SideBarHappy />
             <div className="chatbox-history-box-happy">
                 <div className="chatbox-history-title-box">
                     <h2 className="chatbox-history-title">History</h2>
