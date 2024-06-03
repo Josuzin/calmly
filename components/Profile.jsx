@@ -1,5 +1,6 @@
 import styles from "../styles/Profile.css"
 import SideBar from "./SideBar"
+import Link from "next/link";
 
 export default function Profile() {
   return (
@@ -46,7 +47,7 @@ export default function Profile() {
             </form>
           </div>
           <div className="profile-btn-box">
-            <button className="profile-btn-save">Save new password</button>
+            <Link href="/Home"><button className="profile-btn-save">Save new password</button></Link>
           </div>
         </div>
       </div>

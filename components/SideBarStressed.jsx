@@ -1,9 +1,13 @@
+"use client";
 import Link from "next/link";
-import  "../styles/SideBarStressed.css";
+import "../styles/SideBarStressed.css";
 import Toggle from "./Toggle";
 import LogoutButton from "./LogoutButton";
 
 export default function SideBar({ handleMood }) {
+  const handleClick = () => {
+    prompt("If you need help call 213-544-545");
+  };
   return (
     <div className="sidebar-stressed">
       <div className="Logo">
@@ -64,15 +68,17 @@ export default function SideBar({ handleMood }) {
         </ul>
 
         <div className="emergency-div">
-          <button className="emergency">Emergency</button>
+          <button onClick={handleClick} className="emergency">
+            Emergency
+          </button>
         </div>
         <div className="toggleElogout">
           <div className="div-toggle">
-            <Toggle handleMood={handleMood}/>
+            <Toggle handleMood={handleMood} />
           </div>
           <div className="div-logout">
             <LogoutButton />
-            </div>
+          </div>
         </div>
       </div>
     </div>

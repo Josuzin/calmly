@@ -144,6 +144,7 @@
   background-color: #2c3165;
   padding: 0.781vw 1.302vw;
   border-radius: 0.481vw;
+  cursor: pointer;
 }
 
 .jn-diary-content-box1 , .jn-diary-content-box6 {
