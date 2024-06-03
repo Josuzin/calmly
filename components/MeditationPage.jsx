@@ -28,7 +28,7 @@ export default function MeditationPage() {
                                 from wandering by providing a continuous thread of thought.
                             </p>
                         </div>
-                            <MeditationTracker/>
+                            {/* <MeditationTracker/> */}
                     </div>
                     <div className="meditation-options-box">
                         <div className="ok">
