@@ -11,7 +11,8 @@ export default function SideBar({ handleMood }) {
   return (
     <div className="sidebar">
       <div className="Logo">
-        <img src="images/Rectangle_28.webp" alt="logo calm.ly" />
+        <Link href="/Home"><img src="images/Rectangle_28.webp" alt="logo calm.ly" /></Link>
+        
       </div>
       <div className="lista">
         <ul>
