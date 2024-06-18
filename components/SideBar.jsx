@@ -72,9 +72,6 @@ export default function SideBar({ handleMood }) {
           <button onClick={handleClick} className="emergency">Emergency</button>
         </div>
         <div className="toggleElogout">
-          <div className="div-toggle">
-            <Toggle handleMood={handleMood}/>
-          </div>
           <div className="div-logout">
             <LogoutButton />
             </div>

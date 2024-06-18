@@ -1,7 +1,7 @@
 'use client';
 import { useState, useEffect, useRef } from 'react';
 import { GoogleGenerativeAI, HarmCategory, HarmBlockThreshold } from '@google/generative-ai';
-import styles from '../styles/Chatboxstressed.css'; // 
+import styles from '../styles/Chatboxstressed.css';
 import SideBar from './SideBar';
 import Link from 'next/link';
 
@@ -10,8 +10,9 @@ const Chatbox = () => {
   const [inputValue, setInputValue] = useState('');
   const [error, setError] = useState(null);
   const [chat, setChat] = useState(null);
+  const [isLoading, setIsLoading] = useState(false); // Estado de carregamento
 
-  const apiKey = process.env.NEXT_PUBLIC_GOOGLE_GEN_AI_KEY; // Use NEXT_PUBLIC_ prefix for frontend environment variables
+  const apiKey = process.env.NEXT_PUBLIC_GOOGLE_GEN_AI_KEY;
   const genAI = new GoogleGenerativeAI(apiKey);
   const model = genAI.getGenerativeModel({ model: 'gemini-1.5-pro-latest' });
 
@@ -49,25 +50,23 @@ const Chatbox = () => {
   }, [model, messages, chat]);
 
   const handleSubmit = async (e) => {
-    console.log("OLA SOU UMA FRUTA MAS V")
     e.preventDefault();
     if (!inputValue.trim()) return;
 
     const userMessage = { text: inputValue.trim(), role: 'user' };
     setMessages((prevMessages) => [...prevMessages, userMessage]);
     setInputValue('');
-    const result = await chat.sendMessage("ola");
-    const response = await result.response.text();
-    console.log(response)
 
+    setIsLoading(true); // Inicia o estado de carregamento
 
     try {
       const result = await chat.sendMessage(inputValue.trim());
-      console.log(result);
       const assistantMessage = { text: await result.response.text(), role: 'assistant' };
       setMessages((prevMessages) => [...prevMessages, assistantMessage]);
     } catch (error) {
       setError('An error occurred while sending the message.');
+    } finally {
+      setIsLoading(false); // Finaliza o estado de carregamento
     }
   };
 
@@ -84,22 +83,6 @@ const Chatbox = () => {
   }, [messages]);
 
   return (
-    // <div className="chatbox-container">
-    //   <SideBar />
-    //   <div className="chatbox-history-box">
-    //     <div className="chatbox-history-title-box">
-    //       <h2 className="chatbox-history-title">History</h2>
-    //     </div>
-    //     <div className="chatbox-history-convo">
-    //       <div className="chatbox-date-convo-box">
-    //         <p className="chatbox-date"></p>
-    //       </div>
-    //       <div className="chatbox-convo-box">
-    //         <p className="chatbox-convo-go"></p>
-    //       </div>
-    //     </div>
-    //   </div>
-
     <div className={`Chatboxstressed ${theme}`}>
       <div className="chatbox-my">
         <div className="coco"></div>
@@ -115,10 +98,11 @@ const Chatbox = () => {
       <div className="chatbox-msg-balao">
         {messages.map((message, index) => (
           <div key={index} className={`message ${message.role}`}>
-            {message.role === `assistant` && <img src="./images/chat.png" />}
+            {message.role === `assistant` && <img src="./images/chat.png" alt="assistant" />}
             <span>{message.text}</span>
           </div>
         ))}
+        {isLoading && <div className="loading-container"><div className="loading-message"></div></div>}
         <div ref={chatEndRef} />
       </div>
       {error && <p className="chatbox-error-msg">{error}</p>}
@@ -134,6 +118,7 @@ const Chatbox = () => {
             <img
               src="/images/send-btn.png"
               className="chatbox-send-icon-calm"
+              alt="send"
             ></img>
           </button>
         </form>
