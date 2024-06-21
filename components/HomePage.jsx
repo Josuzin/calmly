@@ -13,7 +13,6 @@ import Moods from "./Mood";
 // import "../styles/HomePageAngry.css"
 // import "../styles/HomePageStressed.css"
 // import "../styles/HomePageCalm.css"
-
 import AudioPlayer from "react-h5-audio-player";
 import "react-h5-audio-player/lib/styles.css";
 import MeditationTracker from "./MeditationTracker";
@@ -21,8 +20,8 @@ import MeditationTracker from "./MeditationTracker";
 export default function HomePage({ handleMood }) {
   const [caraSelecionada, selecionarCara] = useState("happy");
 
-  const [mood, setMood] = useState(0);                                                                                           
-                                                                                              
+  const [mood, setMood] = useState(0);
+     
   function handleChangeMood(num) {
     handleMood(num);
     return;

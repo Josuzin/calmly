@@ -7,7 +7,6 @@ import { useState, useEffect } from 'react';
 
 export default function ChatPage() {
 
-
     const [history, setHistory] = useState([]);
 
     const fetchHistory = async () => {
@@ -37,6 +36,14 @@ export default function ChatPage() {
         }
     };
 
+    const formatDate = (timestamp) => {
+        const date = new Date(timestamp);
+        const day = String(date.getDate()).padStart(2, '0');
+        const month = String(date.getMonth() + 1).padStart(2, '0');
+        const year = date.getFullYear();
+        return `${day}-${month}-${year}`;
+    };
+
     return (
         <div className="chatbox-container">
             <SideBar />
@@ -45,7 +52,7 @@ export default function ChatPage() {
                     <h2 className="chatbox-history-title">History</h2>
                 </div>
                 <div className="chatbox-history-convo">
-                    {history.map((msg, index) => (
+                    {/* {history.slice().reverse().map((msg, index) => (
                         <div key={index} className={`chatbox-message ${msg.role}`}>
                             <span className="chatbox-timestamp">{new Date(msg.timestamp).toLocaleDateString()}</span>
                             <div className="chatbox-msg-history-rectangle">
@@ -53,7 +60,20 @@ export default function ChatPage() {
                             </div>
 
                         </div>
-                    ))}
+                    ))} */}
+                    {history.slice().reverse().map((msg, index) => {
+                        const currentDate = formatDate(msg.timestamp);
+                        const previousDate = index > 0 ? formatDate(history.slice().reverse()[index - 1].timestamp) : null;
+
+                        return (
+                            <div key={index} className={`chatbox-message ${msg.role}`} style={{ marginTop: currentDate !== previousDate ? '3rem' : '0' }}>
+                                <span className="chatbox-timestamp">{currentDate}</span>
+                                <div className="chatbox-msg-history-rectangle">
+                                    <p>{msg.text.length <= 15 ? msg.text : `${msg.text.slice(0, 50)}...`}</p>
+                                </div>
+                            </div>
+                        );
+                    })}
                 </div>
             </div>
             <div className="dugudadaduguduguda">
