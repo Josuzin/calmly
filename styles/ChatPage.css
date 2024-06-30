@@ -28,6 +28,12 @@
     margin-top: 2vw;
     color: #fff;
     margin-bottom: 1vw;
+    height: 70vh;
+    overflow-y: auto;
+}
+
+.chatbox-message {
+    margin-bottom: 10px;
 }
 
 .chatbox-timestamp {
