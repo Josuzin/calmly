@@ -44,7 +44,6 @@ export default function HomePage({ handleMood }) {
                       showJumpControls={false}
                       showDownloadProgress={false}
                       controls
-                      autoPlay
                       src={
                         caraSelecionada === "happy"
                           ? "/musics/happy.mp3"

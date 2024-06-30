@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import "../styles/SideBarAngry.css";
-import Toggle from "./Toggle";
+
 import LogoutButton from "./LogoutButton";
 
 export default function SideBar({ handleMood }) {
@@ -73,9 +73,6 @@ export default function SideBar({ handleMood }) {
           </button>
         </div>
         <div className="toggleElogout">
-          <div className="div-toggle">
-            <Toggle handleMood={handleMood} />
-          </div>
           <div className="div-logout">
             <LogoutButton />
           </div>

@@ -71,6 +71,7 @@ export default function LoginForm() {
           </div>
           {error && <p className="error">{error}</p>}
           <div className="register-link">
+           <p><a href="">Forgot your password?</a></p>
             <p className="acc">
               Need an account?{" "}
               <a href="" className="signup">

@@ -1,5 +1,4 @@
-
-'use client'
+"use client";
 import Link from "next/link";
 import React, { useState } from "react";
 import Image from "next/image";
@@ -9,15 +8,11 @@ import "/styles/LoginForm.css";
 import { signIn } from "next-auth/react";
 import { useRouter } from "next/navigation";
 
-
-
 export default function LoginForm() {
-
   const router = useRouter();
-    const [email, setEmail] = useState("");
-    const [password, setPassword] = useState("");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
   const [error, setError] = useState(undefined);
-
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -30,7 +25,6 @@ export default function LoginForm() {
       setError("invalid credentials");
     }
     if (result.status === 200) {
-
     }
     router.replace("/Home");
   };
@@ -72,7 +66,15 @@ export default function LoginForm() {
           {error && <p className="error">{error}</p>}
           <div className="register-link">
             <p className="acc">
-              Need an account? <a href="" className="signup">SIGN UP</a>
+              <a href="" className="signup">
+                Forgot your password?
+              </a>
+            </p>
+            <p className="acc">
+              Need an account?{" "}
+              <a href="" className="signup">
+                SIGN UP
+              </a>
             </p>
           </div>
         </form>

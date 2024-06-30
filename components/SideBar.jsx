@@ -1,7 +1,6 @@
 "use client";
 import Link from "next/link";
 import  "../styles/SideBar.css";
-import Toggle from "./Toggle";
 import LogoutButton from "./LogoutButton";
 
 export default function SideBar({ handleMood }) {

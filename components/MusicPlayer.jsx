@@ -22,23 +22,20 @@ const MusicPlayer = () => {
   };
 
   const handleRestart = () => {
-    if( isPlaying) {
+    if (isPlaying) {
       audioRef.current.currentTime = 0;
       audioRef.current.play();
       setIsPlaying(true);
     }
   }
-    audioRef.current.currentTime = 0;
-    audioRef.current.play();
-    setIsPlaying(true);
-  
+
   return (
     <div>
         <audio ref={audioRef} src="/music.mp3" />
+        <button onClick={handlePlayPause}>{isPlaying ? "Pause" : "Play"}</button>
         <button onClick={handleRestart}>Restart</button>
     </div>
-  )
-
+  );
 }
 
-export default MusicPlayer
+export default MusicPlayer;

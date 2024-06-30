@@ -37,17 +37,29 @@
   margin-top: 2vw;
 }
 
-.porra-happy,
-.porra-sad,
-.porra-angry,
-.porra-stressed,
-.porra-calm {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0.313vw;
+.porra-sad, .porra-angry, .porra-stressed, .porra-calm, .porra-happy {
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  border-radius: 28px;
+  overflow: visible;
+  position: relative;
   cursor: pointer;
+  padding: 1.5rem;
 }
+
+.porra-sad:hover, .porra-angry:hover, .porra-stressed:hover, .porra-calm:hover, .porra-happy:hover {
+  transform: translateY(-5px) scale(1.05);
+}
+
+.porra-sad:hover { box-shadow: 0 14px 25px rgba(0, 60, 255, 0.3); }
+.porra-angry:hover { box-shadow: 0 14px 25px rgba(253, 0, 0, 0.3); }
+.porra-stressed:hover { box-shadow: 0 14px 25px rgba(170, 77, 0, 0.3); }
+.porra-calm:hover { box-shadow: 0 14px 25px rgba(200, 81, 255, 0.3); }
+.porra-happy:hover { box-shadow: 0 14px 25px rgba(255, 230, 1, 0.3); }
+
+.porra-sad:hover::after, .porra-angry:hover::after, .porra-stressed:hover::after, .porra-calm:hover::after, .porra-happy:hover::after {
+  opacity: 2;
+}
+
 
 .porra-sec-div {
   display: flex;
