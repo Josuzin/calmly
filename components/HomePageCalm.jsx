@@ -21,7 +21,7 @@ export default function HomePage({ handleMood }) {
     <div className="page-main-main-calm">
       <SideBarCalm />
       <div className="porra-page-flex-box">
-        <section className="porra-main-content-box">
+        <div className="porra-main-content-box">
           <div className="porra-para-flex">
             <div className="porra-mood-box-calm">
               <div className="porra-mood-esquerda">
@@ -63,7 +63,7 @@ export default function HomePage({ handleMood }) {
             {caraSelecionada && (
               <div className="porra-mood-direita">
                 <div className="porra-mood-image">
-                  <img className= "calm-gif" src="/images/calm.webp"/>
+                  <img className="calm-gif" src="/images/calm.webp" />
                 </div>
                 <div className="porra-mood-song">
                   <AudioPlayer
@@ -86,21 +86,20 @@ export default function HomePage({ handleMood }) {
               </div>
             )}
           </div>
-            <div className="porra-sec-div">
-              <div className="porra-track-box">
-                <div className="porra-phrase-box-calm">
-                  <p className="porra-phrase">
-                    "Be the energy you wish to attract.”
-                  </p>
-                </div>
-                <MeditationTracker />
+          <div className="porra-sec-div">
+            <div className="porra-track-box">
+              <div className="porra-phrase-box-calm">
+                <p className="porra-phrase">
+                  "Be the energy you wish to attract.”
+                </p>
               </div>
-              <div className="porra-chat-box">
-                <Chatboxcalm />
-              </div>
+              <MeditationTracker />
+            </div>
+            <div className="porra-chat-box">
+              <Chatboxcalm />
             </div>
           </div>
-        </section>
+        </div>
       </div>
     </div>
   );
