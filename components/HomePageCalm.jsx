@@ -60,44 +60,18 @@ export default function HomePage({ handleMood }) {
                 </div>
               )}
             </div>
-            {caraSelecionada && (
-              <div className="porra-mood-direita">
-                <div className="porra-mood-image">
-                  <img className= "calm-gif" src="/images/calm.webp"/>
-                </div>
-                <div className="porra-mood-song">
-                  <AudioPlayer
-                    showJumpControls={false}
-                    showDownloadProgress={false}
-                    controls
-                    src={
-                      caraSelecionada === "happy"
-                        ? "/musics/happy.mp3"
-                        : caraSelecionada === "angry"
-                        ? "/musics/angry.mp3"
-                        : caraSelecionada === "sad"
-                        ? "/musics/sad.mp3"
-                        : caraSelecionada === "stressed"
-                        ? "/musics/stressed.mp3"
-                        : caraSelecionada === "calm" && "/musics/calm.mp3"
-                    }
-                  />
-                </div>
-              </div>
-            )}
           </div>
-            <div className="porra-sec-div">
-              <div className="porra-track-box">
-                <div className="porra-phrase-box-calm">
-                  <p className="porra-phrase">
-                    "Be the energy you wish to attract.”
-                  </p>
-                </div>
-                <MeditationTracker />
+          <div className="porra-sec-div">
+            <div className="porra-track-box">
+              <div className="porra-phrase-box-calm">
+                <p className="porra-phrase">
+                  “Be the energy you wish to attract.”
+                </p>
               </div>
-              <div className="porra-chat-box">
-                <Chatboxcalm />
-              </div>
+              <MeditationTracker />
+            </div>
+            <div className="porra-chat-box">
+              <Chatboxcalm />
             </div>
           </div>
         </section>

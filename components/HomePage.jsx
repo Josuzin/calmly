@@ -49,7 +49,7 @@ export default function HomePage({ handleMood }) {
               <div className="porra-track-box">
                 <div className="porra-phrase-box">
                   <p className="porra-phrase">
-                    "Be the energy you wish to attract.”
+                    “Be the energy you wish to attract.”
                   </p>
                 </div>
                 <MeditationTracker />

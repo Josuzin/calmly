@@ -31,8 +31,15 @@
   font-weight: 500;
 }
 
+.timer-number-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 75px;
+}
+
 .timer-number {
-  font-size: 3.333vw;
+  font-size: 3.433vw;
   font-weight: 600;
 }
 
@@ -55,7 +62,7 @@
   justify-content: space-between;
   min-height: 100vh;
   padding-top: 2%;
-  padding-bottom: 2%;
+  padding-bottom: 5%;
 }
 
 .timer-animation-1,
@@ -124,6 +131,11 @@
 
 .timer-play-btn-box {
   display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  gap: 10px
+  
 }
 
 .timer-btn-replay,
