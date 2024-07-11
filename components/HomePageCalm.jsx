@@ -21,7 +21,7 @@ export default function HomePage({ handleMood }) {
     <div className="page-main-main-calm">
       <SideBarCalm />
       <div className="porra-page-flex-box">
-        <section className="porra-main-content-box">
+        <div className="porra-main-content-box">
           <div className="porra-para-flex">
             <div className="porra-mood-box-calm">
               <div className="porra-mood-esquerda">
@@ -74,7 +74,7 @@ export default function HomePage({ handleMood }) {
               <Chatboxcalm />
             </div>
           </div>
-        </section>
+        </div>
       </div>
     </div>
   );
