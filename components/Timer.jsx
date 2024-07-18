@@ -4,7 +4,7 @@ import styles from "/styles/Timer.css";
 import SideBar from "./SideBar";
 import Link from "next/link";
 
-export default function Timer() {
+export default function Timer({ userId }) {
   const [seconds, setSeconds] = useState(0);
   const [isRunning, setIsRunning] = useState(false);
   const [selectedTime, setSelectedTime] = useState(0);
@@ -51,6 +51,7 @@ export default function Timer() {
     if (seconds === 0 && isRunning) {
       setIsRunning(false); // Stop the timer when it reaches 0
       stopAudio();
+      handleMeditationCompletion(); // Call the function to update streak
     }
   }, [seconds, isRunning]);
 
@@ -78,22 +79,43 @@ export default function Timer() {
     setSeconds(value * 60); // Update the timer immediately
   };
 
+  const handleMeditationCompletion = async () => {
+    try {
+      const res = await fetch('/api/meditation/update', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ userId }),
+      });
+
+      if (!res.ok) {
+        throw new Error('Failed to update meditation streak');
+      }
+
+      const data = await res.json();
+      console.log('Meditation streak updated:', data);
+    } catch (error) {
+      console.error('Error updating meditation streak:', error);
+    }
+  };
+
   return (
     <div className="timer-page-body">
       <SideBar />
       <div className="timer-wrapper">
-        <div class="timer-animation-1"></div>
-        <div class="timer-animation-2"></div>
-        <div class="timer-animation-3"></div>
-        <div class="timer-para-flex">
-          <nav class="timer-navbar-box"></nav>
-          <section class="timer-content-box">
+        <div className="timer-animation-1"></div>
+        <div className="timer-animation-2"></div>
+        <div className="timer-animation-3"></div>
+        <div className="timer-para-flex">
+          <nav className="timer-navbar-box"></nav>
+          <section className="timer-content-box">
             <div className="timer-h1-box">
               <h1 className="timer-title-estiloso">Timer</h1>
             </div>
-            <div class="timer-animation-box">
-              <div class="timer-counting">
-                <div class="timer-number-box">
+            <div className="timer-animation-box">
+              <div className="timer-counting">
+                <div className="timer-number-box">
                   <span className="timer-number">
                     {Math.floor(seconds / 60)}:
                     {String(seconds % 60).padStart(2, "0")}
@@ -101,30 +123,30 @@ export default function Timer() {
                 </div>
               </div>
             </div>
-            <div class="timer-music-section-box">
-              <div class="timer-music-img-box">
-                <div class="timer-music-photo-box">
+            <div className="timer-music-section-box">
+              <div className="timer-music-img-box">
+                <div className="timer-music-photo-box">
                   <img
                     src="/images/timer-music-cover.png"
                     alt="music cover"
-                    class="timer-cover-size"
+                    className="timer-cover-size"
                   />
                 </div>
-                <div class="timer-music-title-box">
-                  <div class="timer-music-flex-box">
-                    <h2 class="timer-music-title">Tunnel of Love</h2>
-                    <h3 class="timer-author-box">Dire Straits</h3>
+                <div className="timer-music-title-box">
+                  <div className="timer-music-flex-box">
+                    <h2 className="timer-music-title">Tunnel of Love</h2>
+                    <h3 className="timer-author-box">Dire Straits</h3>
                   </div>
                 </div>
               </div>
-              <div class="timer-play-btn-box">
-                <div class="timer-replay-box">
-                  <button class="timer-btn-replay" onClick={handleReset}>
+              <div className="timer-play-btn-box">
+                <div className="timer-replay-box">
+                  <button className="timer-btn-replay" onClick={handleReset}>
                     <span className="replay-yes-true">Restart</span>
                   </button>
                 </div>
-                <div class="timer-play-box">
-                  <button class="timer-btn-play" onClick={handleStartPause}>
+                <div className="timer-play-box">
+                  <button className="timer-btn-play" onClick={handleStartPause}>
                     <span className="play-pause-options">
                       {isRunning ? (
                         <span className="pause-para-centrar">Pause</span>
@@ -134,15 +156,15 @@ export default function Timer() {
                     </span>
                   </button>
                 </div>
-                <div class="timer-pause-box">
-                  <button class="timer-btn-homey">
+                <div className="timer-pause-box">
+                  <button className="timer-btn-homey">
                     <Link href="/Home">
-                      <span class="go-home-please">Home</span>
+                      <span className="go-home-please">Home</span>
                     </Link>
                   </button>
                 </div>
               </div>
-              <div class="timer-empty"></div>
+              <div className="timer-empty"></div>
             </div>
           </section>
           {!isRunning && (

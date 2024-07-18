@@ -1,36 +1,34 @@
- import mongoose, { Schema } from "mongoose";
+import mongoose from 'mongoose';
 
- const userSchema = new Schema(
-   {
-     email: {
-       type: String,
-       required: true,
-       unique: true,  
-     },
-     password: {
-       type: String,
-       required: true,
-     },
-     name: {
-       type: String,
-       required: true,
-     },
-     meditationDates: {
-       type: [Date],
-       default: [],
-     },
-     currentStreak: {
-       type: Number,
-       default: 0,
-     },
-     lastMeditationDate: {
-       type: Date,
-       default: null,
-     },
-   },
-   { timestamps: true }
- );
+const UserSchema = new mongoose.Schema(
+  {
+    email: {
+      type: String,
+      required: true,
+      unique: true,
+    },
+    password: {
+      type: String,
+      required: true,
+    },
+    name: {
+      type: String,
+      required: true,
+    },
+    meditationDates: {
+      type: [Date],
+      default: [],
+    },
+    currentStreak: {
+      type: Number,
+      default: 0,
+    },
+    lastMeditationDate: {
+      type: Date,
+      default: null,
+    },
+  },
+  { timestamps: true }
+);
 
- const User = mongoose.models.User || mongoose.model("User", userSchema);
-
- export default User;
+export default mongoose.models.User || mongoose.model('User', UserSchema);
