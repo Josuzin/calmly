@@ -14,7 +14,11 @@ const MeditationPage = () => {
     const fetchData = async () => {
       try {
         const response = await fetch("/api/meditations");
+        if (!response.ok) {
+          throw new Error("Network response was not ok");
+        }
         const data = await response.json();
+        console.log("Fetched meditations:", data); // Log para depuração
         setMeditations(data);
       } catch (error) {
         console.error("Error fetching meditations:", error);
@@ -47,17 +51,21 @@ const MeditationPage = () => {
                 from wandering by providing a continuous thread of thought.
               </p>
             </div>
-            {/* <MeditationTracker/> */}
           </div>
           <div className="meditation-options-box">
-            {meditations.map((meditation) => (
-              <Card
-                key={meditation._id}
-                imgSrc={meditation.imgSrc}
-                title={meditation.title}
-                description={meditation.description}
-              />
-            ))}
+            {meditations.length > 0 ? (
+              meditations.map((meditation) => (
+                <Card
+                  key={meditation._id}
+                  id={meditation._id}
+                  imgSrc={meditation.imgSrc}
+                  title={meditation.title}
+                  description={meditation.description}
+                />
+              ))
+            ) : (
+              <p>No meditations available</p>
+            )}
           </div>
           <div className="show-more">
             <a href="">Show More</a>

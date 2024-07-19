@@ -1,8 +1,8 @@
-// components/Card.js
-import React from "react";
 import Link from "next/link";
 
-const Card = ({ id, imgSrc, title, description }) => {
+const Card = ({ _id, imgSrc, title, description }) => {
+  console.log("Card ID:", _id); // Adicione este log para verificar o ID
+
   return (
     <div className="ok">
       <img src={imgSrc} alt="meditation" className="med-photo" />
