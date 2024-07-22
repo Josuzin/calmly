@@ -8,6 +8,7 @@ import AudioPlayer from "react-h5-audio-player";
 import "react-h5-audio-player/lib/styles.css";
 import { useEffect, useState } from "react";
 import MeditationTracker from "./MeditationTracker";
+import MotivationalSentence from "./MotivationalSentence";
 
 export default function HomePage({ handleMood }) {
   const [caraSelecionada, selecionarCara] = useState("happy");
@@ -63,9 +64,7 @@ export default function HomePage({ handleMood }) {
             <div className="porra-sec-div">
               <div className="porra-track-box">
                 <div className="porra-phrase-box-happy">
-                  <p className="porra-phrase">
-                    "Be the energy you wish to attract.”
-                  </p>
+                  <MotivationalSentence />
                 </div>
                 <MeditationTracker />
               </div>

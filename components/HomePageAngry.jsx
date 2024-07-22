@@ -5,6 +5,7 @@ import styles from "../styles/HomePageAngry.css";
 import SideBarAngry from "./SideBarAngry";
 import Chatboxangry from "./Chatboxangry";
 import Moods from "./Mood";
+import MotivationalSentence from "./MotivationalSentence";
 import { useEffect, useState } from "react";
 import AudioPlayer from "react-h5-audio-player";
 import "react-h5-audio-player/lib/styles.css";
@@ -63,9 +64,7 @@ export default function HomePage({ handleMood }) {
             <div className="porra-sec-div">
               <div className="porra-track-box">
                 <div className="porra-phrase-box-angry">
-                  <p className="porra-phrase">
-                    “Be the energy you wish to attract.”
-                  </p>
+                  <MotivationalSentence />
                 </div>
                 <MeditationTracker />
               </div>

@@ -4,6 +4,7 @@ import Link from "next/link";
 import styles from "../styles/HomePage.css";
 import SideBar from "./SideBar";
 import Chatbox from "./Chatbox";
+import MotivationalSentence from "./MotivationalSentence";
 import { useEffect, useState } from "react";
 import HomePageHappy from "./HomePageHappy";
 import Moods from "./Mood";
@@ -21,11 +22,11 @@ export default function HomePage({ handleMood }) {
   const [caraSelecionada, selecionarCara] = useState("happy");
 
   const [mood, setMood] = useState(0);
-     
+
   function handleChangeMood(num) {
     handleMood(num);
     return;
-  }                                             
+  }
 
   return (
     <div className="page-main-main">
@@ -48,9 +49,7 @@ export default function HomePage({ handleMood }) {
             <div className="porra-sec-div">
               <div className="porra-track-box">
                 <div className="porra-phrase-box">
-                  <p className="porra-phrase">
-                    “Be the energy you wish to attract.”
-                  </p>
+                  <MotivationalSentence />
                 </div>
                 <MeditationTracker />
               </div>
