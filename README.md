@@ -1,4 +1,4 @@
-## Calmly: Your Personalized Path to Mental Wellness
+# Calmly: Your Personalized Path to Mental Wellness
 
 **Calmly empowers individuals and organizations to manage their emotions effectively.** Our comprehensive mental health platform combines evidence-based practices with innovative AI technology to create a supportive environment for self-care and emotional processing.
 
