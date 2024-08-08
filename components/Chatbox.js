@@ -5,6 +5,11 @@ import styles from '../styles/Chatbox.css';
 import SideBar from './SideBar';
 import Link from 'next/link';
 
+// Função para remover asteriscos do texto
+const removeAsterisks = (text) => {
+  return text.replace(/\*/g, '');
+};
+
 const Chatbox = ({ onNewMessage }) => {
   const [messages, setMessages] = useState([]);
   const [inputValue, setInputValue] = useState('');
@@ -59,16 +64,14 @@ const Chatbox = ({ onNewMessage }) => {
 
     setIsLoading(true);
 
-    
-
     try {
       const result = await chat.sendMessage(inputValue.trim());
-      const assistantMessage = { text: await result.response.text(), role: 'assistant' };
+      const assistantMessage = { text: removeAsterisks(await result.response.text()), role: 'assistant' };
       setMessages((prevMessages) => [...prevMessages, assistantMessage]);
     } catch (error) {
       setError('An error occurred while sending the message.');
     } finally {
-      setIsLoading(false); // Set loading to false after processing the message
+      setIsLoading(false);
     }
   };
 
@@ -95,7 +98,7 @@ const Chatbox = ({ onNewMessage }) => {
         {messages.map((message, index) => (
           <div key={index} className={`message ${message.role}`}>
             {message.role === `assistant` && <img src='./images/chat.png' alt="assistant" />}
-            <span>{message.text}</span>
+            <span>{removeAsterisks(message.text)}</span>
           </div>
         ))}
         {isLoading && <div className="loading-container"><div className="loading-message"></div></div>}
