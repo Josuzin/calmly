@@ -50,41 +50,41 @@ export default function LoginForm() {
           <figure>
             <Image src={Rectangle_28} alt="logo" className="logo" />
           </figure>
-          <h2>BEM-VINDO DE VOLTA!</h2>
+          <h2>WELCOME BACK!</h2>
           <div className="input-box">
             <p className="e">Email</p>
             <input
               onChange={(e) => setEmail(e.target.value)}
               type="email"
-              placeholder="Digite seu email"
+              placeholder="Your email"
               required
             />
           </div>
           <div className="input-box">
-            <p className="p">Senha</p>
+            <p className="p">Password</p>
             <input
               onChange={(e) => setPassword(e.target.value)}
               type="password"
-              placeholder="Digite sua senha"
+              placeholder="Your password"
               required
             />
           </div>
           <div className="btn-box">
             <button type="submit" className="btn">
-              ENTRAR
+              Enter
             </button>
           </div>
           {error && <p className="error">{error}</p>}
           <div className="register-link">
             <p className="acc">
               <Link href="/forgot-password" className="signup">
-                Esqueceu sua senha?
+                Forgot your password?
               </Link>
             </p>
             <p className="acc">
-              Precisa de uma conta?{" "}
+              Need an account?{" "}
               <Link href="/signup" className="signup">
-                CADASTRE-SE
+                SIGN-UP
               </Link>
             </p>
           </div>

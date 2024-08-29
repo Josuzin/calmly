@@ -13,9 +13,9 @@ const MeditationPage = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch("/api/meditations");
+        const response = await fetch("/api/guidedMeditations");
         if (!response.ok) {
-          throw new Error("Network response was not ok");
+          throw new Error(`HTTP error! status: ${response.status}`);
         }
         const data = await response.json();
         console.log("Fetched meditations:", data); // Log para depuração

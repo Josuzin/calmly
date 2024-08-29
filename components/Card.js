@@ -2,6 +2,8 @@ import Link from "next/link";
 
 const Card = ({ _id, imgSrc, title, description }) => {
   console.log("Card ID:", _id); // Adicione este log para verificar o ID
+  const id = _id;
+
 
   return (
     <div className="ok">

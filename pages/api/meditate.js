@@ -1,8 +1,9 @@
 import { updateMeditationStreak } from "../../utils/updateStreak";
-import { connectMongoDB } from "../../database/mongodb";
+
+import dbConnect from "../../lib/mongodb";
 export default async function handler(req, res) {
   if (req.method === 'POST') {
-    await connectMongoDB();
+    await dbConnect();
     const { userId, date } = req.body;
 
     try {
