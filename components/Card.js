@@ -1,10 +1,6 @@
 import Link from "next/link";
 
 const Card = ({ _id, imgSrc, title, description }) => {
-  console.log("Card ID:", _id); // Adicione este log para verificar o ID
-  const id = _id;
-
-
   return (
     <div className="ok">
       <img src={imgSrc} alt="meditation" className="med-photo" />
@@ -12,7 +8,7 @@ const Card = ({ _id, imgSrc, title, description }) => {
       <div className="porra">
         <p className="text">{description}</p>
         <div className="btn-da-medit">
-          <Link href={`/meditation/${id}`}>
+          <Link href={`/MeditationMuscle/${_id}`}>
             <button className="btn-thr">Dive in</button>
           </Link>
         </div>

@@ -57,7 +57,7 @@ const MeditationPage = () => {
               meditations.map((meditation) => (
                 <Card
                   key={meditation._id}
-                  id={meditation._id}
+                  _id={meditation._id}
                   imgSrc={meditation.imgSrc}
                   title={meditation.title}
                   description={meditation.description}

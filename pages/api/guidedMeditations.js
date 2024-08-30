@@ -1,3 +1,4 @@
+
 import dbConnect from '../../lib/mongodb';
 import Meditations from '../../models/meditation';
 
@@ -7,7 +8,7 @@ export default async function handler(req, res) {
     console.log('Database connection established');
 
     if (req.method === 'GET') {
-      const meditations = await Meditations.find({}, { title: 1, description: 1 }).lean();
+      const meditations = await Meditations.find({}, { _id: 1, title: 1, description: 1, imgSrc: 1, audioSrc: 1, length: 1, content: 1}).lean();
       console.log('Meditations found:', meditations);
       res.json(meditations);
     } else {

@@ -19,7 +19,7 @@ export default function Profile() {
             <h2 className="profile-title">Profile</h2>
           </div>
           <div className="profile-name-box">
-            <h1 className="profile-nickname">Username123</h1>
+            <h1 className="profile-nickname">Haus</h1>
           </div>
         </div>
       </div>
