@@ -195,6 +195,10 @@
     margin-top: 0.888vw;
     align-self: flex-start;
     margin-right: 10.2vw;
+    margin-left: 0.5vw;
+    width: 40%;
+    padding: 10px;
+    
   }
   
   .btn-fou {
